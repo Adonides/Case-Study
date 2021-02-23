@@ -93,8 +93,43 @@ h1 a:hover {
     top: 76%;
     left: 50%;
     cursor: default;
+}
 
+/*ARTICLE01==========================================*/
+#article01 {
+    padding: 1em 0;
+    border-top: 8px solid #222;
+    background: #f9f9f9;
+    color: #333;
+    font-size: 1.125em; /* 18px / 16px */
+}
 
+.wrap {
+    margin: 0 auto;
+    max-width: 58%; /*centralizar texto*/
+}
+
+#article01 h2 {
+    font-size: 4em; /* 72px / 16px */
+    line-height: 1.1;
+}
+
+#article01 h3 {
+    margin: 1em 0 .8em 0;
+    color:rgb(235, 137, 57);
+    font-size: 2em; /*36px / 16px*/
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+}
+
+#article01 h4 {
+    margin: .8em 0 -.7em 0;
+    color: #222;
+    font-size: 1.333em;
+}
+
+#article01 p {
+    margin: .8em 0;
 }
 /*INTRO ANIMATION==========================================*/
 .intro {
@@ -135,6 +170,30 @@ h1 a:hover {
     display: inline-block; /*permite mover span elemento*/
 }
 
-/*RESPONSIVE.HOME==========================================*/
+/*RESPONSIVE.NAVBAR==========================================*/
+
+/*RESPONSIVE.ARCTICLE==========================================*/
+@media screen and (max-width: 600px){
+    #article01 {
+        font-size: 1em; /*diminuir a fonte*/
+    }
+
+    .wrap {
+        max-width: 85%; /*diminuir os espaços laterais*/
+    }
+}/*mais espaço paro o texto em telas menores*/
+
+@media screen and (min-width: 980px){
+  /* .wrap {
+        max-width: 600px; manter fixa espaço entre as letras*/
+    }
+}/* espaço entre as letras aumenta em tela grandes*/
 
 /*FOOTER==========================================*/
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}

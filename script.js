@@ -1,12 +1,4 @@
-/*NAVBAR==========================================*/
-const NavbarScroll = {
-    getScrolling() {
-        window.addEventListener("scroll", function(){
-            const navbar = document.querySelector("nav")
-            navbar.classList.toggle("sticky", window.scrollY > 0)
-        })
-    }
-}
+
 /*INTRO==========================================*/
 const Intro = {
     getTimeline() {
@@ -21,7 +13,15 @@ const Intro = {
     }
 }
 
-
+/*NAVBAR==========================================*/
+const NavbarScroll = {
+    getScrolling() {
+        window.addEventListener("scroll", function(){
+            const navbar = document.querySelector("nav")
+            navbar.classList.toggle("sticky", window.scrollY > 0)
+        })
+    }
+}
 
 
 const CaseStudy = {

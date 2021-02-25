@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <title>Self taught learners</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d26011a575.js" crossorigin="anonymous"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous">
     </script>
     <script defer src="script.js"></script>
@@ -42,7 +43,7 @@
                     </div>
             </section>
             <hr><!----------------Article------------------->
-            <article id="article01">
+            <article class="article01" id="article01">
                 <section class="wrap">
                     <h2>The Future of Education</h2>
                     <p class="date"><small><em>March 01, 2021</em></small></p>
@@ -50,7 +51,7 @@
                         Before enrolling a college or online curse, we got to think what is the best method to learn X or Z.
                     </h3>
                     <p>
-                          Is the traditional way the better option and what to say about online learning? In this article I will run over through those questions and give my sincere opinion about them.
+                          Is the traditional way the better option and what to say about online learning? In this article I will run over through those questions and give my sincere opinion about it.
                     </p>
                     <h4>Traditional Education</h4>
                     <p>
@@ -66,11 +67,37 @@
                     <p>
                         This kind of mind is what I like, in this point you push yourself for another level! Because you are starting a become the boss of your learning, managing your time and being more independent, in some online curses you got classes on video and even you may interact with the lecture. The cool thing is you are managing a bit your flexible timetable, paying much less and you still have some support of the institution.
                     </p>
-                    
+
+
+                    <a href="#comments" class="comment-link">Your Opinion</a>
                 </section>
             </article>
+            <hr><!----------------COMMENTS------------------->
+            <section class="comment-section" id="comments">
+                <form class="form-comment">
+                    <h2 class="comment-title">Leave a Comment</h2>
+                    <input type="text" class="comment-name comment-text" id="comments-name" placeholder="Name">
+                    <textarea class="comment-area comment-text" name="" id="comments-area" cols="30" rows="10" placeholder="Let everyone knows your option "></textarea>
+                    <button class="btn-comment" id="comment-btn" type="submit">Post Comment</button>
+                </form>
+                
+                <div class="comment-container" id="container-id">
+                    <ul class="comment-list">
+                        <div class="comment">
+                            <li class="user-name">Adonides Amparo</li>
+                            <li class="date-post">25/02/2021</li>
+                            <li class="user-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis facilis incidunt sunt voluptate vitae ducimus fuga, quae numquam obcaecati veniam totam in eligendi, molestias vel veritatis minima accusamus voluptas praesentium.</li>
+                        </div>
+                        <div class="comment">
+                            <li class="user-name">Henrique Martines</li>
+                            <li class="date-post">28/02/2021</li>
+                            <li class="user-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis facilis incidunt sunt voluptate vitae ducimus fuga, quae numquam obcaecati veniam totam in eligendi, molestias vel veritatis minima accusamus voluptas praesentium.</li>
+                        </div>
+                    </ul>
+                </div>
+            </section>
             <hr><!----------------FOOTER------------------->
-            <section>
+            <section class="footer">
                 <footer>
                     <p>&copy;WeB.ProJEct$</p>
                     <p><small>Background photo from <strong>Tatiana Syrikova</strong> no Pexels</small></p>
@@ -79,15 +106,15 @@
         </main>
             
         <div class="intro">
-            <div class="intro-text">
+            <div class="intro-container">
                 <h2 class="hide">
-                    <span class="text">for taught self learners</span>
+                    <span class="intro-text">for taught self learners</span>
                 </h2>
                 <h2 class="hide">
-                    <span class="text">for everyday</span>
+                    <span class="intro-text">for everyday</span>
                 </h2>
                 <h2 class="hide">
-                    <span class="text">challenge.</span>
+                    <span class="intro-text">challenge.</span>
                 </h2>
             </div>
         </div>

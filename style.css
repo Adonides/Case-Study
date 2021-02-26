@@ -164,6 +164,21 @@ nav.sticky ul li a {
     margin: .8em 0;
 }
 
+.comment-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 3px solid var(--orange);
+    color: var(--orange);
+    margin: 2rem 8rem 5rem 8rem ;
+    padding: 0.3rem;
+}
+
+.comment-link:hover {
+    background: Var(--orange);
+    color: var(--text-bg);
+}
+
 /*COMMENTS==========================================*/
 .comment-section {
     background-image: linear-gradient(120deg, var(--light-orange), var(--orange) );
@@ -206,11 +221,11 @@ nav.sticky ul li a {
 }
 
 .btn-comment {
-    background: var(--text-bg);
-    color: var(--orange);
+    background: rgb(109, 92, 77);
+    color: var(--text-bg);
     cursor: pointer;
     transition: all 0.3s ease;
-    
+    outline: none;
 }
 
 .btn-comment:hover {
@@ -222,6 +237,63 @@ nav.sticky ul li a {
     height: 7rem;
 }
 
+.comment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comment-list {
+    
+    min-width: 30%;
+    max-width: 85%;
+}
+
+.comment {
+    position: relative;
+    background: var(--text-bg);
+    color: var(--light-orange);
+    margin: 0.5rem;
+    padding: 0 0.6rem;
+}
+
+.user-name {
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: 0.3rem 0;
+}
+.date-post {
+    font-style: italic;
+    font-size: 0.8em;
+    font-family: 'Lobster', cursive;
+    color: var(--light-orange);
+}
+
+.user-comment {
+    font-size: 0.9em;
+    margin-bottom: 1rem;
+    padding: 1rem 1.5rem 1.8rem 1.5rem; 
+}
+
+.btn-reply {
+    position: absolute;
+    bottom: 5px;
+    right: 8px;
+    background: rgb(109, 92, 77);
+    border: none;
+    color: var(--text-bg);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    padding: 0.4rem;
+    margin-bottom: 0.1rem;
+    
+}
+
+.btn-reply:hover {
+    background: var(--dark-orange);
+    color: var(--text-bg); 
+}
 
 /*INTRO ANIMATION==========================================*/
 .intro {

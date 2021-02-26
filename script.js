@@ -28,23 +28,36 @@ const Comments = {
     nameInput: document.querySelector('#comments-name'),
     commentInput: document.querySelector('#comments-area'),
     commentButton: document.querySelector('#comment-btn'),
-    commentList: document.querySelector('#comment-list'),
+    commentList: document.querySelector('.comment-list'),
     getComment() {
-        Comments.commentButton.addEventListener('click', Comments.addComment)
+        Comments.commentButton.addEventListener('click', Comments.addComment())
     },
     addComment(event) {
         event.preventDefault()
         const containerDiv = document.createElement("div")
         containerDiv.classList.add("comment")
+
         const newName = document.createElement('li')
-        newDate.classList.add("user-name")
+        newName.classList.add("user-name")
+        newName.innerText = 'hey'
+        containerDiv.appendChild(newName)
+
         const newDate = document.createElement('li')
         newDate.classList.add("post-date")
-        newDate = Date()
+        newDate.innerText = 'hey'
+        containerDiv.appendChild(newDate)
+
         const newComment = document.createElement('li')
         newComment.classList.add("user-comment")
         newComment.innerText = 'hey'
-        containerDiv.appendChild(newName, newDate, newComment)
+        containerDiv.appendChild(newComment)
+
+        const btnReplay = document.createElement('button')
+        btnReplay.classList.add("btn-replay")
+        btnReplay.innerText = 'REPLY'
+        containerDiv.appendChild(btnReplay)
+
+        Comments.commentList.appendChild(containerDiv)
     }
 }
 

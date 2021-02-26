@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,900;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <title>Self taught learners</title>
+    <title>Stay Focus</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/d26011a575.js" crossorigin="anonymous"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous">
@@ -24,7 +24,7 @@
                         </div>
                         <ul class="links">
                             <li><a href="#">About</a></li>
-                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Articles</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </nav>
@@ -44,7 +44,7 @@
             </section>
             <hr><!----------------Article------------------->
             <article class="article01" id="article01">
-                <section class="wrap">
+                <section class="wrap-article">
                     <h2>The Future of Education</h2>
                     <p class="date"><small><em>March 01, 2021</em></small></p>
                     <h3>
@@ -74,29 +74,19 @@
             </article>
             <hr><!----------------COMMENTS------------------->
             <section class="comment-section" id="comments">
-                <form class="form-comment">
+                <form class="form-comment" onsubmit="CommentForm.submit(event)">
                     <h2 class="comment-title">Leave a Comment</h2>
-                    <input type="text" class="comment-name comment-text" id="comments-name" placeholder="Your name">
-                    <textarea class="comment-area comment-text" name="" id="comments-area" cols="30" rows="10" placeholder="Let everyone knows your option "></textarea>
-                    <button class="btn-comment" id="comment-btn" type="submit">Post Comment</button>
+                    <input type="text" class="comment-name comment-text" id="comments-name" placeholder="Your name" required>
+                    <textarea class="comment-area comment-text" name="" id="comments-area" cols="30" rows="10" placeholder="Let everyone knows your option " required></textarea>
+                    <div class="button-comment">
+                        <button class="btn-comment">Post Comment</button>
+                    </div>
                 </form>
                 
                 <div class="comment-container" id="container-id">
                     <ul class="comment-list">
 
-                    <div class="comment">
-                            <li class="user-name">Adonides Amparo</li>
-                            <li class="date-post">February 25th, 2021</li>
-                            <li class="user-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis facilis incidunt sunt voluptate vitae ducimus fuga, quae numquam obcaecati veniam totam in eligendi, molestias vel veritatis minima accusamus.</li>
-                            <button class="btn-reply">REPLY</button>
-                        </div> 
-
-                    <div class="comment">
-                            <li class="user-name">Adonides Amparo</li>
-                            <li class="date-post">February 25th, 2021</li>
-                            <li class="user-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis facilis incidunt sunt voluptate vitae ducimus fuga, quae numquam obcaecati veniam totam in eligendi, molestias vel veritatis minima accusamus voluptas praesentium.</li>
-                            <button class="btn-reply">REPLY</button>
-                        </div> 
+                   
                             
                     </ul>
                 </div>

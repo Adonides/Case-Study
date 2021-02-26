@@ -131,7 +131,7 @@ nav.sticky ul li a {
     font-size: 1.125em; /* 18px / 16px */
 }
 
-.wrap {
+.wrap-article {
     margin: 0 auto;
     max-width: 58%; /*centralizar texto*/
 }
@@ -272,7 +272,7 @@ nav.sticky ul li a {
 .user-comment {
     font-size: 0.9em;
     margin-bottom: 1rem;
-    padding: 1rem 1.5rem 1.8rem 1.5rem; 
+    padding: 1rem 1.5rem 2rem 1.5rem; 
 }
 
 .btn-reply {
@@ -351,8 +351,12 @@ nav.sticky ul li a {
         font-size: 1em; /*diminuir a fonte*/
     }
 
-    .wrap {
+    .wrap-article {
         max-width: 85%; /*diminuir os espaços laterais*/
+    }
+
+    .comment-text {
+        max-width: 80%;
     }
 } /*mais espaço paro o texto em telas menores*/
 

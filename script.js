@@ -24,41 +24,69 @@ const NavbarScroll = {
 }
 
 /*COMMENTS==========================================*/
-const Comments = {
-    nameInput: document.querySelector('#comments-name'),
-    commentInput: document.querySelector('#comments-area'),
-    commentButton: document.querySelector('#comment-btn'),
-    commentList: document.querySelector('.comment-list'),
-    getComment() {
-        Comments.commentButton.addEventListener('click', Comments.addComment())
+const CommentForm = {
+    name: document.querySelector('#comments-name'),
+    comment: document.querySelector('#comments-area'),
+
+    getValues() {
+        return {
+            name: this.name.value,
+            comment: this.comment.value
+        }
     },
-    addComment(event) {
+
+    clearFields() {
+        this.name.value = ""
+        this.comment.value = ""
+    },
+
+    submit(event) {
         event.preventDefault()
-        const containerDiv = document.createElement("div")
-        containerDiv.classList.add("comment")
+    
+        const newComment = CommentForm.getValues()
+        
+        DisplayComment.getComment(newComment)
 
-        const newName = document.createElement('li')
-        newName.classList.add("user-name")
-        newName.innerText = 'hey'
-        containerDiv.appendChild(newName)
+        CommentForm.clearFields()
 
-        const newDate = document.createElement('li')
-        newDate.classList.add("post-date")
-        newDate.innerText = 'hey'
-        containerDiv.appendChild(newDate)
-
-        const newComment = document.createElement('li')
-        newComment.classList.add("user-comment")
-        newComment.innerText = 'hey'
-        containerDiv.appendChild(newComment)
-
-        const btnReplay = document.createElement('button')
-        btnReplay.classList.add("btn-replay")
-        btnReplay.innerText = 'REPLY'
-        containerDiv.appendChild(btnReplay)
-
-        Comments.commentList.appendChild(containerDiv)
+        
     }
+}
+
+const DisplayComment = {
+    
+    commentList: document.querySelector('.comment-list'),
+
+    getComment(newComment) {
+            
+            const containerDiv = document.createElement("div")
+            containerDiv.classList.add("comment")
+
+            const userName = document.createElement('li')
+            userName.classList.add("user-name")
+            userName.innerText = newComment.name
+            containerDiv.appendChild(userName)
+
+            const commentDate = document.createElement('li')
+            commentDate.classList.add("date-post")
+            commentDate.innerText = 'February 26th, 2021'
+            containerDiv.appendChild(commentDate)
+
+            const userComment = document.createElement('li')
+            userComment.classList.add("user-comment")
+            userComment.innerText = newComment.comment
+            containerDiv.appendChild(userComment)
+
+            const btnReply = document.createElement('button')
+            btnReply.classList.add("btn-reply")
+            btnReply.innerText = 'REPLY'
+            
+            containerDiv.appendChild(btnReply)
+
+            DisplayComment.commentList.appendChild(containerDiv)
+
+    },
+
 }
 
 const CaseStudy = {
@@ -67,8 +95,10 @@ const CaseStudy = {
         Intro.getTimeline()
 
         NavbarScroll.getScrolling()
+    
     }
 }
+
 
 
 CaseStudy.rendPage()

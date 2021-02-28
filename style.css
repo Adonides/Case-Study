@@ -81,15 +81,16 @@ nav.sticky ul li a {
     display: inline-flex;
     letter-spacing: 1rem;
     position: absolute;
-    top: 12%;
-    left: 8%;
+    top: 1.5%;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .main-title {
     position: absolute; /*pode mover para onde quiser*/
     top: 30%;
     left: 50%;
-    transform: translate(-50%, -30%); /*perfeito centralizado*/
+    transform: translate(-30%, -30%); /*perfeito centralizado*/
     font-family: 'Lobster', cursive;
     font-weight: lighter;
     font-size: 5rem;
@@ -379,16 +380,16 @@ nav.sticky ul li a {
 }
 
 /*RESPONSIVE.NAVBAR==========================================*/
-/*@media ( min-width: 660px) {
+@media ( min-width: 660px) {
    
-
-    .links li a{
-        display: flex;
-        
-        
-        
+    .main-title {
+    position: absolute; /*pode mover para onde quiser*/
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%); /*perfeito centralizado*/
     }
-}*/
+    
+}
 /*RESPONSIVE.ARCTICLE==========================================*/
 @media screen and (max-width: 600px){
     #article01 {

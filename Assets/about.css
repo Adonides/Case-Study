@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-orange: rgb(247, 114, 6);
+    --orange: rgb(235, 137, 57);
+    --light-orange: rgb(199, 160, 89);
+    --text-bg: #f9f9f9;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link {
+    display: inline-flex;
+    padding: 1rem;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.about {
+    max-width: 960px;
+    margin: 0 auto;
+    background: var(--text-bg);
+    font-size: 1.5rem;
+}
+
+.parallax {
+    position: relative;
+    min-height: 80vh;
+    background: url("../Images/online-andrea-piacquadio.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}

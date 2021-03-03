@@ -11,6 +11,13 @@
     --text-bg: #f9f9f9;
 }
 
+body, html {
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    line-height: 1.8em;
+    color: #666;
+}
+/*NAVBAR===================================*/
 .nav-bar {
     display: flex;
     justify-content: space-between;
@@ -23,9 +30,40 @@
     text-decoration: none;
     list-style: none;
     font-size: 1.3rem;
-    color: black;
+    color: #333;
+}
+.about-img, .mission-img, .value-img {
+    position: relative;
+    opacity: 0.7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
+/*ABOUT======================================*/
+.about-img {
+    background-image: url("../Images/online-julia-m-cameron-croped.jpg");
+    min-height: 100vh;
+}
+
+/*MISSION======================================*/
+.mission-img {
+    background-image: url("../Images/online-andrea-piacquadio.jpg");
+    min-height: 450px;
+}
+
+/*VALUE======================================*/
+.value-img {
+    background-image: url("../Images/tradional-fauxels.jpg");
+    min-height: 450px;
+}
+
+.section {
+    text-align: center;
+    padding: 50px 80px;
+}
+/*
 .about {
     max-width: 960px;
     margin: 0 auto;
@@ -36,7 +74,14 @@
 .parallax {
     position: relative;
     min-height: 80vh;
-    background: url("../Images/online-andrea-piacquadio.jpg");
+    background: url("../Images/online-julia-m-cameron-croped.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
+
+.main-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+*/

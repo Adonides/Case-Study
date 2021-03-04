@@ -6,32 +6,77 @@
 
 :root {
     --dark-orange: rgb(247, 114, 6);
-    --orange: rgb(235, 137, 57);
-    --light-orange: rgb(199, 160, 89);
-    --text-bg: #f9f9f9;
+    --Gray: #666;
+    --dark-blue: #282e34;
+    --text-bg: #f4f4f4;
 }
 
 body, html {
     font-family: 'Poppins', sans-serif;
     height: 100%;
     line-height: 1.8em;
-    color: #666;
+    color: var(--Gray);
 }
-/*NAVBAR===================================*/
-.nav-bar {
+
+a, li {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+/*ABOUT-TOP===================================*/
+.top {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.top-icons {
+    position: absolute;
+    top: 1.5%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/*NAVBAR===================================*/
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-link {
+    padding-left: 1rem;
+}
+
 .nav-link {
     display: inline-flex;
     padding: 1rem;
-    text-decoration: none;
-    list-style: none;
     font-size: 1.3rem;
-    color: #333;
+    color:black;
 }
+
+.nav-link a:hover {
+    color: var(--dark-orange);
+}
+
+
+.top.sticky {
+    padding: 5px 60px;
+    background: #333;
+}
+
+.top.sticky ul li a {
+    color: white;
+    font-weight: 100;
+}
+
+/*MAIN=BODY============================*/
 .about-img, .mission-img, .value-img {
     position: relative;
     opacity: 0.7;
@@ -41,10 +86,49 @@ body, html {
     background-attachment: fixed;
 }
 
+.icons {
+    display: inline-flex;
+    letter-spacing: 1rem;
+}
+
+.linkedin a:hover {
+    color: rgb(106, 106, 238);
+    
+}
+
+.github a:hover {
+    color: var(--text-bg);
+    
+}
+
+.instagram a:hover {
+    color: rgb(252, 79, 131);
+}
+
+.section {
+    text-align: center;
+    padding: 35px 80px;
+}
+
+.main-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-family: 'Lobster', cursive;
+    font-weight: lighter;
+    font-size: 5rem;
+    color: var(--dark-orange);
+}
+
 /*ABOUT======================================*/
 .about-img {
     background-image: url("../Images/online-julia-m-cameron-croped.jpg");
-    min-height: 100vh;
+    min-height: 70vh;
+}
+
+.about-text {
+    background-color: Var(--text-bg);
 }
 
 /*MISSION======================================*/
@@ -53,15 +137,25 @@ body, html {
     min-height: 450px;
 }
 
+.mission-text {
+    background-color: var(--dark-blue);
+    color: #ddd;
+}
+
 /*VALUE======================================*/
 .value-img {
     background-image: url("../Images/tradional-fauxels.jpg");
     min-height: 450px;
 }
 
-.section {
-    text-align: center;
-    padding: 50px 80px;
+.value-text {
+    background-color: var(--text-bg);
+}
+
+/*FOOTER======================================*/
+.footer-text {
+    background-color: var(--dark-blue);
+    color: #ddd;
 }
 /*
 .about {

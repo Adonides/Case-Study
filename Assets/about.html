@@ -16,38 +16,58 @@
 </head>
 <body>
     <main>
-        
         <div class="about-img">
-            <nav class="nav-bar">
-                <div class="AA-logo">
-                    <a href="../index.html" class="logo-link">
-                        <img src="../Images/logo-32x32.png" alt="logo">
-                    </a>
+            <div class="top">
+                <div class=" icons top-icons">
+                    <div class="linkedin">
+                        <a href="https://www.linkedin.com/in/adonidesamparo/?midToken=AQE08vnRykUzTw&midSig=1cjvfiQ8aBsVA1&trk=eml-email_pymk_02-header-76-profile&trkEmail=eml-email_pymk_02-header-76-profile-null-1tin5w%7Ekjmxdlsd%7Eca-null-neptune%2Fprofile%7Evanity%2Eview" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                    <div class="github">
+                        <a href="https://github.com/Adonides/Adonides" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="instagram">
+                        <a href="https://www.instagram.com/aa_webprojects/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
                 </div>
-                <ul class="list-link">
-                    <li class="nav-link">
-                        <a href="../index.html" class="nav-link">
-                            Home
+                <nav class="nav-bar"></nav>
+                    <div class="AA-logo">
+                        <a href="../index.html" class="logo-link">
+                            <img src="../Images/logo-32x32.png" alt="logo">
                         </a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#" class="nav-link">
-                            Articles
-                        </a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#" class="nav-link">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <h1 class="main-title">About us</h1>
+                    </div>
+                    <ul class="list-link">
+                        <li class="nav-link">
+                            <a href="../index.html" class="nav-link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#" class="nav-link">
+                                Articles
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#" class="nav-link">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <header>
+                <h1 class="main-title">About.it</h1>
+            </header>
         </div>
         <section class="section about-text">
-            <h2>The art of Learning</h2>
+            <h2 class="sub-title">Art of Learning</h2>
             <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias esse optio suscipit est mollitia, veniam atque porro quos maxime vero deserunt quasi, id, nihil quidem saepe assumenda eos. Sint, distinctio.
+                Discuss different methods of learning so people can approach them to achieve the best performance. We are happy about people's success whose have the set mind of always grow as in their career or in them personal life.
             </p>
         </section>
 
@@ -55,9 +75,9 @@
             <h1 class="main-title">Mission</h1>
         </div>
         <section class="section mission-text">
-            <h2>Achieve learning goals</h2>
+            <h2 class="sub-title">Achieve high goals</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quam excepturi possimus ullam harum dolorum quae delectus modi deserunt rem velit magni, vitae numquam reiciendis. Debitis quod veniam non a!
+                Helping people to get the main objective behind the studies as soon as possible. We do not have the same thought or ideas than yesterday, because everyday we grow better!
             </p>
         </section>
 
@@ -65,19 +85,41 @@
             <h1 class="main-title">Value</h1>
         </div>
         <section class="section value-text">
-            <h2>Open Ideas</h2>
+            <h2 class="sub-title">Open Ideas</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quam excepturi possimus ullam harum dolorum quae delectus modi deserunt rem velit magni, vitae numquam reiciendis. Debitis quod veniam non a!
+                Respect and honest are our road to drive people to conquer big things!
+                We are always open for learning  and pass knowledge.   
             </p>
         </section>
         <hr>
         <section class="section footer-text">
             <footer>
-                <p>
-                    &copy;Web.ProJEct$
-                </p>
+                <div class="icons">
+                    <div class="linkedin">
+                        <a href="https://www.linkedin.com/in/adonidesamparo/?midToken=AQE08vnRykUzTw&midSig=1cjvfiQ8aBsVA1&trk=eml-email_pymk_02-header-76-profile&trkEmail=eml-email_pymk_02-header-76-profile-null-1tin5w%7Ekjmxdlsd%7Eca-null-neptune%2Fprofile%7Evanity%2Eview" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <div class="github">
+                        <a href="https://github.com/Adonides/Adonides" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="instagram">
+                        <a href="https://www.instagram.com/aa_webprojects/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <p>&copy;WeB.ProJEct$</p>
+                <p><small>Background photos from:</small></p>
+                <p><small><strong>Julia Cameron, Andrea Piacquadio </strong> and <strong>Fauxels</strong> no Pexels</small></p>
             </footer>
         </section>
     </main>
+    <script>
+        const NavbarScroll = {
+            getScrolling() {
+                window.addEventListener("scroll", function(){
+                    const navbar = document.querySelector(".nav-bar")
+                    navbar.classList.toggle("sticky", window.scrollY > 0)
+                })
+            }
+        }
+    </script>
 </body>
 </html>

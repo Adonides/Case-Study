@@ -26,12 +26,15 @@ a, li {
 
 /*ABOUT-TOP===================================*/
 .top {
+
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
 }
 
 .top-icons {
+    
     position: absolute;
     top: 1.5%;
     left: 50%;
@@ -52,13 +55,14 @@ a, li {
 
 .logo-link {
     padding-left: 1rem;
+    opacity: 0.7;
 }
 
 .nav-link {
     display: inline-flex;
     padding: 1rem;
     font-size: 1.3rem;
-    color:black;
+    color:#333;
 }
 
 .nav-link a:hover {
@@ -66,20 +70,26 @@ a, li {
 }
 
 
-.top.sticky {
-    padding: 5px 60px;
+.nav-bar.sticky {
+    z-index: 1000;
     background: #333;
+    
 }
 
-.top.sticky ul li a {
+.nav-bar.sticky ul li a {
     color: white;
     font-weight: 100;
+
 }
 
+.nav-bar.sticky ul li a:hover {
+    color: var(--dark-orange);
+    font-weight: 300;
+}
 /*MAIN=BODY============================*/
 .about-img, .mission-img, .value-img {
     position: relative;
-    opacity: 0.7;
+    opacity: 0.7; 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -112,13 +122,37 @@ a, li {
 
 .main-title {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -30%);
+    top: 35%;
+    left: 50%; /* width:100%; */
+    transform: translate(-45%, -30%); /*text-align: center; */
     font-family: 'Lobster', cursive;
     font-weight: lighter;
     font-size: 5rem;
     color: var(--dark-orange);
+    cursor: default;
+    line-height: 5rem;
+}
+
+.home-subtitle {
+    position: absolute;
+    top: 68%;
+    left: 50%; 
+    transform: translate(-65%); 
+    font-weight: 600;
+    font-size: 1.5rem;
+    opacity: 0.5;
+    transition: 0.3s ease-in;
+    
+}
+
+.home-subtitle:hover {
+    font-weight: 700;
+    opacity: 9;
+}
+
+
+.home-subtitle:hover {
+    font-weight: 700;
 }
 
 /*ABOUT======================================*/
@@ -157,25 +191,15 @@ a, li {
     background-color: var(--dark-blue);
     color: #ddd;
 }
-/*
-.about {
-    max-width: 960px;
-    margin: 0 auto;
-    background: var(--text-bg);
+
+.footer p {
+    opacity: 0.6;
+    font-size: small;
+}
+
+.footer .icons {
+    margin-left: 1rem;
     font-size: 1.5rem;
+    letter-spacing: 0.8rem;
 }
 
-.parallax {
-    position: relative;
-    min-height: 80vh;
-    background: url("../Images/online-julia-m-cameron-croped.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.main-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-*/

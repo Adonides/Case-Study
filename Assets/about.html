@@ -16,55 +16,59 @@
 </head>
 <body>
     <main>
-        <div class="about-img">
-            <div class="top">
-                <div class=" icons top-icons">
-                    <div class="linkedin">
-                        <a href="https://www.linkedin.com/in/adonidesamparo/?midToken=AQE08vnRykUzTw&midSig=1cjvfiQ8aBsVA1&trk=eml-email_pymk_02-header-76-profile&trkEmail=eml-email_pymk_02-header-76-profile-null-1tin5w%7Ekjmxdlsd%7Eca-null-neptune%2Fprofile%7Evanity%2Eview" target="_blank">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </div>
-                    <div class="github">
-                        <a href="https://github.com/Adonides/Adonides" target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                    <div class="instagram">
-                        <a href="https://www.instagram.com/aa_webprojects/" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
+        <nav class="nav-bar">
+            <div class=" icons top-icons">
+                <div class="linkedin">
+                    <a href="https://www.linkedin.com/in/adonidesamparo/?midToken=AQE08vnRykUzTw&midSig=1cjvfiQ8aBsVA1&trk=eml-email_pymk_02-header-76-profile&trkEmail=eml-email_pymk_02-header-76-profile-null-1tin5w%7Ekjmxdlsd%7Eca-null-neptune%2Fprofile%7Evanity%2Eview" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
                 </div>
-                <nav class="nav-bar"></nav>
-                    <div class="AA-logo">
-                        <a href="../index.html" class="logo-link">
-                            <img src="../Images/logo-32x32.png" alt="logo">
-                        </a>
-                    </div>
-                    <ul class="list-link">
-                        <li class="nav-link">
-                            <a href="../index.html" class="nav-link">
-                                Home
-                            </a>
-                        </li>
-                        <li class="nav-link">
-                            <a href="#" class="nav-link">
-                                Articles
-                            </a>
-                        </li>
-                        <li class="nav-link">
-                            <a href="#" class="nav-link">
-                                Contact
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="github">
+                    <a href="https://github.com/Adonides" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <div class="instagram">
+                    <a href="https://www.instagram.com/aa_webprojects/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
             </div>
+            <div class="top">
+            <div class="AA-logo">
+                <a href="../index.html" class="logo-link">
+                    <img src="../Images/logo-32x32.png" alt="logo">
+                </a>
+            </div>
+            <ul class="list-link">
+                <li class="nav-link">
+                    <a href="../index.html" class="nav-link">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="#" class="nav-link">
+                        Articles
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="#" class="nav-link">
+                        Contact
+                    </a>
+                </li>
+            </ul> 
+            </div>
+        </nav>
+
+        <div class="about-img">
             <header>
-                <h1 class="main-title">About.it</h1>
+                <h1 class="main-title">Stay Focus</h1>
             </header>
+            <h2 class="home-subtitle"> <a href="#about">
+                About our Blog
+            </a></h2>
         </div>
-        <section class="section about-text">
+        <section id="about" class="section about-text">
             <h2 class="sub-title">Art of Learning</h2>
             <p>
                 Discuss different methods of learning so people can approach them to achieve the best performance. We are happy about people's success whose have the set mind of always grow as in their career or in them personal life.
@@ -93,13 +97,13 @@
         </section>
         <hr>
         <section class="section footer-text">
-            <footer>
+            <footer class="footer">
                 <div class="icons">
                     <div class="linkedin">
                         <a href="https://www.linkedin.com/in/adonidesamparo/?midToken=AQE08vnRykUzTw&midSig=1cjvfiQ8aBsVA1&trk=eml-email_pymk_02-header-76-profile&trkEmail=eml-email_pymk_02-header-76-profile-null-1tin5w%7Ekjmxdlsd%7Eca-null-neptune%2Fprofile%7Evanity%2Eview" target="_blank"><i class="fab fa-linkedin"></i></a>
                     </div>
                     <div class="github">
-                        <a href="https://github.com/Adonides/Adonides" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/Adonides" target="_blank"><i class="fab fa-github"></i></a>
                     </div>
                     <div class="instagram">
                         <a href="https://www.instagram.com/aa_webprojects/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -115,11 +119,12 @@
         const NavbarScroll = {
             getScrolling() {
                 window.addEventListener("scroll", function(){
-                    const navbar = document.querySelector(".nav-bar")
+                    const navbar = document.querySelector("nav")
                     navbar.classList.toggle("sticky", window.scrollY > 0)
                 })
             }
         }
+        NavbarScroll.getScrolling()
     </script>
 </body>
 </html>

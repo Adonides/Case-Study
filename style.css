@@ -39,7 +39,11 @@ nav {
     padding: 35px 60px;
 }
 
-
+.logo-link {
+    margin-left: -2rem;
+    margin-right: 1rem;
+    opacity: 0.7;
+}
 
 .links {
     position: relative;
@@ -49,7 +53,7 @@ nav {
 }
 
 .links li a {
-    padding: 0 2.5rem;
+    padding: 0 1.3rem;
     font-size: 1rem;
     letter-spacing: 0.5px;
     transition: 0.6s;
@@ -61,7 +65,7 @@ nav {
 }
 
 nav.sticky {
-    padding: 5px 60px;
+    padding: 4px 60px;
     background: #333;
 }
 
@@ -72,20 +76,24 @@ nav.sticky ul li a {
 /*HOME==========================================*/
 .section-focus {
     position: relative;
-    min-height: 100vh;
-    background: url("./Images/bedroom\ Office\ 1280x811.jpg");
-    background-size: cover;
-    padding: 0rem 5rem; /*0top botton 5 dos lados*/
+  
 }
 
-.top-icons {
+.top {
+    padding: 0rem 5rem; /*0top botton 5 dos lados*/
+    background: url("./Images/bedroom\ Office\ 1280x811.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vh;
+}
+
+.icons {
     display: inline-flex;
     letter-spacing: 1rem;
-    position: absolute;
-    top: 1.5%;
-    left: 50%;
-    transform: translate(-50%);
+    
 }
+
+
 
 .main-title {
     position: absolute; /*pode mover para onde quiser*/
@@ -117,7 +125,7 @@ nav.sticky ul li a {
     font-weight: 600;
     font-size: 1.5rem;
     border: 1;
-    opacity: 0.9;
+    opacity: 0.7;
     transition: 0.3s ease-in;
 }
 
@@ -382,7 +390,17 @@ nav.sticky ul li a {
 
 /*RESPONSIVE.NAVBAR==========================================*/
 @media ( min-width: 660px) {
-   
+    .logo-link {
+        margin-left: -1rem;
+        margin-right: 1rem;
+    }
+
+    .links li a {
+        padding: 0 3.5rem;
+    }
+
+
+
     .main-title {
     position: absolute; /*pode mover para onde quiser*/
     top: 30%;
@@ -393,6 +411,8 @@ nav.sticky ul li a {
 }
 /*RESPONSIVE.ARCTICLE==========================================*/
 @media screen and (max-width: 600px){
+
+
     #article01 {
         font-size: 1em; /*diminuir a fonte*/
     }

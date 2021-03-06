@@ -15,7 +15,7 @@
 </head>
 <body>
     <main>
-        <section class="top-article">
+        
             <nav class="nav-bar">
                 <div class="logo">
                     <a href="../index.html">
@@ -51,7 +51,43 @@
                     </li>
                 </ul>
             </nav>
-        </section>
+
+            <div class="top-article">
+                <h1 class="main-title">Stay Focus</h1>
+                <h2 class="subtitle">
+                    <a href="#articles">Articles</a>
+                </h2>
+            </div>
+
+            <section id="articles" class="articles">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="../../assets/CaseStudy/traditional-icsa.jpg" alt="traditional Education">
+                    </div>
+                    <div class="card-text">
+                        <h2>Articles <br> <span>Traditional Education</span></h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                       <a href="#">
+                        <img src="../../assets/CaseStudy/online-vlada-karpovich.jpg" alt="traditional Education">
+                       </a> 
+                    </div>
+                    <div class="card-text">
+                        <h2>Articles <br> <span>Online Education</span></h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="../../assets/CaseStudy/online-olia-danilevich-4974915.jpg" alt="traditional Education">
+                    </div>
+                    <div class="card-text">
+                        <h2>Articles <br> <span>My Experience</span></h2>
+                    </div>
+                </div>
+                
+            </section>
         <section>
             <footer>
                 <div class="icons footer-icons">
@@ -77,5 +113,16 @@
             </footer>
         </section>
     </main>
+    <script>
+        const NavbarScroll = {
+            getScrolling() {
+                window.addEventListener("scroll", function(){
+                    const navbar = document.querySelector("nav")
+                    navbar.classList.toggle("sticky", window.scrollY > 0)
+                })
+            }
+        }
+        NavbarScroll.getScrolling()
+    </script>
 </body>
 </html>

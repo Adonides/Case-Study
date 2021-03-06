@@ -44,7 +44,7 @@ a, li {
     justify-content: space-between;
     align-items: center;
     padding: 35px 100px;
-    
+    transition: 0.6s;   
 }
 
 .logo-link {
@@ -151,14 +151,12 @@ a, li {
 }
 
 
-.home-subtitle:hover {
-    font-weight: 700;
-}
+
 
 /*ABOUT======================================*/
 .about-img {
     background-image: url("../Images/online-julia-m-cameron-croped.jpg");
-    min-height: 70vh;
+    min-height: 100vh;
 }
 
 .about-text {

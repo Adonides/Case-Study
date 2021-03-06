@@ -36,11 +36,11 @@ nav {
     justify-content: space-between;
     transition: 0.6s;
     z-index: 1000;
-    padding: 35px 60px;
+    padding: 35px 100px;
 }
 
 .logo-link {
-    margin-left: -2rem;
+    margin-left: -4rem;
     margin-right: 1rem;
     opacity: 0.7;
 }
@@ -48,7 +48,7 @@ nav {
 .links {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 

@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+li, a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.icons {
+    display: inline-flex;
+    letter-spacing: 1rem;
+}
+
+/*NAVBAR=======================================*/
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 125px;
+}
+
+.logo {
+    margin-right: 1rem;
+    margin-left: -5rem;
+    opacity: 0.7;
+}
+
+.top-icons a {
+    color: black;
+}
+
+.linkedin a:hover {
+    color: rgb(106, 106, 238);
+    
+}
+
+.github a:hover {
+    color: #f4f4f4;  
+}
+
+.instagram a:hover {
+    color: rgb(252, 79, 131);   
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link a {
+    padding: 1.3rem;
+}
+
+.top-article {
+    background-image: url("../Images/online-tirachard-kumtanom.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vh;
+}

@@ -186,7 +186,7 @@ a, li {
 
 /*FOOTER======================================*/
 .footer-text {
-    background-color: #333;
+    background-color: var(--dark-blue);
     color: #ddd;
 }
 

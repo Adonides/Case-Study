@@ -10,6 +10,7 @@
     --orange: rgb(235, 137, 57);
     --light-orange: rgb(199, 160, 89);
     --text-bg: #f9f9f9;
+    --text-color: #ddd;
 }
 
 body {
@@ -92,7 +93,7 @@ nav.sticky ul li a {
     background-position: center;
     background-image: url("../Images/online-tirachard-kumtanom.jpg");
     background-size: cover;
-    min-height: 40vh;
+    min-height: 45vh;
     width: 100%;
     opacity: 0.7;
 }
@@ -139,7 +140,7 @@ nav.sticky ul li a {
 .articles h1 {
     position: absolute;
     top: 40px;
-    color: var(--text-bg);
+    color: var(--text-color);
 }
 
 .card {
@@ -177,7 +178,7 @@ nav.sticky ul li a {
 }
 
 .card:hover .card-text {
-    color: var(--text-bg);
+    color: var(--text-color);
 }
 /*ARTICLES.SUBJECTS===============================*/
 .articles-subjects {

@@ -8,6 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,900;1,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
         <title>Contact</title>
+        
         <link rel="stylesheet" href="./contact.css">
         <script src="https://kit.fontawesome.com/d26011a575.js" crossorigin="anonymous"></script>
         <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous">
@@ -50,67 +51,110 @@
                     </li>
                 </ul>
             </nav>
-
+            <section class="top">
+                <div class="top-contact">
+                    <h1 class="main-title">Stay Focus</h1>
+                    <h2 class="subtitle">
+                        <a href="#container">Contact me</a>
+                    </h2>
+                </div>
+            </section>
+            <hr>
             <section class="contact-section">
                 <div class="description">
                     <h2>Contact</h2>
                     <p>For quetions, partnership inquiries, sugestions, or general comments, please fill out the form or e-mail me straigth way.  </p>
                 </div>
-                <div class="container">
+                <div id="container" class="container">
                     <div class="info">
                         <div class="box">
-                            <div class="contact-icons"></div>
+                            <div class="contact-icons">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </div>
                             <div class="contact-text">
                                 <h3>Address</h3>
                                 <p>Rua do Vigário 70D, Alfama, <br>  Lisbon, Portugal <br>1100-616</p>
                             </div>
                         </div>
                         <div class="box">
-                            <div class="contact-icons"></div>
+                            <div class="contact-icons">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            </div>
                             <div class="contact-text">
                                 <h3>E-mail</h3>
                                 <p>webprojects.js@yahoo.com</p>
                             </div>
                         </div>
                         <div class="box">
-                            <div class="contact-icons"></div>
+                            <div class="contact-icons">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                            </div>
                             <div class="contact-text">
                                 <h3>Phone</h3>
                                 <p>+351 9613-84823</p>
                             </div>
                         </div>
                     </div>
+                    <div class="contact-form">
+                        <form class="form" action="">
+                            <h2>Send me a Message</h2>
+                        </form>
+                        <div class="input-box">
+                            <input type="text" required>
+                            <span>Full Name</span>
+                        </div>
+                        <div class="input-box">
+                            <input type="text" required>
+                            <span>E-mail</span>
+                        </div>
+                        <div class="input-box">
+                            <textarea name="" id="" cols="30" rows="10" required></textarea>
+                            <span>Type your Message</span>
+                        </div>
+                        <div class="input-box">
+                            <input class="submit" type="submit" value="Send">
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <hr><!-------FOOTER-------->
-            <section class="footer-text">
+            
+            <section class="section footer-text">
                 <footer class="footer">
-                    <div class="icons top-icons">
-                        <div class="linkedin">
-                            <a href="https://www.linkedin.com/in/adonidesamparo/?midToken=AQE08vnRykUzTw&midSig=1cjvfiQ8aBsVA1&trk=eml-email_pymk_02-header-76-profile&trkEmail=eml-email_pymk_02-header-76-profile-null-1tin5w%7Ekjmxdlsd%7Eca-null-neptune%2Fprofile%7Evanity%2Eview" target="_blank">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </div>
-                        <div class="github">
-                            <a href="https://github.com/Adonides" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                        <div class="instagram">
-                            <a href="https://www.instagram.com/aa_webprojects/" target="_blank">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </div>
+                <div class="icons footer-icons">
+                    <div class="linkedin">
+                        <a href="https://www.linkedin.com/in/adonidesamparo/?midToken=AQE08vnRykUzTw&midSig=1cjvfiQ8aBsVA1&trk=eml-email_pymk_02-header-76-profile&trkEmail=eml-email_pymk_02-header-76-profile-null-1tin5w%7Ekjmxdlsd%7Eca-null-neptune%2Fprofile%7Evanity%2Eview" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
                     </div>
-                    <p>&copy;WeB.ProJEct$</p>
-                    <p><small>Background photos from:</small></p>
-                    <p><small><strong> Lisa Fotios</strong> and <strong>Olia</strong> no Pexels</small>
+                    <div class="github">
+                        <a href="https://github.com/Adonides" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="instagram">
+                        <a href="https://www.instagram.com/aa_webprojects/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <p>&copy;WeB.ProJEct$</p>
+                <p><small>Background photos from:</small></p>
+                    <p><small><strong> Lisa Fotios</strong> and <strong>Cottonbro</strong> no Pexels</small>
                 </footer>
             </section>
         </main>
         <script>
-
+            const NavbarScroll = {
+            getScrolling() {
+                window.addEventListener("scroll", function(){
+                    const navbar = document.querySelector("nav")
+                    navbar.classList.toggle("sticky", window.scrollY > 0)
+                })
+            }
+        }
+        NavbarScroll.getScrolling()
         </script>
     </body>
 

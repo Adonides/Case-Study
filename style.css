@@ -35,12 +35,12 @@ nav {
     justify-content: space-between;
     transition: 0.6s;
     z-index: 1000;
-    padding: 35px 100px;
+    padding: 35px 60px;
 }
 
 .logo-link {
-    margin-left: -4rem;
-    margin-right: 1rem;
+    margin-left: -1.5rem;
+    margin-right: 1.5rem;
     opacity: 0.7;
 }
 
@@ -82,7 +82,7 @@ nav.sticky ul li a {
     background: url("./Images/bedroom\ Office\ 1280x811.jpg");
     background-size: cover;
     min-height: 100vh;
-    min-width: 100vh;
+    width: 100%;
 }
 
 .icons {

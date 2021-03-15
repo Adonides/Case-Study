@@ -28,12 +28,31 @@ const NavbarScroll = {
 const CommentForm = {
     name: document.querySelector('#comments-name'),
     comment: document.querySelector('#comments-area'),
+    reactions: document.getElementsByClassName('.emoji'),
+    submit: document.querySelector('#submit'),
 
     getValues() {
         return {
             name: this.name.value,
             comment: this.comment.value
         }
+    },
+
+    enableSubmit(){ //check the required fields
+        const {comment, name } = CommentForm.getValues()
+         
+        if ( comment.trim() === "" ||
+             name.trim() === "") {
+            this.submit.classList.remove("btn-enabled")
+            console.log(validated)
+        } else {
+            this.submit.classList.add("btn-enabled")
+        }
+    },
+
+    checkFields() {
+        CommentForm.comment.addEventListener("keyup", this.enableSubmit)
+        CommentForm.name.addEventListener("keyup", this.enableSubmit)
     },
 
     clearFields() {
@@ -150,6 +169,8 @@ const CaseStudy = {
         Intro.getTimeline()
 
         NavbarScroll.getScrolling()
+
+        CommentForm.checkFields()
     
     }
 }

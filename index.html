@@ -106,7 +106,7 @@
             <hr> <!----------------Articles------------------->
             <section id="articles" class="articles">
                 
-                    <h1>Articles</h1>
+                    <h1>Subjects</h1>
                 
                 <div class="card">
                     <div class="card-img">
@@ -147,8 +147,18 @@
                     <h2 class="comment-title">Leave a Comment</h2>
                     <input type="text" class="comment-name comment-text" id="comments-name" placeholder="Your name" required>
                     <textarea class="comment-area comment-text" name="" id="comments-area" cols="30" rows="10" placeholder="Let everyone knows your option " required></textarea>
-                    <div class="button-comment">
-                        <button class="btn-comment">Post Comment</button>
+                    
+                    <div class="button-reaction">
+                        <div id="react" class="reaction">
+                            <h4 class="reaction-title">Reactions</h4>
+                            <span class="emoji" data-reaction="Like">
+                                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                            </span>
+                            <span class="emoji" data-reaction="Dislike">
+                                <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                        <button id="submit" class="btn-comment">Post Comment</button>
                     </div>
                 </form>
                 

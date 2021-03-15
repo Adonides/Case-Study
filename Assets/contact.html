@@ -2,7 +2,7 @@
 <html lang="eng">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width-device=width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="../Images/favicon.ico" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,900;1,700&display=swap" rel="stylesheet">
@@ -55,7 +55,7 @@
                 <div class="top-contact">
                     <h1 class="main-title">Stay Focus</h1>
                     <h2 class="subtitle">
-                        <a href="#container">Contact me</a>
+                        <a href="#container">Contact us</a>
                     </h2>
                 </div>
             </section>
@@ -147,14 +147,21 @@
         </main>
         <script>
             const NavbarScroll = {
-            getScrolling() {
-                window.addEventListener("scroll", function(){
-                    const navbar = document.querySelector("nav")
-                    navbar.classList.toggle("sticky", window.scrollY > 0)
-                })
+                getScrolling() {
+                    window.addEventListener("scroll", function(){
+                        const navbar = document.querySelector("nav")
+                        navbar.classList.toggle("sticky", window.scrollY > 0)
+                    })
+                }
             }
-        }
-        NavbarScroll.getScrolling()
+
+
+
+            function renderPage() {
+                NavbarScroll.getScrolling()
+            }
+        
+            renderPage()
         </script>
     </body>
 

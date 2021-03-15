@@ -253,6 +253,11 @@ nav.sticky ul li a {
     cursor: pointer;
     padding: 10px;
     font-size: 1.1rem;
+    opacity: 0.7;
+}
+
+.input-box .submit-enabled {
+    opacity: 1;
 }
 
 /*FOOTER===============================*/
@@ -276,7 +281,7 @@ nav.sticky ul li a {
     letter-spacing: 0.8rem;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 750px) {
     .logo {
         margin-left: -1rem;
         margin-right: 1rem;

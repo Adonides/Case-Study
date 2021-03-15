@@ -296,11 +296,17 @@ nav.sticky ul li a {
     cursor: pointer;
     transition: all 0.3s ease;
     outline: none;
+    opacity: 0.2;
+}
+
+.btn-enabled {
+    opacity: 0.7;
 }
 
 .btn-comment:hover {
     background: var(--dark-orange);
     color: var(--text-bg); 
+    opacity: 1;
 }
 
 .comment-area {
@@ -342,7 +348,33 @@ nav.sticky ul li a {
 .user-comment {
     font-size: 0.9em;
     margin-bottom: 1rem;
-    padding: 1rem 1.5rem 2rem 1.5rem; 
+    padding: 0.5rem 1.5rem 2rem 1.5rem; 
+}
+
+.button-reaction {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reaction-title {
+    font-weight: 200;
+}
+
+.reaction {
+    display: flex;
+    
+    margin: .4rem 0;
+}
+
+.emoji {
+    padding: 0 8px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.emoji:hover {
+    border: 1px solid var(--text-bg);
 }
 
 .btn-reply {
@@ -355,9 +387,9 @@ nav.sticky ul li a {
     cursor: pointer;
     transition: all 0.3s ease;
     outline: none;
-    padding: 0.4rem;
-    margin-bottom: 0.1rem;
-    
+    padding:0.4rem;
+    margin-bottom: 0.1rem 0.1rem;
+    opacity: 0.7;
 }
 
 .btn-reply:hover {
@@ -441,7 +473,7 @@ nav.sticky ul li a {
 }
 
 /*RESPONSIVE.NAVBAR==========================================*/
-@media ( min-width: 660px) {
+@media ( min-width: 640px) {
     .logo-link {
         margin-left: -1rem;
         margin-right: 1rem;
@@ -459,6 +491,11 @@ nav.sticky ul li a {
     left: 50%;
     transform: translate(-50%, -30%); /*perfeito centralizado*/
     }
+
+    .button-reaction {
+        max-width: 58%;
+        
+    }
     
 }
 /*RESPONSIVE.ARCTICLE==========================================*/
@@ -475,6 +512,11 @@ nav.sticky ul li a {
 
     .comment-text {
         max-width: 75%;
+    }
+
+    .button-reaction {
+        max-width: 75%;
+        
     }
 } /*mais espaço paro o texto em telas menores*/
 

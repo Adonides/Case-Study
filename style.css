@@ -1,4 +1,6 @@
 /*Global==========================================*/
+@import url( https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
 * {
     margin: 0;
     padding: 0;
@@ -36,11 +38,12 @@ nav {
     transition: 0.6s;
     z-index: 1000;
     padding: 35px 60px;
+    
 }
 
 .logo-link {
-    margin-left: -1.5rem;
-    margin-right: 1.5rem;
+    margin-left: -3rem;
+    margin-right: 1rem;
     opacity: 0.7;
 }
 
@@ -49,10 +52,11 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: -1rem;
 }
 
 .links li a {
-    padding: 0 1.3rem;
+    padding: 0 1.2rem;
     font-size: 1rem;
     letter-spacing: 0.5px;
     transition: 0.6s;
@@ -63,9 +67,98 @@ nav {
     font-weight: 600;
 }
 
+.lang-menu {
+    position: relative;
+}
+
+.selected-lang {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 80px; /**/
+}
+
+.selected-lang span {
+    margin-left: 8px;
+    font-size: 0.8rem;
+    letter-spacing: 0.8px;
+    
+}
+
+.selected-lang:before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url(https://www.countryflags.io/us/flat/16.png);
+    
+}
+
+.lang-menu ul {
+    display: none;
+    background-color: #444;
+    border: 1px solid #222;
+    box-shadow: 0px 1px 10px rgba(rgb(146, 138, 138), rgb(146, 138, 138), rgb(146, 138, 138), 0.2);
+    position: absolute;
+    top: 16px;
+    right: 0;
+}
+
+.lang-menu ul li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang-menu ul li a {
+    font-size: 0.8rem;
+    font-weight: 200;
+    color: var(--text-bg);
+    display: inline-block;
+    width: 100px;
+    padding: 5px;
+}
+
+.lang-menu ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.lang-menu ul li a:hover {
+    background-color: #333;
+}
+
+.br:before {
+    background-image: url(https://www.countryflags.io/br/flat/16.png);
+}
+
+.us:before {
+    background-image: url(https://www.countryflags.io/us/flat/16.png);
+}
+
+.fr:before {
+    background-image: url(https://www.countryflags.io/fr/flat/16.png);
+}
+
+.de:before {
+    background-image: url(https://www.countryflags.io/de/flat/16.png);
+}
+
 nav.sticky {
     padding: 4px 60px;
     background: #333;
+}
+
+.lang-menu:hover ul {
+    display: block;
+}
+
+nav.sticky span a {
+    color: white;
+    font-weight: 100;
 }
 
 nav.sticky ul li a {
@@ -87,7 +180,7 @@ nav.sticky ul li a {
 
 .icons {
     display: inline-flex;
-    letter-spacing: 1rem;
+    letter-spacing: 0.5rem;
 }
 
 

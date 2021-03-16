@@ -1,3 +1,6 @@
+/*Global==========================================*/
+@import url( https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
 * {
     margin: 0;
     padding: 0;
@@ -41,8 +44,8 @@ li, a {
 }
 
 .logo {
-    margin-right: 1.5rem;
-    margin-left: -1rem;
+    margin-right: 1rem;
+    margin-left: -3rem;
     opacity: 0.7;
 }
 
@@ -64,7 +67,7 @@ li, a {
 }
 
 .nav-link a {
-    padding: 1.6rem;
+    padding: 0 1.6rem;
     font-size: 1rem;
 }
 

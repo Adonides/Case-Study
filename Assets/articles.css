@@ -1,3 +1,6 @@
+/*Global==========================================*/
+@import url( https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
 * {
     margin: 0;
     padding: 0;
@@ -42,8 +45,8 @@ li, a {
 }
 
 .logo {
-    margin-right: 1.5rem;
-    margin-left: -1.5rem;    opacity: 0.7;
+    margin-right: 1rem;
+    margin-left: -3rem;    opacity: 0.7;
 }
 
 .linkedin a:hover {
@@ -100,7 +103,7 @@ nav.sticky ul li a {
 
 .main-title {
     position: absolute;
-    top: 40%;
+    top: 23%;
     left: 50%; /* width:100%; */
     transform: translate(-45%, -30%); /*text-align: center; */
     font-family: 'Lobster', cursive;

@@ -52,10 +52,18 @@
                                 <span><a>English</a></span>
                             </div>
                             <ul>
-                                <li><a class="br" href="">Português</a></li>
-                                <li><a class="us" href="">English</a></li>
-                                <li><a class="fr" href="">français</a></li>
-                                <li><a class="de" href="">Deutsche</a></li>
+                                <li>
+                                    <a class="br" href="#por" data-reload>Português</a>
+                                </li>
+                                <li>
+                                    <a class="us" href="#eng" data-reload>English</a>
+                                </li>
+                                <li>
+                                    <a class="fr" href="#fr" data-reload>français</a>
+                                </li>
+                                <li>
+                                    <a class="de" href="#de" data-reload>Deutsche</a>
+                                </li>
                             </ul>
                         </div>
                     </nav>
@@ -70,10 +78,10 @@
                             </h1>
                         </header>
                         
-                        <p>
+                        <p id="slogan">
                             Taught self is the fast way to learn
                         </p>
-                        <h2 class="home-subtitle"> <a href="#article01">
+                        <h2 class="home-subtitle"> <a href="#article01" id="contentBtn">
                             Check out our content below.
                         </a></h2>
                         
@@ -82,35 +90,35 @@
             <hr><!----------------Article------------------->
             <article class="article01" id="article01">
                 <section class="wrap-article">
-                    <h2>The Future of Education</h2>
-                    <p class="date"><small><em>March 01, 2021</em></small></p>
+                    <h2 id="title">The Future of Education</h2>
+                    <p class="date"><small><em>By Adonides Amparo <br> March 01, 2021</em></small></p>
                     
-                    <h3>
-                        Before enrolling a college or online curse, we got to think what is the best method to learn X or Z.
+                    <h3 id="subtitle">
+                        Before enrolling a college or online course, we got to think what is the best method to learn X or Z.
                     </h3>
-                    <p>
-                          Is the traditional Education the best option and what to say about online learning? In this blog I will run over through those questions and give my sincere opinion about it.
+                    <p id="p01">
+                          Is the traditional Education the best option? and what to say about online learning? In this blog I will run over through those questions and give my sincere opinion about it.
                     </p>
-                    <h4>Traditional Education</h4>
-                    <p>
-                        For more I think about learning, less I become excited about traditional learning, if you ask me it is about to follow one pattern, a routine and most of the time to be forced to learning things you are not interesting and much worse, it will not be necessary for your career at all.  It is a very expense investment and require you to move around to be where the class will take over.
+                    <h4 id="te">Traditional Education</h4>
+                    <p id="p02">
+                        More I think about learning, less I become excited about traditional learning, if you ask me it is about to follow one pattern, a routine and most of the time to be forced to learning things you are not interesting and much worse, it will not be necessary for your career at all.  It is a very expense investment and require you to move around to be where the class will take over consuming more of your time.
                     </p>
-                    <p>
+                    <p id="p03">
                         The strongest defend to traditional learning would be the network, programs and internships offered from those institutes who has the power to partnership with companies. Oh yeah but those benefices are not for every alumnus, the most the time just few students are including to it. No really, the main aspect I would pick from the traditional education is the structure, I say it because there are some subjects, career we must use expense equipment, and the easiest example is to study medicine, I would say it is almost impossible to buy it to have a private laboratory. Even tough partial online curse would to the job!
                     </p>
-                    <h4>Online Learning</h4>
-                    <p>
+                    <h4 id="ol">Online Learning</h4>
+                    <p id="p04">
                         It can be so powerful, all we need to achieve that is a routine, like we do on the traditional learning, yeah exactly to have a specific time to study, manage the time could be the main point you will fail to have a success experience with online curse.
                     </p>
-                    <p>
+                    <p id="p05">
                         This kind of mind is what I like, in this point you push yourself for another level! Because you are starting a become the boss of your learning, managing your time and being more independent, in some online curses you got classes on video and even you may interact with the lecture. The cool thing is you are managing a bit your flexible timetable, paying much less and you still have some support of the institution.
                     </p>
-                    <h4>Happiness is the key to happiness.</h4>
-                    <p>
+                    <h4 id="happiness">Happiness is the key to happiness.</h4>
+                    <p id="p06">
                         The focus here in the end the day is to achieve our goal as soon as possible, and all the methods of education as your pros and cons, and more than that those we change for each person who apply it. In the way to potential your education we got know ourselves well to do it with happiness because believe does not matter you love the subject or not, the true is, hard times will come. It can be to understand one concert or lack of time to study, you might be frustrated then and be happy in what we are doing will surpass any frustration, because each hard time will be just a good challenge!
                     </p>
 
-                    <a href="#comments" class="comment-link">Your Opinion</a>
+                    <a href="#comments" class="comment-link" id="opinion">Your Opinion</a>
                 </section>
             </article>
 
@@ -157,7 +165,7 @@
                 <form class="form-comment" onsubmit="CommentForm.submit(event)">
                     <h2 class="comment-title">Leave a Comment</h2>
                     <input type="text" class="comment-name comment-text" id="comments-name" placeholder="Your name" required>
-                    <textarea class="comment-area comment-text" name="" id="comments-area" cols="30" rows="10" placeholder="Let everyone knows your option " required></textarea>
+                    <textarea class="comment-area comment-text" name="" id="comments-area" cols="30" rows="10" placeholder="Let everyone knows your opinion " required></textarea>
                     
                     <div class="button-reaction">
                         <div id="react" class="reaction">
@@ -207,13 +215,13 @@
         <div class="intro">
             <div class="intro-container">
                 <h2 class="hide">
-                    <span class="intro-text">for taught self learners</span>
+                    <span class="intro-text" id="introduction">for taught self learners</span>
                 </h2>
                 <h2 class="hide">
-                    <span class="intro-text">for everyday</span>
+                    <span class="intro-text" id="everyday">for everyday</span>
                 </h2>
                 <h2 class="hide">
-                    <span class="intro-text">challenge.</span>
+                    <span class="intro-text" id="challenge">challenges.</span>
                 </h2>
             </div>
         </div>

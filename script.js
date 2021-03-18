@@ -171,10 +171,28 @@ const Translate = {
                 opinion.textContent = Languages.german.article11
             }
         }
+    },
+    reload() {
+        Translate.portuguese()
+        Translate.french()
+        Translate.german()
+
+        
     }
 }
 
+const DataReload = {
+    reload: document.querySelectorAll("[data-reload]"),
+    onclickReload() {
+        for (i = 0; i <= this.reload.length; i++) {
+            this.reload[i].onclick = function() {
+                
 
+                location.reload()
+            }
+        }
+    },
+}
 
 /*COMMENTS==========================================*/
 const CommentForm = {
@@ -327,7 +345,11 @@ const CaseStudy = {
         Translate.portuguese()
         Translate.french()
         Translate.german()
-    
+        
+        
+    },
+    reloadPage() {
+        DataReload.onclickReload()
     }
 }
 

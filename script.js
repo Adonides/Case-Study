@@ -126,8 +126,12 @@ const Translate = {
                 happiness.textContent = Languages.portuguese.article09
                 p06.textContent = Languages.portuguese.article10
                 opinion.textContent = Languages.portuguese.article11
+
+                
             }
+            
         }
+        
     },
     french() {
         if (window.location.hash) {
@@ -149,12 +153,19 @@ const Translate = {
                 happiness.textContent = Languages.french.article09
                 p06.textContent = Languages.french.article10
                 opinion.textContent = Languages.french.article11
+
+                
             }
+            
         }
+        
     },
     german() {
         if (window.location.hash) {
             if (window.location.hash === "#de") {
+                introduction.textContent = Languages.german.intro01
+                everyday.textContent = Languages.german.intro02
+                challenge.textContent = Languages.german.intro03
                 slogan.textContent = Languages.german.home
                 contentBtn.textContent = Languages.german.checkOut
                 title.textContent = Languages.german.article
@@ -169,25 +180,26 @@ const Translate = {
                 happiness.textContent = Languages.german.article09
                 p06.textContent = Languages.german.article10
                 opinion.textContent = Languages.german.article11
+
+                
             }
+            
         }
+        
     },
     reload() {
-        Translate.portuguese()
-        Translate.french()
-        Translate.german()
-
+        
+       MainPage.reloadPage()
         
     }
 }
 
-const DataReload = {
-    reload: document.querySelectorAll("[data-reload]"),
-    onclickReload() {
-        for (i = 0; i <= this.reload.length; i++) {
-            this.reload[i].onclick = function() {
-                
 
+const DataReload = {
+    NewReload: document.querySelectorAll("[data-reload]"),
+    onclickReload() {
+        for (i = 0; i <= this.NewReload.length; i++) {
+            this.NewReload[i].onclick = function() {
                 location.reload()
             }
         }
@@ -333,7 +345,7 @@ const DisplayComment = {
     
 }
 
-const CaseStudy = {
+const MainPage = {
     rendPage() {
 
         Intro.getTimeline()
@@ -346,13 +358,14 @@ const CaseStudy = {
         Translate.french()
         Translate.german()
         
-        
     },
     reloadPage() {
-        DataReload.onclickReload()
+        
+       
     }
 }
 
 
 
-CaseStudy.rendPage()
+MainPage.rendPage()
+

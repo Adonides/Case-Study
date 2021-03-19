@@ -194,6 +194,14 @@ nav.sticky ul li a {
     font-weight: 300;
 }
 
+.contact-text a {
+    color: var(--text-color);
+}
+
+.contact-text a:hover {
+    text-decoration: underline;
+}
+
 .contact-text h3 {
     font-weight: 500;
     color: var(--orange);

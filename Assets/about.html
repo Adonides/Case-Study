@@ -60,6 +60,38 @@
                         </a>
                     </li>
                 </ul> 
+
+                <div class="lang-menu">
+                    <div >
+                        <span class="active-eng selected-lang">
+                            English
+                        </span>
+                        <!--<span class="active-por">
+                            <a>Português</a>
+                        </span>
+                        <span>
+                            <a class="active-fr">Français</a>
+                        </span>
+                        <span class="active-de">
+                            <a>Deutsche</a>
+                        </span>-->
+                    </div>
+                    <ul class="lang-wrap"> <!---->
+                        <li>
+                            <a class="br lang-link" href="#" lang="portuguese">Português</a>
+                        </li>
+                        <li>
+                            <a class="us lang-link" href="#" lang="english">English</a>
+                        </li>
+                        <li>
+                            <a class="fr lang-link" href="#" lang="french">Français</a>
+                        </li>
+                        <li>
+                            <a class="de lang-link" href="#" lang="german">Deutsche</a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
         </nav>
 
@@ -69,14 +101,14 @@
             <header>
                 <h1 class="main-title">Stay Focus</h1>
             </header>
-            <h2 class="home-subtitle"> <a href="#about">
+            <h2 class="home-subtitle st00"> <a href="#about">
                 What to Expert about our Blog
             </a></h2>
         </div>
         
         <section id="about" class="section about-text">
-            <h2 class="sub-title">Art of Learning</h2>
-            <p>
+            <h2 class="sub-title st01">Art of Learning</h2>
+            <p class="p01">
                 Discuss different methods of learning so people can approach them to achieve the best performance. We are happy about people's success whose have the set mind of always grow in their career or in them personal life.
             </p>
         </section>
@@ -85,8 +117,8 @@
             <h1 class="main-title">Mission</h1>
         </div>
         <section class="section mission-text">
-            <h2 class="sub-title">Achieve high goals</h2>
-            <p>
+            <h2 class="sub-title st02">Achieve high goals</h2>
+            <p class="p02">
                 Helping people to get the main objective behind the studies as soon as possible. We do not have the same thought or ideas than yesterday, because everyday we grow better!
             </p>
         </section>
@@ -95,8 +127,8 @@
             <h1 class="main-title">Value</h1>
         </div>
         <section class="section value-text">
-            <h2 class="sub-title">Open Ideas</h2>
-            <p>
+            <h2 class="sub-title st03">Open Ideas</h2>
+            <p class="p03">
                 Respect and honest are our road to drive people to conquer big things!
                 We are always open for learning  and  to pass knowledge.   
             </p>
@@ -128,9 +160,99 @@
                     const navbar = document.querySelector("nav")
                     navbar.classList.toggle("sticky", window.scrollY > 0)
                 })
+            },
+            langMenu: document.querySelector(".lang-menu"),
+            langLink: document.querySelectorAll(".lang-link"),
+            topSubtitle: document.querySelector(".home-subtitle"),
+            valueTitle: document.querySelector(".st01"),
+            valueText: document.querySelector(".p01"),
+            missionTitle: document.querySelector(".st02"),
+            missionText: document.querySelector(".p02"),
+            aboutTitle: document.querySelector(".st03"),
+            aboutText: document.querySelector(".p03"),
+            getLangActive() {
+                this.langLink.forEach(element => {
+                    element.addEventListener('click', () => {
+                        /*langMenu.querySelector(".active-eng").classList.remove("active-eng")
+                        if (element.value = 'English') {
+                            classList.add("active-eng")
+                        } else if (element.value = 'Português') {
+                            classList.add("active-por")
+                        } else if (element.value = 'Français') {
+                            classList.add("active-fr")
+                        } else {
+                            classList.add("active-de")
+                        }*/
+
+                        const attribute = element.getAttribute('lang')
+
+                        this.topSubtitle.textContent = Translate[attribute].st00
+                        this.valueTitle.textContent = Translate[attribute].st01
+                        this.valueText.textContent = Translate[attribute].p01
+                        this.missionTitle.textContent = Translate[attribute].st02
+                        this.missionText.textContent = Translate[attribute].p02
+                        this.aboutTitle.textContent = Translate[attribute].st03
+                        this.aboutText.textContent = Translate[attribute].p03
+
+                    })
+                })
             }
         }
-        NavbarScroll.getScrolling()
+        
+
+        const Translate = {
+            "english": 
+            {
+                "st00":  "What to Expert about our Blog",
+                "st01": "Art of Learning",
+                "p01": "Discuss different methods of learning so people can approach them to achieve the best performance. We are happy about people's success whose have the set mind of always grow in their career or in them personal life.",
+                "st02": "Achieve high goals",
+                "p02": "Helping people to get the main objective behind the studies as soon as possible. We do not have the same thought or ideas than yesterday, because everyday we grow better!",
+                "st03": "Open Ideas",
+                "p03": "Respect and honest are our road to drive people to conquer big things! We are always open for learning and to pass knowledge.",
+                
+            },
+            "portuguese":
+            {
+                "home-subtitle": "O que esperar sobre o nosso Blog",
+                "st01": "A arte de Aprender",
+                "p01": "Discutir diferentes métodos de aprendizagem para que as pessoas possam abordá-los para conseguir o melhor desempenho. Ficamos felizes com o sucesso das pessoas que têm a intenção de sempre crescer na carreira ou na vida pessoal.",
+                "st02": "Conseguir objetivos maiores",
+                "p02": "Ajudar as pessoas a alcançar o objetivo principal por trás dos estudos o mais rápido possível. Não temos o mesmo pensamento ou ideias de ontem, porque a cada dia melhoramos!",
+                "st03": "Mente aberta",
+                "p03": "Respeito e honestidade é o nosso caminho para levar as pessoas a conquistar grandes coisas! Estamos sempre abertos para aprender e passar conhecimentos.",
+            },
+            "french":
+            {
+                "home-subtitle": "O que esperar sobre o nosso Blog",
+                "st01": "L'art d'apprendre",
+                "p01": "Discutez des différentes méthodes d'apprentissage afin que les gens puissent les approcher pour obtenir les meilleures performances. Nous sommes heureux du succès des gens qui ont la volonté de toujours grandir dans leur carrière ou dans leur vie personnelle.",
+                "st02": "Atteindre des objectifs élevés",
+                "p02": "Aider les gens à obtenir le plus tôt possible l'objectif principal derrière les études. Nous n'avons pas la même pensée ou les mêmes idées qu'hier, car chaque jour nous grandissons mieux! ",
+                "st03": "Idées ouvertes ",
+                "p03": "Le respect et l'honnêteté sont notre chemin pour conduire les gens à conquérir de grandes choses! Nous sommes toujours ouverts à l'apprentissage et à la transmission des connaissances. ",
+            },
+            "german":
+            {
+                "home-subtitle": "O que esperar sobre o nosso Blog",
+                "st01": "Kunst des Lernens" ,
+                "p01": "Diskutieren Sie verschiedene Lernmethoden, damit die Menschen sich an sie wenden können, um die beste Leistung zu erzielen. Wir freuen uns über den Erfolg der Menschen, die den Willen haben, in ihrer Karriere oder in ihrem Privatleben immer zu wachsen.",
+                "st02": "Hohe Ziele erreichen ",
+                "p02": "Menschen helfen, so schnell wie möglich das Hauptziel des Studiums zu erreichen. Wir haben nicht die gleichen Gedanken oder Ideen wie gestern, weil wir jeden Tag besser werden! ",
+                "st03": "Offene Ideen",
+                "p03": "Respekt und Ehrlichkeit sind unser Weg, um Menschen dazu zu bringen, große Dinge zu erobern! Wir sind immer offen für das Lernen und den Wissensaustausch. ",
+            },
+        }
+
+        const AboutPage = {
+            renderPage() {
+                NavbarScroll.getScrolling()
+
+                NavbarScroll.getLangActive()
+            }
+        }
+
+        AboutPage.renderPage()
     </script>
 </body>
 </html>

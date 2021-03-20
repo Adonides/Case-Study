@@ -50,18 +50,51 @@
                     <a href="./contact.html">Contact</a> 
                     </li>
                 </ul>
+
+                <div class="lang-menu">
+                    <div >
+                        <span class="active-eng selected-lang">
+                            English
+                        </span>
+                        <!--<span class="active-por">
+                            <a>Português</a>
+                        </span>
+                        <span>
+                            <a class="active-fr">Français</a>
+                        </span>
+                        <span class="active-de">
+                            <a>Deutsche</a>
+                        </span>-->
+                    </div>
+                    <ul class="lang-wrap"> <!---->
+                        <li>
+                            <a class="br lang-link" href="#traditional" lang="portuguese">Português</a>
+                        </li>
+                        <li>
+                            <a class="us lang-link" href="#traditional" lang="english">English</a>
+                        </li>
+                        <li>
+                            <a class="fr lang-link" href="#traditional" lang="french">Français</a>
+                        </li>
+                        <li>
+                            <a class="de lang-link" href="#traditional" lang="german">Deutsche</a>
+                        </li>
+                    </ul>
+                </div>
+
+
             </nav>
 
             <div class="top-article">
                 <h1 class="main-title">Stay Focus</h1>
                 <h2 class="subtitle">
-                    <a href="#traditional">Check our articles out</a>
+                    <a href="#traditional">Coming articles </a>
                 </h2>
             </div>
             <hr>
             <section id="articles" class="articles">
                 
-                    <h1>Articles</h1>
+                    <h1 class="mt01">Articles</h1>
                 
                 <div class="card">
                     <div class="card-img">
@@ -70,7 +103,7 @@
                        </a> 
                     </div>
                     <div class="card-text">
-                        <h2><br> <span>Traditional Education</span></h2>
+                        <h2><br> <span class="st01">Traditional Education</span></h2>
                     </div>
                 </div>
                 <div class="card">
@@ -80,7 +113,7 @@
                        </a> 
                     </div>
                     <div class="card-text">
-                        <h2> <br> <span>Online Education</span></h2>
+                        <h2 > <br> <span class="st02">Online Education</span></h2>
                     </div>
                 </div>
                 <div class="card">
@@ -90,7 +123,7 @@
                        </a> 
                     </div>
                     <div class="card-text">
-                        <h2> <br> <span>My Experience</span></h2>
+                        <h2> <br> <span class="st03">My Experience</span></h2>
                     </div>
                 </div>
                 
@@ -98,30 +131,30 @@
             <article id="traditional" class="articles-subjects">
                 <section  class="subjects">
                     <div  class="link-section">
-                        <h2 class="article-title">Traditional Education</h2>
+                        <h2 class="article-title st01">Traditional Education</h2>
                         <ul class="traditional-list">
-                            <li>What have changed in traditional Education?     <small>coming soon</small></li>
-                            <li>Pros of enrolling in traditional Education  <small>coming soon</small></li>
-                            <li>Cons of enrolling in traditional Education  <small>coming soon</small></li>
+                            <li class="tr01">What have changed in traditional Education?     <span class="soon" style="color: red;"><small >coming soon</small></span></li>
+                            <li class="tr02">Pros of enrolling in traditional Education  <small class="soon">coming soon</small></li>
+                            <li class="tr03">Cons of enrolling in traditional Education  <small class="soon">coming soon</small></li>
                         </ul>
                     </div>
                     <hr id="online">
                     <div  class="link-section">
-                        <h2 class="article-title">Online Education</h2>
+                        <h2 class="article-title st02">Online Education</h2>
                         <ul class="online-list">
-                            <li>Types of Online Curses  <small>coming soon</small></li>
-                            <li>Flexibility  <small>coming soon</small></li>
-                            <li>Money saving  <small>coming soon</small></li>
+                            <li class="on01">Types of Online Courses  <small class="soon">coming soon</small></li>
+                            <li class="on02">Flexibility  <small class="soon">coming soon</small></li>
+                            <li class="on03">Money saving  <small class="soon">coming soon</small></li>
                         </ul>
                     </div>
                     <hr id="experience">
                     <div class="link-section">
-                        <h2 class="article-title">My Experience</h2>
+                        <h2 class="article-title st03">My Experience</h2>
                         <ul class="experience-list">
-                            <li>Who am I?    <small>coming soon</small></li>
-                            <li>I decided to study coding  <small> coming soon</small></li>
-                            <li>Which language to pick?  <small>coming soon</small></li>
-                            <li>My study script  <small>coming soon</small></li>
+                            <li class="ex01">Who am I?    <small class="soon">coming soon</small></li>
+                            <li class="ex02">I decided to study coding  <small class="soon"> coming soon</small></li>
+                            <li class="ex03">Which language to pick?  <small class="soon">coming soon</small></li>
+                            <li class="ex04">My study script  <small class="soon">coming soon</small></li>
                         </ul>
                     </div>
                 </section>
@@ -160,9 +193,142 @@
                     const navbar = document.querySelector("nav")
                     navbar.classList.toggle("sticky", window.scrollY > 0)
                 })
+            },
+            langLink: document.querySelectorAll(".lang-link"),
+            mainTitle: document.querySelector(".mt01"),
+            traditionalTitle: document.querySelector(".st01"),
+            onlineTitle: document.querySelector(".st02"),
+            experienceTitle: document.querySelector(".st03"),
+            traditional01: document.querySelector(".tr01"),
+            traditional02: document.querySelector(".tr02"),
+            traditional03: document.querySelector(".tr03"),
+            online01: document.querySelector(".on01"),
+            online02: document.querySelector(".on02"),
+            online03: document.querySelector(".on03"),
+            experience01: document.querySelector(".ex01"),
+            experience02: document.querySelector(".ex02"),
+            experience03: document.querySelector(".ex03"),
+            experience04: document.querySelector(".ex04"),
+            comingSoon: document.querySelector(".soon"),
+            
+            getLangActive() {
+                this.langLink.forEach(element => {
+                    element.addEventListener('click', () => {
+                        /*langMenu.querySelector(".active-eng").classList.remove("active-eng")
+                        if (element.value = 'English') {
+                            classList.add("active-eng")
+                        } else if (element.value = 'Português') {
+                            classList.add("active-por")
+                        } else if (element.value = 'Français') {
+                            classList.add("active-fr")
+                        } else {
+                            classList.add("active-de")
+                        }*/
+
+                        const attribute = element.getAttribute('lang')
+
+                        this.mainTitle.textContent = Translate[attribute].mt01
+                        this.traditionalTitle.textContent = Translate[attribute].st01
+                        this.onlineTitle.textContent = Translate[attribute].st02
+                        this.experienceTitle.textContent = Translate[attribute].st03
+                        this.traditional01.textContent = Translate[attribute].tr01
+                        this.traditional02.textContent = Translate[attribute].tr02
+                        this.traditional03.textContent = Translate[attribute].tr03
+                        this.online01.textContent = Translate[attribute].on01
+                        this.online02.textContent = Translate[attribute].on02
+                        this.online03.textContent = Translate[attribute].on03
+                        this.experience01.textContent = Translate[attribute].ex01
+                        this.experience02.textContent = Translate[attribute].ex02
+                        this.experience03.textContent = Translate[attribute].ex03
+                        this.experience04.textContent = Translate[attribute].ex04
+                        this.comingSoon.textContent = Translate[attribute].soon
+                    })
+                })
             }
         }
-        NavbarScroll.getScrolling()
+
+        const Translate = {
+                "english":
+                {
+                    "mt01": "Articles",
+                    "p01": "Traditional Education",
+                    "st02": "Online Education",
+                    "st03": "My Experience",
+                    "tr01": "What have changed in traditional Education? coming soon",
+                    "tr02": "Pros of enrolling in traditional Education coming soon",
+                    "tr03": "Cons of enrolling in traditional Education coming soon",
+                    "on01": "Types of Online Courses coming soon",
+                    "on02": "Flexibility coming soon",
+                    "on03": "Money saving coming soon",
+                    "ex01": "Who am I? coming soon",
+                    "ex02": "I decided to study coding coming soon",
+                    "ex03": "Which language to pick? coming soon",
+                    "ex04": "My study script coming soon",
+                    "soon": "coming soon"
+                },
+                "portuguese":
+                {
+                    "mt01": "Artigos",
+                    "st01": "Educação tradicional",
+                    "st02": "Educação online",
+                    "st03": "Minha Experinência",
+                    "tr01": "O que mudou na educação tradicional? ",
+                    "tr02": "Prós de se matricular na educação tradicional",
+                    "tr03": "Contras de se matricular na educação tradicional",
+                    "on01": "Tipos de cursos online",
+                    "on02": "Flexibilidade",
+                    "on03": "Poupando dinheiro",
+                    "ex01": "Quem sou eu?",
+                    "ex02": "Decidi estudar programação",
+                    "ex03": "Qual linguagem escolher?",
+                    "ex04": "Meu roteiro de estudo",
+                    "soon": "em breve"
+                },
+                "french":
+                {
+                    "mt01": "Contact",
+                    "st01": "Éducation traditionnelle ",
+                    "st02": "Éducation en ligne",
+                    "st03": "Mon expérience",
+                    "tr01": "Qu'est-ce qui a changé dans l'éducation traditionnelle? Bientôt disponible ",
+                    "tr02": "Les avantages de l'inscription à l'éducation traditionnelle à venir ",
+                    "tr03": "Les inconvénients de l'inscription à l'éducation traditionnelle à venir",
+                    "on01": "Types de cours en ligne à venir ",
+                    "on02": "Flexibilité à venir ",
+                    "on03": "Économies d'argent à venir",
+                    "ex01": "Qui suis je? Bientôt disponible",
+                    "ex02": "J'ai décidé d'étudier le codage à venir ",
+                    "ex03": "Quelle langue choisir? Bientôt disponible ",
+                    "ex04": "Mon scénario d'étude à venir",
+                    "soon": "Bientôt disponible "
+                },
+                "german":
+                {
+                    "mt01": "Artikel",
+                    "st01": "Traditionelle Bildung",
+                    "st02": "Online-Bildung",
+                    "st03": "Meine Erfahrung",
+                    "tr01": "Was hat sich in der traditionellen Bildung geändert? kommt bald",
+                    "tr02": "Die Vorteile einer Einschreibung in die traditionelle Bildung folgen in Kürze ",
+                    "tr03": "Nachteile der Einschreibung in die traditionelle Bildung in Kürze",
+                    "on01": "Arten von Online-Kursen folgen in Kürze",
+                    "on02": "Flexibilität kommt bald",
+                    "on03": "Geld sparen kommt bald ",
+                    "ex01": "Wer bin ich? kommt bald",
+                    "ex02": "Ich beschloss, das Codieren bald zu studieren ",
+                    "ex03": "Welche Sprache soll ich wählen? kommt bald ",
+                    "ex04": "Mein Lernskript kommt bald ",
+                    "soon": "kommt bald"
+                },
+            }
+
+        function renderPage() {
+            NavbarScroll.getScrolling()
+
+            NavbarScroll.getLangActive()
+        }
+        renderPage()
+        
     </script>
 </body>
 </html>

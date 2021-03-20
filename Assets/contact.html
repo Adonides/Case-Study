@@ -50,6 +50,39 @@
                     <a href="./articles.html" rel="next">Articles</a> 
                     </li>
                 </ul>
+
+                <div class="lang-menu">
+                    <div >
+                        <span class="active-eng selected-lang">
+                            English
+                        </span>
+                        <!--<span class="active-por">
+                            <a>Português</a>
+                        </span>
+                        <span>
+                            <a class="active-fr">Français</a>
+                        </span>
+                        <span class="active-de">
+                            <a>Deutsche</a>
+                        </span>-->
+                    </div>
+                    <ul class="lang-wrap"> <!---->
+                        <li>
+                            <a class="br lang-link" href="#contact" lang="portuguese">Português</a>
+                        </li>
+                        <li>
+                            <a class="us lang-link" href="#contact" lang="english">English</a>
+                        </li>
+                        <li>
+                            <a class="fr lang-link" href="#contact" lang="french">Français</a>
+                        </li>
+                        <li>
+                            <a class="de lang-link" href="#contact" lang="german">Deutsche</a>
+                        </li>
+                    </ul>
+                </div>
+
+
             </nav>
             <section class="top">
                 <div class="top-contact">
@@ -60,10 +93,10 @@
                 </div>
             </section>
             <hr>
-            <section class="contact-section">
+            <section id="contact" class="contact-section">
                 <div class="description">
-                    <h2>Contact</h2>
-                    <p>For quetions, partnership inquiries, sugestions, or general comments, please fill out the form or e-mail me straigth way.  </p>
+                    <h2 class="st01">Contact</h2>
+                    <p class="p01">For questions, partnership inquiries, suggestions, or general comments, please fill out the form or email me straight away.  </p>
                 </div>
                 <div id="container" class="container">
                     <div class="info">
@@ -72,7 +105,7 @@
                                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                             </div>
                             <div class="contact-text">
-                                <h3>Address</h3>
+                                <h3 class="st02">Address</h3>
                                 <p>Rua do Vigário 70D, Alfama, <br>  Lisbon, Portugal <br>1100-616</p>
                             </div>
                         </div>
@@ -99,7 +132,7 @@
                     </div>
                     <div class="contact-form">
                         <form class="form" action="">
-                            <h2>Send me a Message</h2>
+                            <h2 class="st03">Send us a Message</h2>
                         
                             <div class="input-box">
                                 <input type="text" required>
@@ -155,13 +188,73 @@
                         const navbar = document.querySelector("nav")
                         navbar.classList.toggle("sticky", window.scrollY > 0)
                     })
+                },
+                langLink: document.querySelectorAll(".lang-link"),
+                contactTitle: document.querySelector(".st01"),
+                contactText: document.querySelector(".p01"),
+                addressTitle: document.querySelector(".st02"),
+                formTitle: document.querySelector(".st03"),
+                
+                getLangActive() {
+                    this.langLink.forEach(element => {
+                        element.addEventListener('click', () => {
+                            /*langMenu.querySelector(".active-eng").classList.remove("active-eng")
+                            if (element.value = 'English') {
+                                classList.add("active-eng")
+                            } else if (element.value = 'Português') {
+                                classList.add("active-por")
+                            } else if (element.value = 'Français') {
+                                classList.add("active-fr")
+                            } else {
+                                classList.add("active-de")
+                            }*/
+
+                            const attribute = element.getAttribute('lang')
+
+                            this.contactTitle.textContent = Translate[attribute].st01
+                            this.contactText.textContent = Translate[attribute].p01
+                            this.addressTitle.textContent = Translate[attribute].st02
+                            this.formTitle.textContent = Translate[attribute].st03
+                        })
+                    })
                 }
             }
 
-
+            const Translate = {
+                "english":
+                {
+                    "st01": "Contact",
+                    "p01": "For questions, partnership inquiries, suggestions, or general comments, please fill out the form or email me straight away.",
+                    "st02": "Address",
+                    "st03": "Send us your Message",
+                },
+                "portuguese":
+                {
+                    "st01": "Contato",
+                    "p01": "Em caso de dúvidas, perguntas sobre parcerias, sugestões ou comentários gerais, preencha o formulário abaixo ou encaminhe um e-mail diretamente. ",
+                    "st02": "Endereço",
+                    "st03": "Envie-nos a sua mensagem ",
+                },
+                "french":
+                {
+                    "st01": "Contact",
+                    "p01": "Pour des questions, des demandes de partenariat, des suggestions ou des commentaires généraux, veuillez remplir le formulaire ou m'envoyer un e-mail immédiatement.",
+                    "st02": "Adresse ",
+                    "st03": "Envoyez-nous votre message ",
+                },
+                "german":
+                {
+                    "st01": "Kontakt",
+                    "p01": "Bei Fragen, Partnerschaftsanfragen, Vorschlägen oder allgemeinen Kommentaren füllen Sie bitte das Formular aus oder senden Sie mir umgehend eine E-Mail.",
+                    "st02": "Adresse",
+                    "st03": "Senden Sie uns Ihre Nachricht ",
+                },
+            }
 
             function renderPage() {
                 NavbarScroll.getScrolling()
+
+                NavbarScroll.getLangActive()
             }
         
             renderPage()

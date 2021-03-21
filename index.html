@@ -62,18 +62,18 @@
                                     <a>Deutsche</a>
                                 </span>-->
                             </div>
-                            <ul onclick="Translate.reload()"> <!---->
+                            <ul > <!--onclick="Translate.reload()"-->
                                 <li>
-                                    <a class="br" href="#por" data-reload>Português</a>
+                                    <a class="br" href="#por" lang="portuguese" data-reload>Português</a>
                                 </li>
                                 <li>
-                                    <a class="us" href="#eng" data-reload>English</a>
+                                    <a class="us" href="#eng" lang="english" data-reload>English</a>
                                 </li>
                                 <li>
-                                    <a class="fr" href="#fr" data-reload>Français</a>
+                                    <a class="fr" href="#fr" lang="french" data-reload>Français</a>
                                 </li>
                                 <li>
-                                    <a class="de" href="#de" data-reload>Deutsche</a>
+                                    <a class="de" href="#de" lang="german" data-reload>Deutsche</a>
                                 </li>
                             </ul>
                         </div>
@@ -93,7 +93,7 @@
                             Taught self is the fast way to learn
                         </p>
                         <h2 class="home-subtitle"> <a href="#article01" id="contentBtn">
-                            Check our content out.
+                            Foreword
                         </a></h2>
                         
                     </div>
@@ -129,14 +129,14 @@
                         The focus here in the end the day is to achieve our goal as soon as possible, and all the methods of education as your pros and cons, and more than that those we change for each person who apply it. In the way to potential your education we got know ourselves well to do it with happiness because believe does not matter you love the subject or not, the true is, hard times will come. It can be to understand one concert or lack of time to study, you might be frustrated then and be happy in what we are doing will surpass any frustration, because each hard time will be just a good challenge!
                     </p>
 
-                    <a href="#comments" class="comment-link" id="opinion">Your Opinion</a>
+                    <a href="#comments" class="comment-link" id="opinion">Write Your Opinion</a>
                 </section>
             </article>
 
             <hr> <!----------------Articles------------------->
             <section id="articles" class="articles">
                 
-                    <h1>Subjects</h1>
+                    <h1>Contents</h1>
                 
                 <div class="card">
                     <div class="card-img">
@@ -174,7 +174,7 @@
             <hr><!----------------COMMENTS------------------->
             <section class="comment-section" id="comments">
                 <form class="form-comment" onsubmit="CommentForm.submit(event)">
-                    <h2 class="comment-title">Leave a Comment</h2>
+                    <h2 id="comment" class="comment-title">Leave a Comment</h2>
                     <input type="text" class="comment-name comment-text" id="comments-name" placeholder="Your name" required>
                     <textarea class="comment-area comment-text" name="" id="comments-area" cols="30" rows="10" placeholder="Let everyone knows your opinion " required></textarea>
                     

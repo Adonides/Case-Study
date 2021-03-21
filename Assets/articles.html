@@ -88,13 +88,13 @@
             <div class="top-article">
                 <h1 class="main-title">Stay Focus</h1>
                 <h2 class="subtitle">
-                    <a href="#traditional">Coming articles </a>
+                    <a id="coming" href="#traditional">Coming articles </a>
                 </h2>
             </div>
             <hr>
             <section id="articles" class="articles">
                 
-                    <h1 class="mt01">Articles</h1>
+                    <h1 class="mt01">Contents</h1>
                 
                 <div class="card">
                     <div class="card-img">
@@ -133,7 +133,7 @@
                     <div  class="link-section">
                         <h2 class="article-title st01">Traditional Education</h2>
                         <ul class="traditional-list">
-                            <li class="tr01">What have changed in traditional Education?     <span class="soon" style="color: red;"><small >coming soon</small></span></li>
+                            <li class="tr01">What have changed in traditional Education?     <span class="sooner" style="color: red;"><small >coming soon</small></span></li>
                             <li class="tr02">Pros of enrolling in traditional Education  <small class="soon">coming soon</small></li>
                             <li class="tr03">Cons of enrolling in traditional Education  <small class="soon">coming soon</small></li>
                         </ul>
@@ -195,6 +195,7 @@
                 })
             },
             langLink: document.querySelectorAll(".lang-link"),
+            contentLink: document.querySelector("#coming"),
             mainTitle: document.querySelector(".mt01"),
             traditionalTitle: document.querySelector(".st01"),
             onlineTitle: document.querySelector(".st02"),
@@ -209,7 +210,7 @@
             experience02: document.querySelector(".ex02"),
             experience03: document.querySelector(".ex03"),
             experience04: document.querySelector(".ex04"),
-            comingSoon: document.querySelector(".soon"),
+            comingSoon: document.querySelector(".sooner"),
             
             getLangActive() {
                 this.langLink.forEach(element => {
@@ -227,6 +228,7 @@
 
                         const attribute = element.getAttribute('lang')
 
+                        this.contentLink.textContent = Translate[attribute].coming
                         this.mainTitle.textContent = Translate[attribute].mt01
                         this.traditionalTitle.textContent = Translate[attribute].st01
                         this.onlineTitle.textContent = Translate[attribute].st02
@@ -250,25 +252,27 @@
         const Translate = {
                 "english":
                 {
-                    "mt01": "Articles",
+                    "coming": "Coming articles",
+                    "mt01": "Contents",
                     "p01": "Traditional Education",
                     "st02": "Online Education",
                     "st03": "My Experience",
-                    "tr01": "What have changed in traditional Education? coming soon",
-                    "tr02": "Pros of enrolling in traditional Education coming soon",
-                    "tr03": "Cons of enrolling in traditional Education coming soon",
-                    "on01": "Types of Online Courses coming soon",
-                    "on02": "Flexibility coming soon",
-                    "on03": "Money saving coming soon",
-                    "ex01": "Who am I? coming soon",
-                    "ex02": "I decided to study coding coming soon",
-                    "ex03": "Which language to pick? coming soon",
-                    "ex04": "My study script coming soon",
+                    "tr01": "What have changed in traditional Education?",
+                    "tr02": "Pros of enrolling in traditional Education",
+                    "tr03": "Cons of enrolling in traditional Education",
+                    "on01": "Types of Online Courses ",
+                    "on02": "Flexibility",
+                    "on03": "Money saving",
+                    "ex01": "Who am I?",
+                    "ex02": "I decided to study coding",
+                    "ex03": "Which language to pick? ",
+                    "ex04": "My study script ",
                     "soon": "coming soon"
                 },
                 "portuguese":
                 {
-                    "mt01": "Artigos",
+                    "coming": "Próximos artigos",
+                    "mt01": "Conteúdo",
                     "st01": "Educação tradicional",
                     "st02": "Educação online",
                     "st03": "Minha Experinência",
@@ -286,39 +290,40 @@
                 },
                 "french":
                 {
-                    "mt01": "Contact",
-                    "st01": "Éducation traditionnelle ",
+                    "coming": "Articles à venir",
+                    "mt01": "Contenu",
+                    "st01": "traditionnelle",
                     "st02": "Éducation en ligne",
                     "st03": "Mon expérience",
-                    "tr01": "Qu'est-ce qui a changé dans l'éducation traditionnelle? Bientôt disponible ",
-                    "tr02": "Les avantages de l'inscription à l'éducation traditionnelle à venir ",
-                    "tr03": "Les inconvénients de l'inscription à l'éducation traditionnelle à venir",
+                    "tr01": "Qu'est-ce qui a changé dans l'éducation traditionnelle? ",
+                    "tr02": "Les avantages de l'inscription à l'éducation traditionnelle",
+                    "tr03": "Les inconvénients de l'inscription à l'éducation traditionnelle",
                     "on01": "Types de cours en ligne à venir ",
-                    "on02": "Flexibilité à venir ",
-                    "on03": "Économies d'argent à venir",
-                    "ex01": "Qui suis je? Bientôt disponible",
-                    "ex02": "J'ai décidé d'étudier le codage à venir ",
-                    "ex03": "Quelle langue choisir? Bientôt disponible ",
-                    "ex04": "Mon scénario d'étude à venir",
-                    "soon": "Bientôt disponible "
+                    "on02": "Flexibilité",
+                    "on03": "Économies d'argent",
+                    "ex01": "Qui suis je?",
+                    "ex02": "J'ai décidé d'étudier le codage",
+                    "ex03": "Quelle langue choisir? ",
+                    "ex04": "Mon scénario d'étude",
+                    
                 },
                 "german":
                 {
-                    "mt01": "Artikel",
+                    "coming": "Kommende Artikel",
+                    "mt01": "Inhalt",
                     "st01": "Traditionelle Bildung",
                     "st02": "Online-Bildung",
                     "st03": "Meine Erfahrung",
-                    "tr01": "Was hat sich in der traditionellen Bildung geändert? kommt bald",
-                    "tr02": "Die Vorteile einer Einschreibung in die traditionelle Bildung folgen in Kürze ",
-                    "tr03": "Nachteile der Einschreibung in die traditionelle Bildung in Kürze",
-                    "on01": "Arten von Online-Kursen folgen in Kürze",
-                    "on02": "Flexibilität kommt bald",
-                    "on03": "Geld sparen kommt bald ",
-                    "ex01": "Wer bin ich? kommt bald",
-                    "ex02": "Ich beschloss, das Codieren bald zu studieren ",
-                    "ex03": "Welche Sprache soll ich wählen? kommt bald ",
-                    "ex04": "Mein Lernskript kommt bald ",
-                    "soon": "kommt bald"
+                    "tr01": "Was hat sich in der traditionellen Bildung geändert? ",
+                    "tr02": "Die Vorteile einer Einschreibung in die traditionelle Bildung folgen",
+                    "tr03": "Nachteile der Einschreibung in die traditionelle Bildung",
+                    "on01": "Arten von Online-Kursen folgen",
+                    "on02": "Flexibilität",
+                    "on03": "Geld sparen",
+                    "ex01": "Wer bin ich?",
+                    "ex02": "Ich beschloss, Codierung zu studieren",
+                    "ex03": "Welche Sprache soll ich wählen?",
+                    "ex04": "Mein Lernskript",
                 },
             }
 

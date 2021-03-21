@@ -32,7 +32,7 @@ const Languages = {
         intro02: "for everyday",
         intro03: "challenge.",
         home: "Taught self is the fast way to learn",
-        checkOut: "Check out our content below",
+        checkOut: "Foreword",
         article: "The Future of Education",
         article01: "Before enrolling a college or online course, we got to think what is the best method to learn X or Z.",
         article02: "Is the traditional Education the best option and what to say about online learning? In this blog I will run over through those questions and give my sincere opinion about it.",
@@ -44,14 +44,15 @@ const Languages = {
         article08: "This kind of mind is what I like, in this point you push yourself for another level! Because you are starting a become the boss of your learning, managing your time and being more independent, in some online curses you got classes on video and even you may interact with the lecture. The cool thing is you are managing a bit your flexible timetable, paying much less and you still have some support of the institution.",
         article09: "Happiness is the key to happiness.",
         article10: "The focus here in the end the day is to achieve our goal as soon as possible, and all the methods of education as your pros and cons, and more than that those we change for each person who apply it. In the way to potential your education we got know ourselves well to do it with happiness because believe does not matter you love the subject or not, the true is, hard times will come. It can be to understand one concert or lack of time to study, you might be frustrated then and be happy in what we are doing will surpass any frustration, because each hard time will be just a good challenge!",
-        article11: "Your Opinion",
+        article11: "Write Your Opinion",
+        article12: "Leave a Comment",
     },
     portuguese: {
         intro01: "para autoditadas",
         intro02: "para todos os dias",
         intro03: "de desafios",
         home: "Auto-didata é a maneira mais rápida de aprender ",
-        checkOut: "Confira nosso conteúdo abaixo",
+        checkOut: "Prefácio",
         article: "O Futuro da Educação",
         article01: "Antes de matricular-nos em uma faculdade ou curso online, devemos pensar qual é o melhor método para aprender X ou Z. ",
         article02: "A educação tradicional é a melhor opção? e o que dizer sobre o aprendizado online? Neste blog irei repassar essas perguntas e dar minha opinião sincera a respeito.",
@@ -63,14 +64,15 @@ const Languages = {
         article08: "Este tipo de mentalidade que gosto muito, neste ponto você se esforça e entra em um outro nível! Porque você está começando a se tornar o chefe do seu aprendizado, administrando seu tempo e sendo mais independente, em alguns cursos online você tem aulas em vídeo e até pode interagir com a palestra. O legal é que você está administrando um pouco melhor o seu horário que é mais flexível, pagando muito menos e ainda tem algum apoio da instituição.",
         article09: "A felicidade é a chave da felicidade.",
         article10: "O foco aqui no final das contas é atingir nosso objetivo o mais rápido possível, e todos os métodos de educação tem seus prós e contras, e mais do que isso tudo muda conforme cada pessoa cada um de nós temos nossas caracteristicas. No caminho para potencializar nossa educação precisamos conhece-nos bem para fazê-lo com alegria, pois acredite que não importa se você ama ou não o assunto, a verdade é que difículdades virão. Pode ser por não entender um concerto ou falta de tempo para estudar, você pode ficar frustrado então esta determinado e feliz no que estamos fazendo superará qualquer frustração, pois cada momento difícil será apenas um bom desafio para ser superado!",
-        article11: "Sua opinião",
+        article11: "Escreva sua opinião",
+        article12: "Deixe um Comentário",
     },
     french: {
         intro01: "pour les apprenants autodidactes",
         intro02: "pour tous les jours",
         intro03: "défis",
         home: "L'auto-apprentissage est le moyen le plus rapide d'apprendre",
-        checkOut: "Découvrez notre contenu ci-dessous ",
+        checkOut: "avant-propos",
         article: "L'avenir de l'éducation ",
         article01: "Avant de s'inscrire à un collège ou à un cours en ligne, nous devons réfléchir à la meilleure méthode pour apprendre X ou Z. ",
         article02: "L'éducation traditionnelle est-elle la meilleure option? et que dire de l'apprentissage en ligne? Dans ce blog, je vais parcourir ces questions et donner mon opinion sincère à ce sujet.",
@@ -82,14 +84,15 @@ const Languages = {
         article08: "Ce genre d'esprit est ce que j'aime, dans ce point vous vous poussez pour un autre niveau! Parce que vous commencez à devenir le patron de votre apprentissage, à gérer votre temps et à être plus indépendant, dans certaines malédictions en ligne, vous avez des cours sur vidéo et même vous pouvez interagir avec la conférence. Ce qui est cool, c'est que vous gérez un peu votre emploi du temps flexible, que vous payez beaucoup moins et que vous bénéficiez toujours du soutien de l'institution.",
         article09: "Le bonheur est la clé du bonheur.",
         article10: "L'objectif ici en fin de compte est d'atteindre notre objectif le plus rapidement possible, et toutes les méthodes d'éducation comme vos avantages et inconvénients, et plus que celles que nous changeons pour chaque personne qui l'applique. Dans la manière de valoriser votre éducation, nous nous savons bien le faire avec bonheur parce que croire que peu importe que vous aimez le sujet ou non, le vrai est que des temps difficiles viendront. Cela peut être pour comprendre un concert ou le manque de temps pour étudier, vous pourriez alors être frustré et être heureux dans ce que nous faisons surpassera toute frustration, car chaque moment difficile sera juste un bon défi! ",
-        article11: "Votre opinion ",
+        article11: "Écrivez votre opinion",
+        article12: "Laissez un commentaire",
     },
     german: {
         intro01: "für unterrichtete Selbstlerner",
         intro02: "für jeden Tag",
         intro03: "Herausforderungen ",
         home: "Selbstunterricht ist der schnelle Weg zu lernen ",
-        checkOut: "Schauen Sie sich unseren Inhalt unten an ",
+        checkOut: "Vorwort",
         article: "Die Zukunft der Bildung ",
         article01: "Bevor wir uns für ein College oder einen Online-Kurs anmelden, müssen wir uns überlegen, was die beste Methode ist, um X oder Z zu lernen. ",
         article02: "Ist die traditionelle Bildung die beste Option? und was soll man über Online-Lernen sagen? In diesem Blog werde ich diese Fragen durchgehen und meine aufrichtige Meinung dazu abgeben. ",
@@ -101,11 +104,37 @@ const Languages = {
         article08: "Diese Art von Geist gefällt mir, an diesem Punkt drängst du dich auf eine andere Ebene! Da Sie anfangen, der Chef Ihres Lernens zu werden, Ihre Zeit zu verwalten und unabhängiger zu sein, haben Sie in einigen Online-Flüchen Unterricht auf Video erhalten und können sogar mit der Vorlesung interagieren. Das Coole ist, dass Sie Ihren flexiblen Zeitplan ein wenig verwalten, viel weniger bezahlen und immer noch Unterstützung von der Institution haben.",
         article09: "Glück ist der Schlüssel zum Glück. ",
         article10: "Am Ende des Tages geht es hier darum, unser Ziel so schnell wie möglich zu erreichen und alle Methoden der Bildung als Ihre Vor- und Nachteile zu betrachten. Darüber hinaus ändern wir diese für jede Person, die sie anwendet. Auf dem Weg zu einer potenziellen Ausbildung haben wir uns gut kennengelernt, um dies mit Glück zu tun, denn glauben, dass es keine Rolle spielt, ob Sie das Thema lieben oder nicht, es ist wahr, es werden schwere Zeiten kommen. Es kann sein, ein Konzert zu verstehen oder Zeit zum Lernen zu haben. Dann sind Sie vielleicht frustriert und glücklich darüber, was wir tun, wird jede Frustration übertreffen, denn jede schwere Zeit wird nur eine gute Herausforderung sein! ",
-        article11: "Deine Meinung",
+        article11: "Schreib deine Meinung",
+        article12: "Hinterlasse einen Kommentar",
     }
 }
 
 const Translate = {
+    english() {
+        if (window.location.hash) {
+            if (window.location.hash === "#eng") {
+                introduction.textContent = Languages.english.intro01
+                everyday.textContent = Languages.english.intro02
+                challenge.textContent = Languages.english.intro03
+                slogan.textContent = Languages.english.home
+                contentBtn.textContent = Languages.english.checkOut
+                title.textContent = Languages.english.article
+                subtitle.textContent = Languages.english.article01
+                p01.textContent = Languages.english.article02
+                te.textContent = Languages.english.article03
+                p02.textContent = Languages.english.article04
+                p03.textContent = Languages.english.article05
+                ol.textContent = Languages.english.article06
+                p04.textContent = Languages.english.article07
+                p05.textContent = Languages.english.article08
+                happiness.textContent = Languages.english.article09
+                p06.textContent = Languages.english.article10
+                opinion.textContent = Languages.english.article11
+            }
+            
+        }
+        
+    },
     portuguese() {
         if (window.location.hash) {
             if (window.location.hash === "#por") {
@@ -180,30 +209,51 @@ const Translate = {
                 happiness.textContent = Languages.german.article09
                 p06.textContent = Languages.german.article10
                 opinion.textContent = Languages.german.article11
-
-                
             }
             
         }
         
     },
-    reload() {
-        
-       MainPage.reloadPage()
-        
-    }
-}
+    slogan: document.querySelector("#slogan"),
+    contentBtn: document.querySelector("#contentBtn"),
+    title: document.querySelector("#title"),
+    subtitle: document.querySelector("#subtitle"),
+    p01: document.querySelector("#p01"),
+    traditional: document.querySelector("#te"),
+    p02: document.querySelector("#p02"),
+    p03: document.querySelector("#p03"),
+    online: document.querySelector("#ol"),
+    p04: document.querySelector("#p04"),
+    p05: document.querySelector("#p05"),
+    conclusion: document.querySelector("#happiness"),
+    p06: document.querySelector("#p06"),
+    opinion: document.querySelector("#opinion"),
+    comment: document.querySelector("#comment"),
+    clickEvent() {
+        const translateReload = document.querySelectorAll("[data-reload]")
+        translateReload.forEach(element => {
+            element.addEventListener('click', () => {
+                const attribute = element.getAttribute('lang')
 
-
-const DataReload = {
-    NewReload: document.querySelectorAll("[data-reload]"),
-    onclickReload() {
-        for (i = 0; i <= this.NewReload.length; i++) {
-            this.NewReload[i].onclick = function() {
-                location.reload()
-            }
-        }
+                this.slogan.textContent = Languages[attribute].home
+                this.contentBtn.textContent = Languages[attribute].checkOut
+                this.title.textContent = Languages[attribute].article
+                this.subtitle.textContent = Languages[attribute].article01
+                this.p01.textContent = Languages[attribute].article02
+                this.traditional.textContent = Languages[attribute].article03
+                this.p02.textContent = Languages[attribute].article04
+                this.p03.textContent = Languages[attribute].article05
+                this.online.textContent = Languages[attribute].article06
+                this.p04.textContent = Languages[attribute].article07
+                this.p05.textContent = Languages[attribute].article08
+                this.conclusion.textContent = Languages[attribute].article09
+                this.p06.textContent = Languages[attribute].article10
+                this.opinion.textContent = Languages[attribute].article11
+                this.comment.textContent = Languages[attribute].article12
+            })
+        })
     },
+    
 }
 
 /*COMMENTS==========================================*/
@@ -353,14 +403,16 @@ const MainPage = {
         NavbarScroll.getScrolling()
 
         CommentForm.checkFields()
-
+        
         Translate.portuguese()
         Translate.french()
         Translate.german()
-        
+        Translate.english()
+        Translate.clickEvent()
     },
     reloadPage() {
         
+       location.reload()
        
     }
 }

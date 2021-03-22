@@ -68,16 +68,16 @@
                     </div>
                     <ul class="lang-wrap"> <!---->
                         <li>
-                            <a class="br lang-link" href="#contact" lang="portuguese">Português</a>
+                            <a class="br lang-link" href="#por" lang="portuguese">Português</a>
                         </li>
                         <li>
-                            <a class="us lang-link" href="#contact" lang="english">English</a>
+                            <a class="us lang-link" href="#eng" lang="english">English</a>
                         </li>
                         <li>
-                            <a class="fr lang-link" href="#contact" lang="french">Français</a>
+                            <a class="fr lang-link" href="#fr" lang="french">Français</a>
                         </li>
                         <li>
-                            <a class="de lang-link" href="#contact" lang="german">Deutsche</a>
+                            <a class="de lang-link" href="#de" lang="german">Deutsche</a>
                         </li>
                     </ul>
                 </div>
@@ -88,7 +88,7 @@
                 <div class="top-contact">
                     <h1 class="main-title">Stay Focus</h1>
                     <h2 class="subtitle">
-                        <a href="#container">Contact us</a>
+                        <a href="#contact" class="subt">Contact us</a>
                     </h2>
                 </div>
             </section>
@@ -190,6 +190,7 @@
                     })
                 },
                 langLink: document.querySelectorAll(".lang-link"),
+                topSubt: document.querySelector(".subt"),
                 contactTitle: document.querySelector(".st01"),
                 contactText: document.querySelector(".p01"),
                 addressTitle: document.querySelector(".st02"),
@@ -211,6 +212,7 @@
 
                             const attribute = element.getAttribute('lang')
 
+                            this.topSubt.textContent = Translate[attribute].subtBtn
                             this.contactTitle.textContent = Translate[attribute].st01
                             this.contactText.textContent = Translate[attribute].p01
                             this.addressTitle.textContent = Translate[attribute].st02
@@ -223,6 +225,7 @@
             const Translate = {
                 "english":
                 {
+                    "subtBtn":  "Contact us",
                     "st01": "Contact",
                     "p01": "For questions, partnership inquiries, suggestions, or general comments, please fill out the form or email me straight away.",
                     "st02": "Address",
@@ -230,6 +233,7 @@
                 },
                 "portuguese":
                 {
+                    "subtBtn":  "Fale conosco",
                     "st01": "Contato",
                     "p01": "Em caso de dúvidas, perguntas sobre parcerias, sugestões ou comentários gerais, preencha o formulário abaixo ou encaminhe um e-mail diretamente. ",
                     "st02": "Endereço",
@@ -237,6 +241,7 @@
                 },
                 "french":
                 {
+                    "subtBtn":  "Nous contacter ",
                     "st01": "Contact",
                     "p01": "Pour des questions, des demandes de partenariat, des suggestions ou des commentaires généraux, veuillez remplir le formulaire ou m'envoyer un e-mail immédiatement.",
                     "st02": "Adresse ",
@@ -244,6 +249,7 @@
                 },
                 "german":
                 {
+                    "subtBtn":  "Kontaktiere uns",
                     "st01": "Kontakt",
                     "p01": "Bei Fragen, Partnerschaftsanfragen, Vorschlägen oder allgemeinen Kommentaren füllen Sie bitte das Formular aus oder senden Sie mir umgehend eine E-Mail.",
                     "st02": "Adresse",

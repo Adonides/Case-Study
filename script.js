@@ -45,7 +45,11 @@ const Languages = {
         article09: "Happiness is the key to happiness.",
         article10: "The focus here in the end the day is to achieve our goal as soon as possible, and all the methods of education as your pros and cons, and more than that those we change for each person who apply it. In the way to potential your education we got know ourselves well to do it with happiness because believe does not matter you love the subject or not, the true is, hard times will come. It can be to understand one concert or lack of time to study, you might be frustrated then and be happy in what we are doing will surpass any frustration, because each hard time will be just a good challenge!",
         article11: "Write Your Opinion",
-        article12: "Leave a Comment",
+        article12: "Contents",
+        article13: "Traditional Education",
+        article14: "Online Education",
+        article15: "My Experience",
+        commentTitle: "Leave a Comment",
     },
     portuguese: {
         intro01: "para autoditadas",
@@ -65,7 +69,11 @@ const Languages = {
         article09: "A felicidade é a chave da felicidade.",
         article10: "O foco aqui no final das contas é atingir nosso objetivo o mais rápido possível, e todos os métodos de educação tem seus prós e contras, e mais do que isso tudo muda conforme cada pessoa cada um de nós temos nossas caracteristicas. No caminho para potencializar nossa educação precisamos conhece-nos bem para fazê-lo com alegria, pois acredite que não importa se você ama ou não o assunto, a verdade é que difículdades virão. Pode ser por não entender um concerto ou falta de tempo para estudar, você pode ficar frustrado então esta determinado e feliz no que estamos fazendo superará qualquer frustração, pois cada momento difícil será apenas um bom desafio para ser superado!",
         article11: "Escreva sua opinião",
-        article12: "Deixe um Comentário",
+        article12: "Conteúdo",
+        article13: "Educação tradicional",
+        article14: "Educação online",
+        article15: "Minha Experinência",
+        commentTitle: "Deixe um Comentário",
     },
     french: {
         intro01: "pour les apprenants autodidactes",
@@ -85,7 +93,11 @@ const Languages = {
         article09: "Le bonheur est la clé du bonheur.",
         article10: "L'objectif ici en fin de compte est d'atteindre notre objectif le plus rapidement possible, et toutes les méthodes d'éducation comme vos avantages et inconvénients, et plus que celles que nous changeons pour chaque personne qui l'applique. Dans la manière de valoriser votre éducation, nous nous savons bien le faire avec bonheur parce que croire que peu importe que vous aimez le sujet ou non, le vrai est que des temps difficiles viendront. Cela peut être pour comprendre un concert ou le manque de temps pour étudier, vous pourriez alors être frustré et être heureux dans ce que nous faisons surpassera toute frustration, car chaque moment difficile sera juste un bon défi! ",
         article11: "Écrivez votre opinion",
-        article12: "Laissez un commentaire",
+        article12: "Contenu",
+        article13: "traditionnelle",
+        article14: "Éducation en ligne",
+        article15: "Mon expérience",
+        commentTitle: "Laissez un commentaire",
     },
     german: {
         intro01: "für unterrichtete Selbstlerner",
@@ -105,7 +117,11 @@ const Languages = {
         article09: "Glück ist der Schlüssel zum Glück. ",
         article10: "Am Ende des Tages geht es hier darum, unser Ziel so schnell wie möglich zu erreichen und alle Methoden der Bildung als Ihre Vor- und Nachteile zu betrachten. Darüber hinaus ändern wir diese für jede Person, die sie anwendet. Auf dem Weg zu einer potenziellen Ausbildung haben wir uns gut kennengelernt, um dies mit Glück zu tun, denn glauben, dass es keine Rolle spielt, ob Sie das Thema lieben oder nicht, es ist wahr, es werden schwere Zeiten kommen. Es kann sein, ein Konzert zu verstehen oder Zeit zum Lernen zu haben. Dann sind Sie vielleicht frustriert und glücklich darüber, was wir tun, wird jede Frustration übertreffen, denn jede schwere Zeit wird nur eine gute Herausforderung sein! ",
         article11: "Schreib deine Meinung",
-        article12: "Hinterlasse einen Kommentar",
+        article12: "Inhalt",
+        article13: "Traditionelle Bildung",
+        article14: "Online-Bildung",
+        article15: "Meine Erfahrung",
+        commentTitle: "Hinterlasse einen Kommentar",
     }
 }
 
@@ -130,6 +146,11 @@ const Translate = {
                 happiness.textContent = Languages.english.article09
                 p06.textContent = Languages.english.article10
                 opinion.textContent = Languages.english.article11
+                mt01.textContent = Languages.english.article12
+                st01.textContent = Languages.english.article13
+                st02.textContent = Languages.english.article14
+                st03.textContent = Languages.english.article15
+                comment.textContent = Languages.english.commentTitle
             }
             
         }
@@ -155,7 +176,11 @@ const Translate = {
                 happiness.textContent = Languages.portuguese.article09
                 p06.textContent = Languages.portuguese.article10
                 opinion.textContent = Languages.portuguese.article11
-
+                mt01.textContent = Languages.portuguese.article12
+                st01.textContent = Languages.portuguese.article13
+                st02.textContent = Languages.portuguese.article14
+                st03.textContent = Languages.portuguese.article15
+                comment.textContent = Languages.portuguese.commentTitle
                 
             }
             
@@ -182,7 +207,11 @@ const Translate = {
                 happiness.textContent = Languages.french.article09
                 p06.textContent = Languages.french.article10
                 opinion.textContent = Languages.french.article11
-
+                mt01.textContent = Languages.french.article12
+                st01.textContent = Languages.french.article13
+                st02.textContent = Languages.french.article14
+                st03.textContent = Languages.french.article15
+                comment.textContent = Languages.french.commentTitle
                 
             }
             
@@ -209,6 +238,10 @@ const Translate = {
                 happiness.textContent = Languages.german.article09
                 p06.textContent = Languages.german.article10
                 opinion.textContent = Languages.german.article11
+                mt01.textContent = Languages.german.mt01
+                mt01.textContent = Languages.german.mt01
+                mt01.textContent = Languages.german.mt01
+                mt01.textContent = Languages.german.mt01
             }
             
         }
@@ -229,6 +262,10 @@ const Translate = {
     p06: document.querySelector("#p06"),
     opinion: document.querySelector("#opinion"),
     comment: document.querySelector("#comment"),
+    articleSection: document.querySelector("#mt01"),
+    traditionalTitle: document.querySelector("#st01"),
+    onlineTitle: document.querySelector("#st02"),
+    experienceTitle: document.querySelector("#st03"),
     clickEvent() {
         const translateReload = document.querySelectorAll("[data-reload]")
         translateReload.forEach(element => {
@@ -249,7 +286,11 @@ const Translate = {
                 this.conclusion.textContent = Languages[attribute].article09
                 this.p06.textContent = Languages[attribute].article10
                 this.opinion.textContent = Languages[attribute].article11
-                this.comment.textContent = Languages[attribute].article12
+                this.articleSection.textContent = Languages[attribute].article12
+                this.traditionalTitle.textContent = Languages[attribute].article13
+                this.onlineTitle.textContent = Languages[attribute].article14
+                this.experienceTitle.textContent = Languages[attribute].article15
+                this.comment.textContent = Languages[attribute].commentTitle
             })
         })
     },

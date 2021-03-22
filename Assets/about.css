@@ -252,11 +252,14 @@ nav.sticky span {
 
 .top-subtitle  {
     position: absolute;
-    top: 68%;
-    left: 50%; 
-    transform: translate(-65%); 
+    top: 80%;
+    left: 45%; 
+    transform: translate(-80%); 
     font-weight: 600;
     font-size: 1.5rem;
+    background-color: var(--text-bg);
+    padding: 20px;
+    border: solid var(--dark-orange);
     opacity: 0.7;
     transition: 0.3s ease-in;
     color: #222;

@@ -204,7 +204,7 @@ nav.sticky ul li a {
     background-position: center;
     background-image: url("../../assets/CaseStudy/online-cottonbro.jpg");
     background-size: cover;
-    min-height: 72vh;
+    min-height: 100vh;
     width: 100%;
     opacity: 0.7;
 }
@@ -213,7 +213,7 @@ nav.sticky ul li a {
     position: absolute;
     top: 30%;
     left: 50%; /* width:100%; */
-    transform: translate(-45%, -30%); /*text-align: center; */
+    transform: translate(-50%, -30%); /*text-align: center; */
     font-family: 'Lobster', cursive;
     font-weight: lighter;
     font-size: 5rem;
@@ -224,11 +224,15 @@ nav.sticky ul li a {
 
 .subtitle {
     position: absolute;
-    top: 82%;
-    left: 41%; 
-    transform: translate(-50%); 
+    top: 80%;
+    left: 45%; 
+    transform: translate(-80%); 
     font-weight: 600;
     font-size: 1.5rem;
+    background-color: var(--text-bg);
+    padding: 20px;
+    color: #333;
+    border: solid var(--dark-orange);
     opacity: 0.5;
     transition: 0.3s ease-in;
 }

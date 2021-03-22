@@ -78,16 +78,16 @@
                     </div>
                     <ul class="lang-wrap"> <!---->
                         <li>
-                            <a class="br lang-link" href="#about" lang="portuguese">Português</a>
+                            <a class="br lang-link" href="#por" lang="portuguese">Português</a>
                         </li>
                         <li>
-                            <a class="us lang-link" href="#about" lang="english">English</a>
+                            <a class="us lang-link" href="#eng" lang="english">English</a>
                         </li>
                         <li>
-                            <a class="fr lang-link" href="#about" lang="french">Français</a>
+                            <a class="fr lang-link" href="#fr" lang="french">Français</a>
                         </li>
                         <li>
-                            <a class="de lang-link" href="#about" lang="german">Deutsche</a>
+                            <a class="de lang-link" href="#de" lang="german">Deutsche</a>
                         </li>
                     </ul>
                 </div>
@@ -101,7 +101,7 @@
             <header>
                 <h1 class="main-title">Stay Focus</h1>
             </header>
-            <h2 class="top-subtitle subt"> <a href="#about">
+            <h2 class="top-subtitle"> <a href="#about" class="subt">
                 What to Expert about our Blog
             </a></h2>
         </div>
@@ -186,7 +186,7 @@
 
                         const attribute = element.getAttribute('lang')
 
-                        //this.topSubt.textContent = Translate[attribute].subt
+                        this.topSubt.textContent = Translate[attribute].subtBtn
                         this.valueTitle.textContent = Translate[attribute].st01
                         this.valueText.textContent = Translate[attribute].p01
                         this.missionTitle.textContent = Translate[attribute].st02
@@ -203,7 +203,7 @@
         const Translate = {
             "english": 
             {
-                "st00":  "What to Expert about our Blog",
+                "subtBtn":  "What to Expert about our Blog",
                 "st01": "Art of Learning",
                 "p01": "Discuss different methods of learning so people can approach them to achieve the best performance. We are happy about people's success whose have the set mind of always grow in their career or in them personal life.",
                 "st02": "Achieve high goals",
@@ -214,7 +214,7 @@
             },
             "portuguese":
             {
-                "home-subtitle": "O que esperar sobre o nosso Blog",
+                "subtBtn": "O que esperar sobre o nosso Blog",
                 "st01": "A arte de Aprender",
                 "p01": "Discutir diferentes métodos de aprendizagem para que as pessoas possam abordá-los para conseguir o melhor desempenho. Ficamos felizes com o sucesso das pessoas que têm a intenção de sempre crescer na carreira ou na vida pessoal.",
                 "st02": "Conseguir objetivos maiores",
@@ -224,7 +224,7 @@
             },
             "french":
             {
-                "home-subtitle": "O que esperar sobre o nosso Blog",
+                "subtBtn": "Que faut-il savoir sur notre blog",
                 "st01": "L'art d'apprendre",
                 "p01": "Discutez des différentes méthodes d'apprentissage afin que les gens puissent les approcher pour obtenir les meilleures performances. Nous sommes heureux du succès des gens qui ont la volonté de toujours grandir dans leur carrière ou dans leur vie personnelle.",
                 "st02": "Atteindre des objectifs élevés",
@@ -234,7 +234,7 @@
             },
             "german":
             {
-                "home-subtitle": "O que esperar sobre o nosso Blog",
+                "subtBtn": "Was Sie über unseren Blog erfahren sollten", 
                 "st01": "Kunst des Lernens" ,
                 "p01": "Diskutieren Sie verschiedene Lernmethoden, damit die Menschen sich an sie wenden können, um die beste Leistung zu erzielen. Wir freuen uns über den Erfolg der Menschen, die den Willen haben, in ihrer Karriere oder in ihrem Privatleben immer zu wachsen.",
                 "st02": "Hohe Ziele erreichen ",

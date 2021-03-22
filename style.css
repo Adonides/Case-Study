@@ -282,14 +282,43 @@ nav.sticky ul li a {
     margin: .8em 0;
 }
 
-.comment-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.button-reaction {
+    display: grid;
+    grid-template-columns: 1fr 80px;
+    justify-content: space-between;
+}
+
+/*.reaction {
+    
+    
+}*/
+
+.reaction-title {
+    display: inline-block;
+    font-weight: 200;
+    margin-top: -5rem;
+}
+
+.emoji {
+    padding: 0 8px;
+    cursor: pointer;
+}
+
+.emoji:hover {
+    color: var(--dark-orange);
+}
+
+.selected-reaction {
+    color: var(--dark-orange);
+}
+
+.comment-link {  
+     
+    padding: 5px;
     outline: 3px solid var(--orange);
     color: var(--orange);
-    margin: 2rem 8rem 5rem 8rem ;
-    padding: 0.3rem;
+    
+    
 }
 
 .comment-link:hover {
@@ -455,35 +484,11 @@ nav.sticky ul li a {
     padding: 0.5rem 1.5rem 2rem 1.5rem; 
 }
 
-.button-reaction {
-    width: 75%;
-    display: flex;
-    justify-content: space-between;
-}
 
-.reaction-title {
-    font-weight: 200;
-}
-
-.reaction {
-    display: flex;
-    
-    margin: .4rem 0;
-}
-
-.emoji {
-    padding: 0 8px;
-    border: 1px solid transparent;
-    cursor: pointer;
-}
-
-.emoji:hover {
-    border: 1px solid var(--text-bg);
-}
 
 .btn-reply {
     position: absolute;
-    bottom: 5px;
+    bottom: 2px;
     right: 8px;
     background: rgb(109, 92, 77);
     border: none;
@@ -491,7 +496,7 @@ nav.sticky ul li a {
     cursor: pointer;
     transition: all 0.3s ease;
     outline: none;
-    padding:0.4rem;
+    padding:0.3rem;
     margin-bottom: 0.1rem 0.1rem;
     opacity: 0.7;
 }
@@ -597,10 +602,7 @@ nav.sticky ul li a {
     transform: translate(-50%, -30%); /*perfeito centralizado*/
     }
 
-    .button-reaction {
-        max-width: 58%;
-        
-    }
+    
     
 }
 /*RESPONSIVE.ARCTICLE==========================================*/
@@ -617,11 +619,6 @@ nav.sticky ul li a {
 
     .comment-text {
         max-width: 75%;
-    }
-
-    .button-reaction {
-        max-width: 75%;
-        
     }
 } /*mais espaço paro o texto em telas menores*/
 

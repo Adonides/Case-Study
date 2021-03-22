@@ -73,7 +73,7 @@ li, a {
 
 .nav-link a:hover {
     color: var(--dark-orange);
-    font-weight: 300;
+    font-weight: 400 transparent;
 }
 
 /*Languages==========*/

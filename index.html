@@ -102,7 +102,7 @@
             <article class="article01" id="article01">
                 <section class="wrap-article">
                     <h2 id="title">The Future of Education</h2>
-                    <p class="date"><small><em>By Adonides Amparo <br> March 01, 2021</em></small></p>
+                    <p class="date"><small><em>By Adonides Amparo <br> March 22, 2021</em></small></p>
                     
                     <h3 id="subtitle">
                         Before enrolling a college or online course, we got to think what is the best method to learn X or Z.
@@ -129,11 +129,22 @@
                         The focus here in the end the day is to achieve our goal as soon as possible, and all the methods of education as your pros and cons, and more than that those we change for each person who apply it. In the way to potential your education we got know ourselves well to do it with happiness because believe does not matter you love the subject or not, the true is, hard times will come. It can be to understand one concert or lack of time to study, you might be frustrated then and be happy in what we are doing will surpass any frustration, because each hard time will be just a good challenge!
                     </p>
 
-                    <a href="#comments" class="comment-link" id="opinion">Write Your Opinion</a>
+                    <div class="button-reaction">
+                        <div id="react" class="reaction">
+                            <h4 class="reaction-title" style="color: rgb(247, 114, 6);">Reaction:</h4>
+                            <span onclick="ReactionIcons.setSelected('thumbUp') " class="emoji" id="thumbUp" data-reaction="Like">
+                                <abbr title="Like"><i class="fa fa-thumbs-up" aria-hidden="true"></i></abbr>
+                            </span>
+                            <span onclick="ReactionIcons.setSelected('thumbDown')" class="emoji down"   id="thumbDown" data-reaction="Dislike">
+                                <abbr title="Dislike"><i class="fa fa-thumbs-down" aria-hidden="true"></i></abbr>
+                            </span>
+                        </div>
+                        <a href="./Assets/contact.html" class="comment-link" id="opinion">Write Your Opinion</a>
+                    </div>
                 </section>
             </article>
 
-            <hr> <!----------------Articles------------------->
+            <hr> <!----------------Articles-------------------><!--
             <section id="articles" class="articles">
                 
                     <h1 id="mt01">Contents</h1>
@@ -171,23 +182,15 @@
                 
             </section>
 
-            <hr><!----------------COMMENTS------------------->
+            <hr>--------------COMMENTS------------------
             <section class="comment-section" id="comments">
                 <form class="form-comment" onsubmit="CommentForm.submit(event)">
                     <h2 id="comment" class="comment-title">Leave a Comment</h2>
                     <input type="text" class="comment-name comment-text" id="comments-name" placeholder="Your name" required>
                     <textarea class="comment-area comment-text" name="" id="comments-area" cols="30" rows="10" placeholder="Let everyone knows your opinion " required></textarea>
                     
-                    <div class="button-reaction">
-                        <div id="react" class="reaction">
-                            <h4 class="reaction-title">Reactions</h4>
-                            <span class="emoji" data-reaction="Like">
-                                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-                            </span>
-                            <span class="emoji" data-reaction="Dislike">
-                                <i class="fa fa-thumbs-down" aria-hidden="true"></i>
-                            </span>
-                        </div>
+                    <div class="button-comment">
+                        
                         <button id="submit" class="btn-comment">Post Comment</button>
                     </div>
                 </form>
@@ -199,7 +202,7 @@
                             
                     </ul>
                 </div>
-            </section>
+            </section>-->
             <hr><!----------------FOOTER------------------->
             <section class="footer">
                 <footer>

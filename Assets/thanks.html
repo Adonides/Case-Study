@@ -10,16 +10,71 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <title>Thank You</title>
     <script src="https://kit.fontawesome.com/d26011a575.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css"> 
+    <style>
+        .home {
+            background-image: linear-gradient(120deg, #38434e ,#282e34);
+            background-size: cover;
+            min-height: 100vh;
+            width: 100%;
+        }
+        .container {
+            max-height: 100vh;
+        }
+        .nav-bar {
+            padding: 15px 60px;
+        }
+        .links li a {
+            color: #f4f4f4;
+        }
+        .active-language {
+            color: #f4f4f4;
+        }
+        .fa {
+            position: absolute;
+            left: 42%;
+        }
+        .main-title span {
+            position: absolute;
+            left: 15%;
+        }
+        .main-title {
+            position: absolute;
+            top: 20%;
+            color: rgb(247, 114, 6);
+            font-size: 3rem;
+        }
+        .subtitle {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            right: 10%;
+            font-size: 1.5rem;
+            font-weight: 300;
+            background-color: var(--text-bg);
+            padding: 20px;
+            border: solid var(--dark-orange);
+            opacity: 0.5;
+        }
+        .copyright {
+            align-items: center;
+            position: absolute;
+            top: 85%;
+            left: 42%;
+            transform: translate(-50%);
+            color: #f4f4f4;
+        }
+    </style>
 </head>
 <body>
-    <main>
+    <main class="container">
         <section class="section-focus">
             
         <!----------------NAVERGATION BAR------------------->
                 <nav class="nav-bar">
                     <div class="logo">
-                        <a href="#" class="logo-link">
-                            <img src="./Images/logo-32x32.png" alt="logo AA Web Projects">
+                        <a href="../index.html" class="logo-link">
+                            <img src="../Images/logo-32x32.png" alt="logo AA Web Projects">
                         </a>
                     </div>
                     <div class="icons top-icons">
@@ -40,9 +95,9 @@
                         </div>
                     </div>
                     <ul class="links">
-                        <li><a href="./Assets/about.html" rel="next">About</a></li>
-                        <li><a href="./Assets/articles.html" rel="next">Articles</a></li>
-                        <li><a href="./Assets/contact.html" rel="next">Contact</a></li>
+                        <li><a href="./about.html" rel="next">About</a></li>
+                        <li><a href="./articles.html" rel="next">Articles</a></li>
+                        <li><a href="./contact.html" rel="next">Contact</a></li>
                     </ul>
                     <div class="lang-menu">
                         <div class="selected-lang">
@@ -77,26 +132,70 @@
                 </nav>
         <!----------------HOME------------------->
                 
-                <div class="top">
+                <div class="home">
                     
                     <header>
-                        
-                        <h1 class="main-title">
+                        <h1 id="title" class="main-title">
                             <i class="fa fa-check-circle" aria-hidden="true"></i> <br>
-                            Thank you for reaching us!
+                            <span id="Thanks">Thank you</span> <br> for reaching us!
                         </h1>
                     </header>
                     
-                    <h2 id="subtitle" class="home-subtitle"> 
+                    <h2 id="subtitle" class="subtitle"> 
                         We got your message and we are on it! Expert to hear from us very soon!
                     </h2>
 
-                    <p id="footer">
+                    <p class="copyright">
                         &copy; WeB.Project$
                     </p>
                     
                     
                 </div>
         </section>
+        <script>
+            const Translate = {
+                langLink: document.querySelectorAll("[data-reload]"),
+                thanks: document.querySelector('#title'),
+                text: document.querySelector('#subtitle'),
+                getLangActive() {
+                    this.langLink.forEach(element => {
+                        element.addEventListener('click', () => {
+                            const attribute = element.getAttribute('lang')
+
+                            this.thanks.textContent = Language[attribute].title
+                            this.text.textContent = Language[attribute].subtitle
+                        })
+                    })
+                }
+            }
+
+            const Language = {
+                "english":
+                {
+                    "title":  "Thank you for reaching us!",
+                    "subtitle": "We got your message and we are on it! Expert to hear from us very soon!",
+                },
+                "portuguese":
+                {
+                    "title":  "Obrigado por nos contactar!",
+                    "subtitle": "Recebemos sua mensagem e estamos trabalhando nisso! Entraremos em contato contigo em breve!",
+                },
+                "french":
+                {
+                    "title":  "Merci de nous avoir contactés!",
+                    "subtitle": "Nous avons reçu votre message et nous y sommes! Expert à nous entendre très bientôt! ",
+                },
+                "german":
+                {
+                    "title":  "Vielen Dank, dass Sie uns erreicht haben!",
+                    "subtitle": "Wir haben Ihre Nachricht erhalten und sind dabei! Experte, sehr bald von uns zu hören! ",
+                },
+            }
+
+            
+            Translate.getLangActive()
+
+            
+        </script>
 </body>
 </html>

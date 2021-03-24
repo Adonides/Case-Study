@@ -189,9 +189,9 @@ nav.sticky ul li a {
 
 .main-title {
     position: absolute; /*pode mover para onde quiser*/
-    top: 30%;
+    top: 25%;
     left: 50%;
-    transform: translate(-30%, -30%); /*perfeito centralizado*/
+    transform: translate(-25%, -30%); /*perfeito centralizado*/
     font-family: 'Lobster', cursive;
     font-weight: lighter;
     font-size: 5rem;
@@ -210,7 +210,7 @@ nav.sticky ul li a {
 
 #slogan {
     position: absolute;
-    top: 68%;
+    top: 64%;
     left: 40%;
     font-size: 1.5rem;
 }
@@ -581,7 +581,10 @@ nav.sticky ul li a {
     color: rgb(252, 79, 131);
     
 }
+/*RESPONSIVE.Mobile==========================================*/
+@media ( max-width: 640px) {
 
+}
 /*RESPONSIVE.NAVBAR==========================================*/
 @media ( min-width: 640px) {
     .logo-link {
@@ -606,7 +609,7 @@ nav.sticky ul li a {
     
 }
 /*RESPONSIVE.ARCTICLE==========================================*/
-@media screen and (max-width: 600px){
+@media screen and (max-width: 610px){
 
 
     #article01 {

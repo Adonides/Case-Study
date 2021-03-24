@@ -17,7 +17,7 @@
 body, html {
     font-family: 'Poppins', sans-serif;
     height: 100%;
-    line-height: 1.8em;
+    line-height: 1.5em;
     color: var(--Gray);
 }
 
@@ -275,7 +275,7 @@ nav.sticky span {
 
 /*ABOUT======================================*/
 .about-img {
-    background-image: url("../Images/online-julia-m-cameron-croped.jpg");
+    background-image: url("../Images/online-julia-m-cameron-croped\ 1200x660.jpg");
     min-height: 100vh;
 }
 
@@ -313,6 +313,7 @@ nav.sticky span {
 .footer p {
     opacity: 0.6;
     font-size: small;
+    line-height: 1em;
 }
 
 .footer .icons {

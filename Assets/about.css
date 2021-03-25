@@ -356,9 +356,10 @@ nav.sticky .mobile-nav .bar {
         padding: 0 3rem;
     }
 }
+/*RESPONSIVE.MOBILE==========================================*/
 
 /*RESPONSIVE.MOBILE==========================================*/
-@media screen and (max-width: 610px){
+@media screen and (max-width: 500px){
     .nav-bar.sticky {
         padding: 15px 60px;
     }
@@ -368,7 +369,7 @@ nav.sticky .mobile-nav .bar {
     }
         
     .icons {
-        margin-left: -7rem;
+        margin-left: -5rem;
         letter-spacing: 1rem;
     }
 

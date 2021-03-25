@@ -43,14 +43,14 @@
                             </div>
                         </div>
                         <ul class="links">
-                            <li><a href="./Assets/about.html" rel="next">About</a></li>
-                            <li><a href="./Assets/articles.html" rel="next">Articles</a></li>
-                            <li><a href="./Assets/contact.html" rel="next">Contact</a></li>
+                            <li><a href="./Assets/about.html" rel="next" id="link01">About</a></li>
+                            <li><a href="./Assets/articles.html" rel="next" id="link02">Articles</a></li>
+                            <li><a href="./Assets/contact.html" rel="next" id="link03">Contact</a></li>
                         </ul>
                         <div class="lang-menu">
                             <div >
                                 <span class="selected-lang">
-                                    <a class="lang-text">English</a>
+                                    <a class="lang-text" id="link04">English</a>
                                 </span>
                                <!-- <span>
                                     <a>Português</a>
@@ -137,12 +137,15 @@
                     <div class="button-reaction">
                         <div id="react" class="reaction">
                             <h4 class="reaction-title" style="color: rgb(247, 114, 6);">Reaction:</h4>
+
                             <span onclick="ReactionIcons.setSelected('thumbUp') " class="emoji" id="thumbUp" data-reaction="Like">
                                 <abbr title="Like"><i class="fa fa-thumbs-up" aria-hidden="true"></i></abbr>
                             </span>
+
                             <span onclick="ReactionIcons.setSelected('thumbDown')" class="emoji down"   id="thumbDown" data-reaction="Dislike">
                                 <abbr title="Dislike"><i class="fa fa-thumbs-down" aria-hidden="true"></i></abbr>
                             </span>
+                            
                         </div>
                         <a href="./Assets/contact.html" class="comment-link" id="opinion">Write Your Opinion</a>
                     </div>

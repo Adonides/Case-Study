@@ -1,0 +1,388 @@
+/*Global==========================================*/
+@import url( https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-blue: #282e34;
+    --dark-orange: rgb(247, 114, 6);
+    --orange: rgb(235, 137, 57);
+    --light-orange: rgb(199, 160, 89);
+    --text-bg: #f9f9f9;
+}
+
+a, li {
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*NAVBAR==========================================*/
+nav {
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.6s;
+    z-index: 1000;
+    padding: 35px 60px;
+    background-color: var(--dark-blue);
+}
+
+.logo-link {
+    margin-left: -3rem;
+    margin-right: 1rem;
+    opacity: 0.7;
+}
+
+
+
+.links {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -1rem;
+}
+
+
+
+.container {
+    max-height: 100vh;
+}
+.nav-bar {
+    padding: 15px 60px;
+}
+.links li a {
+    letter-spacing: 0.8px;
+    color: #f4f4f4;
+    padding: 0 1.2rem;
+    font-size: 0.9rem;
+}
+
+.links li a:hover{
+    color: var(--dark-orange);  
+}
+
+.active-language {
+    color: #f4f4f4;
+}
+
+.mobile-nav .bar {
+    background-color: var(--text-bg);
+}
+
+/*Languages==========*/
+.lang-menu {
+    position: relative;
+}
+
+.selected-lang {
+    font-size: 0.7rem;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80px; /**/
+    
+}
+
+.selected-lang:before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url(https://www.countryflags.io/us/flat/16.png);
+    
+}
+
+.lang-menu ul {
+    display: none;
+    background-color: var(--dark-blue);
+    border: 1px solid #222;
+    box-shadow: 0px 1px 10px rgba(rgb(146, 138, 138), rgb(146, 138, 138), rgb(146, 138, 138), 0.2);
+    position: absolute;
+    top: 16px;
+    right: 0;
+}
+
+.lang-menu ul li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang-menu ul li a {
+    font-size: 0.8rem;
+    font-weight: 200;
+    color: var(--text-bg);
+    display: inline-block;
+    width: 100px;
+    padding: 5px;
+}
+
+.lang-menu ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.lang-menu ul li a:hover {
+    background-color: rgba(66, 65, 173, 0.247);
+    color: var(--dark-orange);
+}
+
+.br:before {
+    background-image: url(https://www.countryflags.io/br/flat/16.png);
+}
+
+.us:before {
+    background-image: url(https://www.countryflags.io/us/flat/16.png);
+}
+
+.fr:before {
+    background-image: url(https://www.countryflags.io/fr/flat/16.png);
+}
+
+.de:before {
+    background-image: url(https://www.countryflags.io/de/flat/16.png);
+}
+
+.lang-menu:hover ul {
+    display: block;
+}
+
+nav.sticky {
+    padding: 4px 60px;
+    background: #333;
+}
+
+nav.sticky span a {
+    color: white;
+    font-weight: 100;
+}
+
+nav.sticky ul li a {
+    color: white;
+    font-weight: 100;
+}
+
+nav.sticky .mobile-nav .bar {
+    background: white;
+    
+}
+
+/*Mobile navbar================================*/
+.mobile-nav {
+    position: absolute;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+    height: 21px;
+    width: 30px;
+    }
+
+        .mobile-nav .bar {
+            height: 2px;
+            width: 100%;
+            border-radius: 12px;
+            background: var(--text-bg);
+
+        }
+        
+        .home {
+            position: relative;
+            padding: 0rem 5rem; /*0top botton 5 dos lados*/
+            background-image: linear-gradient(120deg, #38434e ,#282e34);
+            background-size: cover;
+            min-height: 100vh;
+            width: 100%;
+        }
+        
+        .icons {
+            display: inline-flex;
+            letter-spacing: 0.5rem;
+            
+        }
+
+        .fa {
+            position: absolute;
+            left: 41%;
+            top: -8%;
+            font-size: 3.5rem;
+            
+        }
+        
+        .main-title {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            
+            position: absolute; /*pode mover para onde quiser*/
+            top: 24%;
+            left: 28%;
+            right: 20%;
+            font-family: 'Lobster', cursive;
+            color: rgb(247, 114, 6);
+            font-size: 2rem;
+        }
+        
+        .title {
+            color: var(--orange);
+            cursor: default;
+        }
+        
+
+        
+        .home-subtitle {
+            position: absolute;
+            top: 70%;
+            right: 10%;
+            left: 10%;
+            font-weight: 300;
+            font-size: 1.5rem;
+            background-color: var(--text-bg);
+            padding: 20px;
+            border: solid var(--dark-orange);
+            opacity: 0.5;
+            
+        }
+        
+
+/*FOOTER==========================================*/
+.footer {
+    text-align: center;
+    
+}
+
+.footer p {
+    opacity: 0.6;
+    font-size: small;
+}
+
+.copyright {
+    align-items: center;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%);
+    color: #f4f4f4;
+}
+
+.footer .icons {
+    display: inline-flex;
+    text-align: center;
+    margin-left: 1rem;
+    padding: 0.5rem ;
+    font-size: 1.5rem;
+    letter-spacing: 0.8rem;
+}
+
+.linkedin a:hover {
+    color: rgb(106, 106, 238);
+    
+}
+
+.github a:hover {
+    color: var(--text-bg);
+    
+}
+
+.instagram a:hover {
+    color: rgb(252, 79, 131);
+    
+}
+
+/*RESPONSIVE.NAVBAR==========================================*/
+@media ( min-width: 640px) {
+    .logo-link {
+        margin-left: -1rem;
+        margin-right: 1rem;
+    }
+
+    .links li a {
+        padding: 0 3.5rem;
+    }
+}
+
+
+/*RESPONSIVE.MOBILE==========================================*/
+@media screen and (max-width: 610px){
+    nav.sticky {
+        padding: 15px 60px;
+    }
+
+    .mobile-nav {
+        display: flex;
+    }
+        
+    .icons {
+        margin-left: -5rem;
+        letter-spacing: 1rem;
+    }
+
+        .links {
+            display: none;
+            position: absolute;
+            top: 75%;
+            left: 23%;
+        }    
+
+            .links li {
+                text-align: center;
+            }
+            
+                .links li a {
+                    padding: 1.2rem;
+                    font-size: 0.8rem;
+                }
+
+                .links.active-navbar {
+                    display: flex;
+                }
+
+    .fa {
+        position: absolute;
+        left: 42%;
+        top: -8%;
+        font-size: 3rem;
+    }
+
+    .main-title {
+        font-size: 1.5rem;
+        position: absolute;
+        top: 45%;
+        left: 30%;
+        transform: translate(-3%, -50%);
+    }
+
+    .home-subtitle {
+        position: absolute;
+        top: 68%;
+        right: 10%;
+        left: 10%;
+        font-weight: 300;
+        font-size: 1.5rem;
+        background-color: var(--text-bg);
+        padding: 15px;
+        border: solid var(--dark-orange);
+        opacity: 0.5;
+        
+    }
+}

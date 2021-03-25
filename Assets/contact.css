@@ -271,9 +271,10 @@ nav.sticky .mobile-nav .bar {
 }
 
 /*CONTACT==================================*/
-.contact-section {
+.form-section {
     position: relative;
     min-height: 100vh;
+    width: 100%;
     padding: 50px;
     display: flex;
     justify-content: center;
@@ -314,7 +315,7 @@ nav.sticky .mobile-nav .bar {
 }
 
 .info .box {
-    min-width: 85vh;
+    
     position: relative;
     padding: 20px 0;
     display: flex;
@@ -439,7 +440,7 @@ nav.sticky .mobile-nav .bar {
 }
 
 /*RESPONSIVE.MOBILE==========================================*/
-@media screen and (max-width: 610px){
+@media screen and (max-width: 500px){
     nav.sticky {
         padding: 15px 60px;
     }
@@ -449,7 +450,7 @@ nav.sticky .mobile-nav .bar {
     }
         
     .icons {
-        margin-left: -7rem;
+        margin-left: -5rem;
         letter-spacing: 1rem;
     }
 
@@ -472,6 +473,14 @@ nav.sticky .mobile-nav .bar {
                 .nav-list.active-navbar {
                     display: flex;
                 }
+
+.info .box {
+    margin-left: -25px;
+}
+
+.contact-form {
+    width: 95%;
+}
 }
 
 @media (min-width: 750px) {
@@ -495,6 +504,13 @@ nav.sticky .mobile-nav .bar {
         align-items: center;
         margin-top: 2rem;
         flex-direction: row;
+    }
+    
+    .info .box {
+        
+        position: relative;
+        padding: 20px 0;
+        display: flex;
     }
 
     .info {

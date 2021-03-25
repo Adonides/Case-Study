@@ -603,10 +603,7 @@ nav.sticky .mobile-nav .bar {
     color: rgb(252, 79, 131);
     
 }
-/*RESPONSIVE.Mobile==========================================*/
-@media ( max-width: 640px) {
-
-}
+/*==========================================*/
 /*RESPONSIVE.NAVBAR==========================================*/
 @media ( min-width: 640px) {
     .logo-link {
@@ -631,7 +628,7 @@ nav.sticky .mobile-nav .bar {
     
 }
 /*RESPONSIVE.MOBILE==========================================*/
-@media screen and (max-width: 610px){
+@media screen and (max-width: 580px){
     nav.sticky {
         padding: 15px 60px;
     }
@@ -641,7 +638,7 @@ nav.sticky .mobile-nav .bar {
     }
         
     .icons {
-        margin-left: -7rem;
+        margin-left: -6rem;
         letter-spacing: 1rem;
     }
 

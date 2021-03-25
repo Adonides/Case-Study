@@ -35,6 +35,10 @@ const Languages = {
         intro01: "for taught self learners,",
         intro02: "for everyday",
         intro03: "challenge.",
+        nav01: "About",
+        nav02: "Articles",
+        nav03: "Contact",
+        nav04: "English",
         home: "Taught self is the fast way to learn",
         checkOut: "Foreword",
         article: "The Future of Education",
@@ -59,6 +63,10 @@ const Languages = {
         intro01: "para autoditadas",
         intro02: "para todos os dias",
         intro03: "de desafios",
+        nav01: "Sobre",
+        nav02: "Artigos",
+        nav03: "Contato",
+        nav04: "Inglês",
         home: "Auto-didata é a maneira mais rápida de aprender ",
         checkOut: "Prefácio",
         article: "O Futuro da Educação",
@@ -83,6 +91,10 @@ const Languages = {
         intro01: "pour les apprenants autodidactes",
         intro02: "pour tous les jours",
         intro03: "défis",
+        nav01: "Environ",
+        nav02: "Articles",
+        nav03: "Contact",
+        nav04: "Anglais",
         home: "L'auto-apprentissage est le moyen le plus rapide d'apprendre",
         checkOut: "avant-propos",
         article: "L'avenir de l'éducation ",
@@ -106,7 +118,11 @@ const Languages = {
     german: {
         intro01: "für unterrichtete Selbstlerner",
         intro02: "für jeden Tag",
-        intro03: "Herausforderungen ",
+        intro03: "Herausforderungen",
+        nav01: "Über",
+        nav02: "Artikel",
+        nav03: "Kontakt",
+        nav04: "Englisch",
         home: "Selbstunterricht ist der schnelle Weg zu lernen ",
         checkOut: "Vorwort",
         article: "Die Zukunft der Bildung ",
@@ -136,6 +152,10 @@ const Translate = {
                 introduction.textContent = Languages.english.intro01
                 everyday.textContent = Languages.english.intro02
                 challenge.textContent = Languages.english.intro03
+                link01.textContent = Languages.english.nav01
+                link02.textContent = Languages.english.nav02
+                link03.textContent = Languages.english.nav03
+                link04.textContent = Languages.english.nav04
                 slogan.textContent = Languages.english.home
                 contentBtn.textContent = Languages.english.checkOut
                 title.textContent = Languages.english.article
@@ -150,11 +170,11 @@ const Translate = {
                 happiness.textContent = Languages.english.article09
                 p06.textContent = Languages.english.article10
                 opinion.textContent = Languages.english.article11
-                mt01.textContent = Languages.english.article12
+                /*mt01.textContent = Languages.english.article12
                 st01.textContent = Languages.english.article13
                 st02.textContent = Languages.english.article14
                 st03.textContent = Languages.english.article15
-                comment.textContent = Languages.english.commentTitle
+                comment.textContent = Languages.english.commentTitle*/
             }
             
         }
@@ -166,6 +186,10 @@ const Translate = {
                 introduction.textContent = Languages.portuguese.intro01
                 everyday.textContent = Languages.portuguese.intro02
                 challenge.textContent = Languages.portuguese.intro03
+                link01.textContent = Languages.portuguese.nav01
+                link02.textContent = Languages.portuguese.nav02
+                link03.textContent = Languages.portuguese.nav03
+                link04.textContent = Languages.portuguese.nav04
                 slogan.textContent = Languages.portuguese.home
                 contentBtn.textContent = Languages.portuguese.checkOut
                 title.textContent = Languages.portuguese.article
@@ -180,11 +204,11 @@ const Translate = {
                 happiness.textContent = Languages.portuguese.article09
                 p06.textContent = Languages.portuguese.article10
                 opinion.textContent = Languages.portuguese.article11
-                mt01.textContent = Languages.portuguese.article12
+                /*mt01.textContent = Languages.portuguese.article12
                 st01.textContent = Languages.portuguese.article13
                 st02.textContent = Languages.portuguese.article14
                 st03.textContent = Languages.portuguese.article15
-                comment.textContent = Languages.portuguese.commentTitle
+                comment.textContent = Languages.portuguese.commentTitle*/
                 
             }
             
@@ -197,6 +221,10 @@ const Translate = {
                 introduction.textContent = Languages.french.intro01
                 everyday.textContent = Languages.french.intro02
                 challenge.textContent = Languages.french.intro03
+                link01.textContent = Languages.french.nav01
+                link02.textContent = Languages.french.nav02
+                link03.textContent = Languages.french.nav03
+                link04.textContent = Languages.french.nav04
                 slogan.textContent = Languages.french.home
                 contentBtn.textContent = Languages.french.checkOut
                 title.textContent = Languages.french.article
@@ -211,11 +239,11 @@ const Translate = {
                 happiness.textContent = Languages.french.article09
                 p06.textContent = Languages.french.article10
                 opinion.textContent = Languages.french.article11
-                mt01.textContent = Languages.french.article12
+                /*mt01.textContent = Languages.french.article12
                 st01.textContent = Languages.french.article13
                 st02.textContent = Languages.french.article14
                 st03.textContent = Languages.french.article15
-                comment.textContent = Languages.french.commentTitle
+                comment.textContent = Languages.french.commentTitle*/
                 
             }
             
@@ -228,6 +256,10 @@ const Translate = {
                 introduction.textContent = Languages.german.intro01
                 everyday.textContent = Languages.german.intro02
                 challenge.textContent = Languages.german.intro03
+                link01.textContent = Languages.german.nav01
+                link02.textContent = Languages.german.nav02
+                link03.textContent = Languages.german.nav03
+                link04.textContent = Languages.german.nav04
                 slogan.textContent = Languages.german.home
                 contentBtn.textContent = Languages.german.checkOut
                 title.textContent = Languages.german.article
@@ -242,10 +274,11 @@ const Translate = {
                 happiness.textContent = Languages.german.article09
                 p06.textContent = Languages.german.article10
                 opinion.textContent = Languages.german.article11
-                mt01.textContent = Languages.german.mt01
-                mt01.textContent = Languages.german.mt01
-                mt01.textContent = Languages.german.mt01
-                mt01.textContent = Languages.german.mt01
+                /*mt01.textContent = Languages.german.article12
+                st01.textContent = Languages.german.article13
+                st02.textContent = Languages.german.article14
+                st03.textContent = Languages.german.article15
+                comment.textContent = Languages.german.commentTitle*/
             }
             
         }
@@ -253,6 +286,10 @@ const Translate = {
     },
     slogan: document.querySelector("#slogan"),
     contentBtn: document.querySelector("#contentBtn"),
+    about: document.querySelector("#link01"),
+    articles: document.querySelector("#link02"),
+    contact: document.querySelector("#link03"),
+    idiom: document.querySelector("#link04"),
     title: document.querySelector("#title"),
     subtitle: document.querySelector("#subtitle"),
     p01: document.querySelector("#p01"),
@@ -266,10 +303,10 @@ const Translate = {
     p06: document.querySelector("#p06"),
     opinion: document.querySelector("#opinion"),
     comment: document.querySelector("#comment"),
-    articleSection: document.querySelector("#mt01"),
+    /*articleSection: document.querySelector("#mt01"),
     traditionalTitle: document.querySelector("#st01"),
     onlineTitle: document.querySelector("#st02"),
-    experienceTitle: document.querySelector("#st03"),
+    experienceTitle: document.querySelector("#st03"),*/
     clickEvent() {
         const translateReload = document.querySelectorAll("[data-reload]")
         translateReload.forEach(element => {
@@ -278,6 +315,10 @@ const Translate = {
 
                 this.slogan.textContent = Languages[attribute].home
                 this.contentBtn.textContent = Languages[attribute].checkOut
+                this.about.textContent = Languages[attribute].link01
+                this.articles.textContent = Languages[attribute].link02
+                this.contact.textContent = Languages[attribute].link03
+                this.idiom.textContent = Languages[attribute].link04
                 this.title.textContent = Languages[attribute].article
                 this.subtitle.textContent = Languages[attribute].article01
                 this.p01.textContent = Languages[attribute].article02
@@ -290,11 +331,11 @@ const Translate = {
                 this.conclusion.textContent = Languages[attribute].article09
                 this.p06.textContent = Languages[attribute].article10
                 this.opinion.textContent = Languages[attribute].article11
-                this.articleSection.textContent = Languages[attribute].article12
+                /*this.articleSection.textContent = Languages[attribute].article12
                 this.traditionalTitle.textContent = Languages[attribute].article13
                 this.onlineTitle.textContent = Languages[attribute].article14
                 this.experienceTitle.textContent = Languages[attribute].article15
-                this.comment.textContent = Languages[attribute].commentTitle
+                this.comment.textContent = Languages[attribute].commentTitle*/
             })
         })
     },
@@ -485,7 +526,7 @@ const MainPage = {
         Translate.english()
         Translate.clickEvent()
 
-        ReactionIcons.setSelected()
+        
     },
     reloadPage() {
         

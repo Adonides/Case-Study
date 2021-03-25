@@ -21,6 +21,10 @@ const NavbarScroll = {
             const navbar = document.querySelector("nav")
             navbar.classList.toggle("sticky", window.scrollY > 0)
         })
+    },
+    mobileBar() {
+        const navbar = document.getElementsByClassName('links')[0]
+    navbar.classList.toggle('active-navbar')
     }
 }
 

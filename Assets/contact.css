@@ -34,6 +34,8 @@ li, a {
 /*NAVBAR==================================*/
 .nav-bar {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: 1000;
     display: flex;
@@ -198,6 +200,32 @@ nav.sticky {
 nav.sticky ul li a {
     color: white;
 }
+
+nav.sticky .mobile-nav .bar {
+    background: var(--text-bg);
+    
+}
+
+/*Mobile navbar================================*/
+.mobile-nav {
+    position: absolute;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+    height: 21px;
+    width: 30px;
+    }
+
+        .mobile-nav .bar {
+            height: 2px;
+            width: 100%;
+            border-radius: 12px;
+            background: #333;
+
+        }
+
+
 /*TOP===============================*/
 .top-contact {
     position: relative;
@@ -408,6 +436,42 @@ nav.sticky ul li a {
     margin-left: 1rem;
     font-size: 1.5rem;
     letter-spacing: 0.8rem;
+}
+
+/*RESPONSIVE.MOBILE==========================================*/
+@media screen and (max-width: 610px){
+    nav.sticky {
+        padding: 15px 60px;
+    }
+
+    .mobile-nav {
+        display: flex;
+    }
+        
+    .icons {
+        margin-left: -7rem;
+        letter-spacing: 1rem;
+    }
+
+        .nav-list {
+            display: none;
+            position: absolute;
+            top: 75%;
+            left: 23%;
+        }    
+
+            .nav-list li {
+                text-align: center;
+            }
+            
+                .nav-list li a {
+                    padding: 1.2rem;
+                    font-size: 0.8rem;
+                }
+
+                .nav-list.active-navbar {
+                    display: flex;
+                }
 }
 
 @media (min-width: 750px) {

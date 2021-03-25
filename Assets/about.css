@@ -46,12 +46,12 @@ a, li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 35px 100px;
+    padding: 35px 60px;
     transition: 0.6s;   
 }
 
 .logo-link {
-    margin-left: -5.5rem;
+    margin-left: -3rem;
     opacity: 0.7;  
 }
 
@@ -80,15 +80,14 @@ a, li {
 .selected-lang {
     cursor: pointer;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
     width: 80px; /**/
 }
 
 .selected-lang {
     font-size: 0.7rem;
     letter-spacing: 0.8px;
-    cursor: pointer;
     color: black;
 }
 
@@ -183,7 +182,7 @@ a, li {
 .nav-bar.sticky {
     z-index: 1000;
     background: #333;
-    padding: 2px 95px;
+    padding: 4px 60px;
     
 }
 
@@ -202,6 +201,31 @@ nav.sticky span {
     color: var(--dark-orange);
     font-weight: 300;
 }
+
+nav.sticky .mobile-nav .bar {
+    background: var(--text-bg);
+    
+}
+
+/*Mobile navbar================================*/
+.mobile-nav {
+    position: absolute;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+    height: 21px;
+    width: 30px;
+    }
+
+        .mobile-nav .bar {
+            height: 2px;
+            width: 100%;
+            border-radius: 12px;
+            background: #333;
+
+        }
+    
 /*MAIN=BODY============================*/
 .about-img, .mission-img, .value-img {
     position: relative;
@@ -252,8 +276,8 @@ nav.sticky span {
 
 .top-subtitle  {
     position: absolute;
-    top: 80%;
-    left: 45%; 
+    top: 70%;
+    left: 50%; 
     transform: translate(-80%); 
     font-weight: 600;
     font-size: 1.5rem;
@@ -331,4 +355,48 @@ nav.sticky span {
     .nav-link a  {
         padding: 0 3rem;
     }
+}
+
+/*RESPONSIVE.MOBILE==========================================*/
+@media screen and (max-width: 610px){
+    .nav-bar.sticky {
+        padding: 15px 60px;
+    }
+
+    .mobile-nav {
+        display: flex;
+    }
+        
+    .icons {
+        margin-left: -7rem;
+        letter-spacing: 1rem;
+    }
+
+        .list-link {
+            display: none;
+            position: absolute;
+            top: 75%;
+            left: 20%;
+        }    
+
+            .list-link li {
+                text-align: center;
+            }
+            
+                .list-link li a {
+                    font-size: 0.8rem;
+                    padding: 1rem;
+                    
+                }
+
+                .list-link.active-navbar {
+                    display: flex;
+                }
+
+                .main-title {
+                    position: absolute; /*pode mover para onde quiser*/
+                    top: 25%;
+                    left: 50%;
+                    transform: translate(-40%, -30%); /*perfeito centralizado*/
+                }
 }

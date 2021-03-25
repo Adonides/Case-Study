@@ -73,16 +73,13 @@ nav {
 }
 
 .selected-lang {
+    font-size: 0.7rem;
+    letter-spacing: 0.8px;
     cursor: pointer;
     display: flex;
     align-items: center;
+    justify-content: space-around;
     width: 80px; /**/
-}
-
-.selected-lang span {
-    margin-left: 8px;
-    font-size: 0.8rem;
-    letter-spacing: 0.8px;
     
 }
 
@@ -167,6 +164,30 @@ nav.sticky ul li a {
     color: white;
     font-weight: 100;
 }
+
+nav.sticky .mobile-nav .bar {
+    background: var(--text-bg);
+    
+}
+
+/*Mobile navbar================================*/
+.mobile-nav {
+    position: absolute;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+    height: 21px;
+    width: 30px;
+    }
+
+        .mobile-nav .bar {
+            height: 2px;
+            width: 100%;
+            border-radius: 12px;
+            background: #333;
+
+        }
 /*HOME==========================================*/
 .section-focus {
     position: relative;
@@ -183,6 +204,7 @@ nav.sticky ul li a {
 .icons {
     display: inline-flex;
     letter-spacing: 0.5rem;
+    
 }
 
 
@@ -273,7 +295,7 @@ nav.sticky ul li a {
 }
 
 #article01 h4 {
-    margin: .8em 0 -.5em 0;
+    margin: .8em 0 -.3em 0;
     color: #222;
     font-size: 1.333em;
 }
@@ -608,9 +630,47 @@ nav.sticky ul li a {
     
     
 }
-/*RESPONSIVE.ARCTICLE==========================================*/
+/*RESPONSIVE.MOBILE==========================================*/
 @media screen and (max-width: 610px){
+    nav.sticky {
+        padding: 15px 60px;
+    }
 
+    .mobile-nav {
+        display: flex;
+    }
+        
+    .icons {
+        margin-left: -7rem;
+        letter-spacing: 1rem;
+    }
+
+        .links {
+            display: none;
+            position: absolute;
+            top: 75%;
+            left: 23%;
+        }    
+
+            .links li {
+                text-align: center;
+            }
+            
+                .links li a {
+                    padding: 1.2rem;
+                    font-size: 0.8rem;
+                }
+
+                .links.active-navbar {
+                    display: flex;
+                }
+
+.main-title {
+    position: absolute; /*pode mover para onde quiser*/
+    top: 25%;
+    left: 50%;
+    transform: translate(-40%, -30%); /*perfeito centralizado*/
+}
 
     #article01 {
         font-size: 1em; /*diminuir a fonte*/

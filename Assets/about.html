@@ -16,7 +16,7 @@
 </head>
 <body>
     <main>
-        <nav class="nav-bar">
+        <nav class="nav-bar" id="nav">
             
             <div class="top">
                 <div class="AA-logo">
@@ -24,7 +24,11 @@
                         <img src="../Images/logo-32x32.png" alt="logo">
                     </a>
                 </div>
-
+                <a href="#nav" class="mobile-nav" onclick="NavbarScroll.mobileBar()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
                 <div class=" icons top-icons">
                     <div class="linkedin">
                         <a href="https://www.linkedin.com/in/adonidesamparo/?midToken=AQE08vnRykUzTw&midSig=1cjvfiQ8aBsVA1&trk=eml-email_pymk_02-header-76-profile&trkEmail=eml-email_pymk_02-header-76-profile-null-1tin5w%7Ekjmxdlsd%7Eca-null-neptune%2Fprofile%7Evanity%2Eview" target="_blank">
@@ -196,6 +200,10 @@
 
                     })
                 })
+            },
+            mobileBar() {
+                const navbar = document.getElementsByClassName('list-link')[0]
+            navbar.classList.toggle('active-navbar')
             }
         }
         
@@ -235,13 +243,13 @@
             "german":
             {
                 "subtBtn": "Was Sie über unseren Blog erfahren sollten", 
-                "st01": "Kunst des Lernens" ,
-                "p01": "Diskutieren Sie verschiedene Lernmethoden, damit die Menschen sich an sie wenden können, um die beste Leistung zu erzielen. Wir freuen uns über den Erfolg der Menschen, die den Willen haben, in ihrer Karriere oder in ihrem Privatleben immer zu wachsen.",
-                "st02": "Hohe Ziele erreichen ",
-                "p02": "Menschen helfen, so schnell wie möglich das Hauptziel des Studiums zu erreichen. Wir haben nicht die gleichen Gedanken oder Ideen wie gestern, weil wir jeden Tag besser werden! ",
-                "st03": "Offene Ideen",
-                "p03": "Respekt und Ehrlichkeit sind unser Weg, um Menschen dazu zu bringen, große Dinge zu erobern! Wir sind immer offen für das Lernen und den Wissensaustausch. ",
-            },
+                "st01": "Die Kunst des Lernens" ,
+                "p01": "Diskutiere verschiedene Lernansätze, sodass die Menschen verschiedene Herangehensweisen kennenlernen, die ihnen ermöglicht ihre bestmögliche Leistung zu erbringen. Wir freuen uns über den Erfolgt von Menschen mit diesem Mindset; die in ihrer Karriere oder ihrem Privatleben stetig wachsen. ",
+                "st02": "Erreiche hochgesteckte Ziele:",
+                "p02": "Hilf den Menschen dabei, das Ziel, dass sie durch ihr Studium anstreben so schnell wie möglich zu erreichen. Wir haben nie die gleichen Ideen wie im Gestern, denn wir wachsen jeden Tag über uns hinaus und werden besser!",
+                "st03": "Offen für Ideen:",
+                "p03": "Respekt und Ehrlichkeit sind die Straße, die uns dazu führt, Menschen beim Erreichen von Großem zu begleiten. Wir sind immer offen für Lernen und Wissensweitergabe.",
+            }
         }
 
         const AboutPage = {

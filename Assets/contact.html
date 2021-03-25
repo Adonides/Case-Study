@@ -15,7 +15,7 @@
     </head>
     <body>
         <main>
-            <nav class="nav-bar">
+            <nav class="nav-bar" id="nav">
                 <div class="logo">
                     <a href="../index.html" rel="prev">
                         <img src="../Images/logo-32x32.png" alt="brand-logo"> 
@@ -80,7 +80,11 @@
                         </li>
                     </ul>
                 </div>
-
+                <a href="#nav" class="mobile-nav" onclick="NavbarScroll.mobileBar()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
 
             </nav>
             <section class="top">
@@ -226,7 +230,11 @@
                             this.formTitle.textContent = Translate[attribute].st03
                         })
                     })
-                }
+                },
+                mobileBar() {
+                const navbar = document.getElementsByClassName('nav-list')[0]
+            navbar.classList.toggle('active-navbar')
+            }
             }
 
             const Translate = {

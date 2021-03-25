@@ -59,7 +59,7 @@
         .copyright {
             align-items: center;
             position: absolute;
-            top: 85%;
+            top: 95%;
             left: 42%;
             transform: translate(-50%);
             color: #f4f4f4;
@@ -129,6 +129,11 @@
                             </li>
                         </ul>
                     </div>
+                    <a href="#nav" class="mobile-nav" onclick="NavbarScroll.mobileBar()">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </a>
                 </nav>
         <!----------------HOME------------------->
                 
@@ -166,6 +171,10 @@
                             this.text.textContent = Language[attribute].subtitle
                         })
                     })
+                },
+                mobileBar() {
+                    const navbar = document.getElementsByClassName('links')[0]
+                    navbar.classList.toggle('active-navbar')
                 }
             }
 

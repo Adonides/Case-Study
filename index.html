@@ -19,7 +19,7 @@
             <section class="section-focus">
                 
             <!----------------NAVERGATION BAR------------------->
-                    <nav class="nav-bar">
+                    <nav class="nav-bar" id="nav">
                         <div class="logo">
                             <a href="#" class="logo-link">
                                 <img src="./Images/logo-32x32.png" alt="logo AA Web Projects">
@@ -48,8 +48,8 @@
                             <li><a href="./Assets/contact.html" rel="next">Contact</a></li>
                         </ul>
                         <div class="lang-menu">
-                            <div class="selected-lang">
-                                <span>
+                            <div >
+                                <span class="selected-lang">
                                     <a class="lang-text">English</a>
                                 </span>
                                <!-- <span>
@@ -77,6 +77,11 @@
                                 </li>
                             </ul>
                         </div>
+                        <a href="#nav" class="mobile-nav" onclick="NavbarScroll.mobileBar()">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </a>
                     </nav>
             <!----------------HOME------------------->
                     

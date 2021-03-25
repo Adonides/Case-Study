@@ -81,7 +81,11 @@
                         </li>
                     </ul>
                 </div>
-
+                <a href="#nav" class="mobile-nav" onclick="NavbarScroll.mobileBar()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
 
             </nav>
 
@@ -246,6 +250,10 @@
                         this.comingSoon.textContent = Translate[attribute].soon
                     })
                 })
+            },
+            mobileBar() {
+                const navbar = document.getElementsByClassName('nav-list')[0]
+            navbar.classList.toggle('active-navbar')
             }
         }
 

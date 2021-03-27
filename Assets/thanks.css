@@ -374,13 +374,13 @@ nav.sticky .mobile-nav .bar {
 
     .home-subtitle {
         position: absolute;
-        top: 68%;
+        top: 64%;
         right: 10%;
         left: 10%;
         font-weight: 300;
         font-size: 1.5rem;
         background-color: var(--text-bg);
-        padding: 15px;
+        padding: 10px;
         border: solid var(--dark-orange);
         opacity: 0.5;
         

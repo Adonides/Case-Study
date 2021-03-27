@@ -41,19 +41,19 @@
                 </div>
                 <ul class="nav-list">
                     <li class="nav-link">
-                        <a href="../index.html">Home</a> 
+                        <a href="../index.html" id="link01">Home</a> 
                     </li>
                     <li class="nav-link">
-                        <a href="./about.html">About</a>
+                        <a href="./about.html" id="link02">About</a>
                     </li>
                     <li class="nav-link">
-                    <a href="./contact.html">Contact</a> 
+                    <a href="./contact.html" id="link03">Contact</a> 
                     </li>
                 </ul>
 
                 <div class="lang-menu">
                     <div >
-                        <span class="active-eng selected-lang">
+                        <span class="active-eng selected-lang" id="link04">
                             English
                         </span>
                         <!--<span class="active-por">
@@ -103,31 +103,31 @@
                 <div class="card">
                     <div class="card-img">
                        <a href="#traditional">
-                        <img src="../Images/traditional-icsa 1200x789.jpg" alt="traditional Education">
+                        <img src="../Images/traditional-icsa 500x329.jpg" alt="traditional Education">
                        </a> 
                     </div>
                     <div class="card-text">
-                        <h2><br> <span class="st01">Traditional Education</span></h2>
+                        <h2><br> <span class="st04">Traditional Education</span></h2>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-img">
                        <a href="#online">
-                        <img src="../Images/online-vlada-karpovich 1200x800.jpg" alt="online Education">
+                        <img src="../Images/online-vlada-karpovich 500x333.jpg" alt="online Education">
                        </a> 
                     </div>
                     <div class="card-text">
-                        <h2 > <br> <span class="st02">Online Education</span></h2>
+                        <h2 > <br> <span class="st05">Online Education</span></h2>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-img">
                        <a href="#experience">
-                        <img src="../Images/online-olia-danilevich 1200x800.jpg" alt="my taught self experience">
+                        <img src="../Images/online-olia-danilevich 500x333.jpg" alt="my taught self experience">
                        </a> 
                     </div>
                     <div class="card-text">
-                        <h2> <br> <span class="st03">My Experience</span></h2>
+                        <h2> <br> <span class="st06">My Experience</span></h2>
                     </div>
                 </div>
                 
@@ -137,28 +137,48 @@
                     <div  class="link-section">
                         <h2 class="article-title st01">Traditional Education</h2>
                         <ul class="traditional-list">
-                            <li class="tr01">What have changed in traditional Education?     <span class="sooner" style="color: red;"><small >coming soon</small></span></li>
-                            <li class="tr02">Pros of enrolling in traditional Education  <small class="soon">coming soon</small></li>
-                            <li class="tr03">Cons of enrolling in traditional Education  <small class="soon">coming soon</small></li>
+                            <div class="coming-article">
+                                <li class="tr01">What have changed in traditional Education?</li>     <span><small class="soon01">coming soon</small></span>
+                            </div>
+                            <div class="coming-article">
+                                <li class="tr02">Pros of enrolling in traditional Education </li> <span><small class="soon02">coming soon</small></span>
+                            </div>
+                            <div class="coming-article">
+                                <li class="tr03">Cons of enrolling in traditional Education</li>  <span><small class="soon03">coming soon</small></span>
+                        </div>
                         </ul>
                     </div>
                     <hr id="online">
                     <div  class="link-section">
                         <h2 class="article-title st02">Online Education</h2>
                         <ul class="online-list">
-                            <li class="on01">Types of Online Courses  <small class="soon">coming soon</small></li>
-                            <li class="on02">Flexibility  <small class="soon">coming soon</small></li>
-                            <li class="on03">Money saving  <small class="soon">coming soon</small></li>
+                            <div class="coming-article">
+                                <li class="on01">Types of Online Courses</li>  <span><small class="soon04">coming soon</small></span>
+                            </div>
+                            <div class="coming-article">
+                                <li class="on02">Flexibility</li> <span><small class="soon05">coming soon</small></span>
+                            </div>
+                            <div class="coming-article">
+                                <li class="on03">Money saving </li> <span><small class="soon06">coming soon</small></span>
+                            </div>
                         </ul>
                     </div>
                     <hr id="experience">
                     <div class="link-section">
                         <h2 class="article-title st03">My Experience</h2>
                         <ul class="experience-list">
-                            <li class="ex01">Who am I?    <small class="soon">coming soon</small></li>
-                            <li class="ex02">I decided to study coding  <small class="soon"> coming soon</small></li>
-                            <li class="ex03">Which language to pick?  <small class="soon">coming soon</small></li>
-                            <li class="ex04">My study script  <small class="soon">coming soon</small></li>
+                            <div class="coming-article">
+                                <li class="ex01">Who am I?</li>    <span><small class="soon07">coming soon</small></span>
+                            </div>
+                            <div class="coming-article">
+                                <li class="ex02">I decided to study coding</li>  <span><small class="soon08"> coming soon</small></span>
+                            </div>
+                            <div class="coming-article">
+                                <li class="ex03">Which language to pick?</li>  <span><small class="soon09">coming soon</small></span>
+                            </div>
+                            <div class="coming-article">
+                                <li class="ex04">My study script</li>  <span><small class="soon10">coming soon</small></span>
+                            </div>
                         </ul>
                     </div>
                 </section>
@@ -199,11 +219,18 @@
                 })
             },
             langLink: document.querySelectorAll(".lang-link"),
+            home: document.querySelector("#link01"),
+            about: document.querySelector("#link02"),
+            contact: document.querySelector("#link03"),
+            idiom: document.querySelector("#link04"),
             contentLink: document.querySelector("#coming"),
             mainTitle: document.querySelector(".mt01"),
-            traditionalTitle: document.querySelector(".st01"),
-            onlineTitle: document.querySelector(".st02"),
-            experienceTitle: document.querySelector(".st03"),
+            traditionalLink: document.querySelector(".st01"),
+            onlineLink: document.querySelector(".st02"),
+            experienceLink: document.querySelector(".st03"),
+            traditionalTitle: document.querySelector(".st04"),
+            onlineTitle: document.querySelector(".st05"),
+            experienceTitle: document.querySelector(".st06"),
             traditional01: document.querySelector(".tr01"),
             traditional02: document.querySelector(".tr02"),
             traditional03: document.querySelector(".tr03"),
@@ -214,7 +241,16 @@
             experience02: document.querySelector(".ex02"),
             experience03: document.querySelector(".ex03"),
             experience04: document.querySelector(".ex04"),
-            comingSoon: document.querySelector(".sooner"),
+            comingSoon01: document.querySelector(".soon01"),
+            comingSoon02: document.querySelector(".soon02"),
+            comingSoon03: document.querySelector(".soon03"),
+            comingSoon04: document.querySelector(".soon04"),
+            comingSoon05: document.querySelector(".soon05"),
+            comingSoon06: document.querySelector(".soon06"),
+            comingSoon07: document.querySelector(".soon07"),
+            comingSoon08: document.querySelector(".soon08"),
+            comingSoon09: document.querySelector(".soon09"),
+            comingSoon10: document.querySelector(".soon10"),
             
             getLangActive() {
                 this.langLink.forEach(element => {
@@ -232,11 +268,18 @@
 
                         const attribute = element.getAttribute('lang')
 
+                        this.home.textContent = Translate[attribute].nav01
+                        this.about.textContent = Translate[attribute].nav02
+                        this.contact.textContent = Translate[attribute].nav03
+                        this.idiom.textContent = Translate[attribute].nav04
                         this.contentLink.textContent = Translate[attribute].coming
                         this.mainTitle.textContent = Translate[attribute].mt01
-                        this.traditionalTitle.textContent = Translate[attribute].st01
-                        this.onlineTitle.textContent = Translate[attribute].st02
-                        this.experienceTitle.textContent = Translate[attribute].st03
+                        this.traditionalLink.textContent = Translate[attribute].st01
+                        this.onlineLink.textContent = Translate[attribute].st02
+                        this.experienceLink.textContent = Translate[attribute].st03
+                        this.traditionalTitle.textContent = Translate[attribute].st04
+                        this.onlineTitle.textContent = Translate[attribute].st05
+                        this.experienceTitle.textContent = Translate[attribute].st06
                         this.traditional01.textContent = Translate[attribute].tr01
                         this.traditional02.textContent = Translate[attribute].tr02
                         this.traditional03.textContent = Translate[attribute].tr03
@@ -247,7 +290,17 @@
                         this.experience02.textContent = Translate[attribute].ex02
                         this.experience03.textContent = Translate[attribute].ex03
                         this.experience04.textContent = Translate[attribute].ex04
-                        this.comingSoon.textContent = Translate[attribute].soon
+                        this.comingSoon01.textContent = Translate[attribute].soon
+                        this.comingSoon02.textContent = Translate[attribute].soon
+                        this.comingSoon03.textContent = Translate[attribute].soon
+                        this.comingSoon04.textContent = Translate[attribute].soon
+                        this.comingSoon05.textContent = Translate[attribute].soon
+                        this.comingSoon06.textContent = Translate[attribute].soon
+                        this.comingSoon07.textContent = Translate[attribute].soon
+                        this.comingSoon08.textContent = Translate[attribute].soon
+                        this.comingSoon09.textContent = Translate[attribute].soon
+                        this.comingSoon10.textContent = Translate[attribute].soon
+                        
                     })
                 })
             },
@@ -260,11 +313,18 @@
         const Translate = {
                 "english":
                 {
+                    "nav01": "Home",
+                    "nav02": "About",
+                    "nav03": "Contact",
+                    "nav04": "English",
                     "coming": "Coming articles",
                     "mt01": "Contents",
                     "st01": "Traditional Education",
                     "st02": "Online Education",
                     "st03": "My Experience",
+                    "st04": "Traditional Education",
+                    "st05": "Online Education",
+                    "st06": "My Experience",
                     "tr01": "What have changed in traditional Education?",
                     "tr02": "Pros of enrolling in traditional Education",
                     "tr03": "Cons of enrolling in traditional Education",
@@ -279,11 +339,18 @@
                 },
                 "portuguese":
                 {
+                    "nav01": "Início",
+                    "nav02": "Sobre",
+                    "nav03": "Contato",
+                    "nav04": "English",
                     "coming": "Próximos artigos",
                     "mt01": "Conteúdo",
                     "st01": "Educação tradicional",
                     "st02": "Educação online",
                     "st03": "Minha Experinência",
+                    "st04": "Educação tradicional",
+                    "st05": "Educação online",
+                    "st06": "Minha Experinência",
                     "tr01": "O que mudou na educação tradicional? ",
                     "tr02": "Prós de se matricular na educação tradicional",
                     "tr03": "Contras de se matricular na educação tradicional",
@@ -298,11 +365,18 @@
                 },
                 "french":
                 {
+                    "nav01": "Home",
+                    "nav02": "Environ",
+                    "nav03": "Contact",
+                    "nav04": "Anglais",
                     "coming": "Articles à venir",
                     "mt01": "Contenu",
                     "st01": "traditionnelle",
                     "st02": "Éducation en ligne",
                     "st03": "Mon expérience",
+                    "st04": "traditionnelle",
+                    "st05": "Éducation en ligne",
+                    "st06": "Mon expérience",
                     "tr01": "Qu'est-ce qui a changé dans l'éducation traditionnelle? ",
                     "tr02": "Les avantages de l'inscription à l'éducation traditionnelle",
                     "tr03": "Les inconvénients de l'inscription à l'éducation traditionnelle",
@@ -313,15 +387,22 @@
                     "ex02": "J'ai décidé d'étudier le codage",
                     "ex03": "Quelle langue choisir? ",
                     "ex04": "Mon scénario d'étude",
-                    
+                    "soon": "Bientôt disponible"
                 },
                 "german":
                 {
+                    "nav01": "Home",
+                    "nav02": "Über",
+                    "nav03": "Kontakt",
+                    "nav04": "Englisch",
                     "coming": "Kommende Artikel",
                     "mt01": "Inhalt",
-                    "st01": "Traditionelle Bildung",
-                    "st02": "Online-Bildung",
+                    "st01": "Traditionelles Lernen",
+                    "st02": "Online Lernen",
                     "st03": "Meine Erfahrung",
+                    "st04": "Traditionelles Lernen",
+                    "st05": "Online Lernen",
+                    "st06": "Meine Erfahrung",
                     "tr01": "Was hat sich in der traditionellen Bildung geändert? ",
                     "tr02": "Die Vorteile einer Einschreibung in die traditionelle Bildung folgen",
                     "tr03": "Nachteile der Einschreibung in die traditionelle Bildung",
@@ -332,6 +413,7 @@
                     "ex02": "Ich beschloss, Codierung zu studieren",
                     "ex03": "Welche Sprache soll ich wählen?",
                     "ex04": "Mein Lernskript",
+                    "soon": "kommt bald "
                 },
             }
 

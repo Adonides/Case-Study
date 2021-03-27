@@ -47,9 +47,9 @@
                         </div>
                     </div>
                     <ul class="links">
-                        <li><a href="./about.html" rel="next">About</a></li>
-                        <li><a href="./articles.html" rel="next">Articles</a></li>
-                        <li><a href="./contact.html" rel="next">Contact</a></li>
+                        <li><a href="./about.html" rel="next" id="link01">About</a></li>
+                        <li><a href="./articles.html" rel="next" id="link02">Articles</a></li>
+                        <li><a href="./contact.html" rel="next" id="link03">Contact</a></li>
                     </ul>
                     <div class="lang-menu">
                         <div class="selected-lang">
@@ -115,6 +115,10 @@
         <script>
             const Translate = {
                 langLink: document.querySelectorAll("[data-reload]"),
+                about: document.querySelector("#link01"),
+                articles: document.querySelector("#link02"),
+                contact: document.querySelector("#link03"),
+                idiom: document.querySelector(".active-language"),
                 thanks: document.querySelector('#title'),
                 text: document.querySelector('#subtitle'),
                 getLangActive() {
@@ -122,32 +126,52 @@
                         element.addEventListener('click', () => {
                             const attribute = element.getAttribute('lang')
 
-                            this.thanks.textContent = Language[attribute].title
-                            this.text.textContent = Language[attribute].subtitle
+                            this.about.textContent = Languages[attribute].nav01
+                            this.articles.textContent = Languages[attribute].nav02
+                            this.contact.textContent = Languages[attribute].nav03
+                            this.idiom.textContent = Languages[attribute]["active-language"]
+                            this.thanks.textContent = Languages[attribute].title
+                            this.text.textContent = Languages[attribute].subtitle
                         })
                     })
                 }
             }
 
-            const Language = {
+            const Languages = {
                 "english":
                 {
+                    "nav01":  "About",
+                    "nav02":  "Articles",
+                    "nav03":  "contact",
+                    "active-language":  "English",
                     "title":  "Thank you for reaching us!",
                     "subtitle": "We got your message and we are on it! Expert to hear from us very soon!",
                 },
                 "portuguese":
                 {
+                    "nav01":  "Sobre",
+                    "nav02":  "Artigos",
+                    "nav03":  "contato",
+                    "active-language":  "Inglês",
                     "title":  "Obrigado por nos contactar!",
                     "subtitle": "Recebemos sua mensagem e estamos trabalhando nisso! Entraremos em contato contigo em breve!",
                 },
                 "french":
                 {
+                    "nav01":  "Environ",
+                    "nav02":  "Articles",
+                    "nav03":  "contact",
+                    "active-language":  "Anglais",
                     "title":  "Merci de nous avoir contactés!",
                     "subtitle": "Nous avons reçu votre message et nous y sommes! Expert à nous entendre très bientôt! ",
                 },
                 "german":
                 {
-                    "title":  "Vielen Dank, dass Sie uns erreicht haben!",
+                    "nav01":  "Über",
+                    "nav02":  "Artikel",
+                    "nav03":  "Kontakt",
+                    "active-language":  "Englisch",
+                    "title":  "Vielen Dank",
                     "subtitle": "Wir haben Ihre Nachricht erhalten und sind dabei! Experte, sehr bald von uns zu hören! ",
                 },
             }

@@ -349,11 +349,18 @@ nav.sticky .mobile-nav .bar {
     min-height: 50vh;
 }
 
+.coming-article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .link-section li {
     margin: 1em 0;
 }
 
-.link-section li small {
+.link-section  span {
+    margin-left: 1rem;
     color: red;
 }
 /*FOOTER===============================*/
@@ -411,13 +418,28 @@ nav.sticky .mobile-nav .bar {
                     display: flex;
                 }
 
-.link-section {
-    margin-left: -1.5rem;
-}
+    .link-section {
+        margin-left: -1.5rem;
+    }
 
-.article-title {
-    font-size: 2.5em;
-}
+    .subjects {
+        max-width: 65%;
+    }
+
+    .subjects hr {
+        margin-left: -2rem;
+        
+    }
+
+    .article-title {
+        font-size: 2em;
+    }
+
+    .articles-subjects {
+        padding: 1em 0;
+        font-size: 1em;
+    }
+
 }
 
 @media (min-width: 625px) {

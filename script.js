@@ -315,10 +315,10 @@ const Translate = {
 
                 this.slogan.textContent = Languages[attribute].home
                 this.contentBtn.textContent = Languages[attribute].checkOut
-                this.about.textContent = Languages[attribute].link01
-                this.articles.textContent = Languages[attribute].link02
-                this.contact.textContent = Languages[attribute].link03
-                this.idiom.textContent = Languages[attribute].link04
+                this.about.textContent = Languages[attribute].nav01
+                this.articles.textContent = Languages[attribute].nav02
+                this.contact.textContent = Languages[attribute].nav03
+                this.idiom.textContent = Languages[attribute].nav04
                 this.title.textContent = Languages[attribute].article
                 this.subtitle.textContent = Languages[attribute].article01
                 this.p01.textContent = Languages[attribute].article02

@@ -49,17 +49,17 @@
 
                 <ul class="list-link">
                     <li class="nav-link">
-                        <a href="../index.html" class="nav-link">
+                        <a href="../index.html" class="nav-link" id="link01">
                             Home
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="./articles.html" class="nav-link">
+                        <a href="./articles.html" class="nav-link" id="link02">
                             Articles
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="./contact.html" class="nav-link">
+                        <a href="./contact.html" class="nav-link" id="link03">
                             Contact
                         </a>
                     </li>
@@ -67,7 +67,7 @@
 
                 <div class="lang-menu">
                     <div >
-                        <span class="active-eng selected-lang">
+                        <span class="active-eng selected-lang" id="link04">
                             English
                         </span>
                         <!--<span class="active-por">
@@ -167,6 +167,10 @@
             },
             langMenu: document.querySelector(".lang-menu"),
             langLink: document.querySelectorAll(".lang-link"),
+            home: document.querySelector("#link01"),
+            articles: document.querySelector("#link02"),
+            contact: document.querySelector("#link03"),
+            idiom: document.querySelector("#link04"),
             topSubt: document.querySelector(".subt"),
             valueTitle: document.querySelector(".st01"),
             valueText: document.querySelector(".p01"),
@@ -190,6 +194,10 @@
 
                         const attribute = element.getAttribute('lang')
 
+                        this.home.textContent = Translate[attribute].nav01
+                        this.articles.textContent = Translate[attribute].nav02
+                        this.contact.textContent = Translate[attribute].nav03
+                        this.idiom.textContent = Translate[attribute].nav04
                         this.topSubt.textContent = Translate[attribute].subtBtn
                         this.valueTitle.textContent = Translate[attribute].st01
                         this.valueText.textContent = Translate[attribute].p01
@@ -211,6 +219,10 @@
         const Translate = {
             "english": 
             {
+                "nav01": "Home",
+                "nav02": "Articles",
+                "nav03": "Contact",
+                "nav04": "English",
                 "subtBtn":  "What to Expert about our Blog",
                 "st01": "Art of Learning",
                 "p01": "Discuss different methods of learning so people can approach them to achieve the best performance. We are happy about people's success whose have the set mind of always grow in their career or in them personal life.",
@@ -222,6 +234,10 @@
             },
             "portuguese":
             {
+                "nav01": "Início",
+                "nav02": "Artigos",
+                "nav03": "Contato",
+                "nav04": "Inglês",
                 "subtBtn": "O que esperar sobre o nosso Blog",
                 "st01": "A arte de Aprender",
                 "p01": "Discutir diferentes métodos de aprendizagem para que as pessoas possam abordá-los para conseguir o melhor desempenho. Ficamos felizes com o sucesso das pessoas que têm a intenção de sempre crescer na carreira ou na vida pessoal.",
@@ -232,6 +248,10 @@
             },
             "french":
             {
+                "nav01": "Home",
+                "nav02": "Articles",
+                "nav03": "Contact",
+                "nav04": "Englisch",
                 "subtBtn": "Que faut-il savoir sur notre blog",
                 "st01": "L'art d'apprendre",
                 "p01": "Discutez des différentes méthodes d'apprentissage afin que les gens puissent les approcher pour obtenir les meilleures performances. Nous sommes heureux du succès des gens qui ont la volonté de toujours grandir dans leur carrière ou dans leur vie personnelle.",
@@ -242,6 +262,10 @@
             },
             "german":
             {
+                "nav01": "Home",
+                "nav02": "Artikel",
+                "nav03": "Kontakt",
+                "nav04": "Englisch",
                 "subtBtn": "Was Sie über unseren Blog erfahren sollten", 
                 "st01": "Die Kunst des Lernens" ,
                 "p01": "Diskutiere verschiedene Lernansätze, sodass die Menschen verschiedene Herangehensweisen kennenlernen, die ihnen ermöglicht ihre bestmögliche Leistung zu erbringen. Wir freuen uns über den Erfolgt von Menschen mit diesem Mindset; die in ihrer Karriere oder ihrem Privatleben stetig wachsen. ",

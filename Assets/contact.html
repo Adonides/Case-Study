@@ -41,19 +41,19 @@
                     </div>
                     <ul class="nav-list">
                         <li class="nav-link">
-                            <a href="../index.html" rel="prev">Home</a> 
+                            <a href="../index.html" rel="prev" id="link01">Home</a> 
                         </li>
                         <li class="nav-link">
-                            <a href="./about.html" rel="next">About</a>
+                            <a href="./about.html" rel="next" id="link02">About</a>
                         </li>
                         <li class="nav-link">
-                        <a href="./articles.html" rel="next">Articles</a> 
+                        <a href="./articles.html" rel="next"id="link03">Articles</a> 
                         </li>
                     </ul>
 
                     <div class="lang-menu">
                         <div >
-                            <span class="active-eng selected-lang">
+                            <span class="active-eng selected-lang" id="link04">
                                 English
                             </span>
                             <!--<span class="active-por">
@@ -118,7 +118,7 @@
                             <i class="fa fa-envelope-o" aria-hidden="true"></i>
                         </div>
                         <div class="contact-text">
-                            <h3>E-mail</h3>
+                            <h3 class="st04">E-mail</h3>
                             <p>
                                 <a href="mailto:webprojects.js@yahoo.com">webprojects.js@yahoo.com</a>
                             </p>
@@ -129,7 +129,7 @@
                             <i class="fa fa-phone" aria-hidden="true"></i>
                         </div>
                         <div class="contact-text">
-                            <h3>Phone</h3>
+                            <h3 class="st05">Phone</h3>
                             <p>+351 9613-84823</p>
                         </div>
                     </div>
@@ -156,10 +156,11 @@
                             <div>
                                 <input type="hidden" name="_next" value="https://stayfocus.cf/Assets/thanks.html">
                             </div>
-
+                            
 
                             <div class="input-box">
-                                <input class="submit" type="submit" value="Send">
+                                <button class="submit" type="submit">send</button>
+                                <!--<input class="submit" type="submit" value="Send">-->
                             </div>
                         </form>
                     </div>
@@ -202,11 +203,18 @@
                     })
                 },
                 langLink: document.querySelectorAll(".lang-link"),
+                home: document.querySelector("#link01"),
+                about: document.querySelector("#link02"),
+                articles: document.querySelector("#link03"),
+                idiom: document.querySelector("#link04"),
                 topSubt: document.querySelector(".subt"),
                 contactTitle: document.querySelector(".st01"),
                 contactText: document.querySelector(".p01"),
                 addressTitle: document.querySelector(".st02"),
                 formTitle: document.querySelector(".st03"),
+                mailTitle: document.querySelector(".st04"),
+                phoneTitle: document.querySelector(".st05"),
+                submitBtn: document.querySelector(".submit"),
                 
                 getLangActive() {
                     this.langLink.forEach(element => {
@@ -224,11 +232,18 @@
 
                             const attribute = element.getAttribute('lang')
 
+                            this.home.textContent = Translate[attribute].nav01
+                            this.about.textContent = Translate[attribute].nav02
+                            this.articles.textContent = Translate[attribute].nav03
+                            this.idiom.textContent = Translate[attribute].nav04
                             this.topSubt.textContent = Translate[attribute].subtBtn
                             this.contactTitle.textContent = Translate[attribute].st01
                             this.contactText.textContent = Translate[attribute].p01
                             this.addressTitle.textContent = Translate[attribute].st02
                             this.formTitle.textContent = Translate[attribute].st03
+                            this.mailTitle.textContent = Translate[attribute].st04
+                            this.phoneTitle.textContent = Translate[attribute].st05
+                            this.submitBtn.textContent = Translate[attribute].st06
                         })
                     })
                 },
@@ -241,35 +256,63 @@
             const Translate = {
                 "english":
                 {
+                    "nav01": "Home",
+                    "nav02": "Articles",
+                    "nav03": "Contact",
+                    "nav04": "English",
                     "subtBtn":  "Contact us",
                     "st01": "Contact",
                     "p01": "For questions, partnership inquiries, suggestions, or general comments, please fill out the form or email me straight away.",
                     "st02": "Address",
                     "st03": "Send us your Message",
+                    "st04": "E-mail",
+                    "st05": "Phone",
+                    "st06": "Send",
                 },
                 "portuguese":
                 {
+                    "nav01": "Início",
+                    "nav02": "Sobre",
+                    "nav03": "Artigos",
+                    "nav04": "Inglês",
                     "subtBtn":  "Fale conosco",
                     "st01": "Contato",
                     "p01": "Em caso de dúvidas, perguntas sobre parcerias, sugestões ou comentários gerais, preencha o formulário abaixo ou encaminhe um e-mail diretamente. ",
                     "st02": "Endereço",
                     "st03": "Envie-nos a sua mensagem ",
+                    "st04": "E-mail",
+                    "st05": "Telefone",
+                    "st06": "Enviar",
                 },
                 "french":
                 {
+                    "nav01": "Home",
+                    "nav02": "environ",
+                    "nav03": "Articles",
+                    "nav04": "Anglais",
                     "subtBtn":  "Nous contacter ",
                     "st01": "Contact",
                     "p01": "Pour des questions, des demandes de partenariat, des suggestions ou des commentaires généraux, veuillez remplir le formulaire ou m'envoyer un e-mail immédiatement.",
                     "st02": "Adresse ",
                     "st03": "Envoyez-nous votre message ",
+                    "st04": "E-mail",
+                    "st05": "Téléphone",
+                    "st06": "Envoyer",
                 },
                 "german":
                 {
+                    "nav01": "Home",
+                    "nav02": "Über",
+                    "nav03": "Artikel",
+                    "nav04": "Englisch",
                     "subtBtn":  "Kontaktiere uns",
                     "st01": "Kontakt",
                     "p01": "Bei Fragen, Partnerschaftsanfragen, Vorschlägen oder allgemeinen Kommentaren füllen Sie bitte das Formular aus oder senden Sie mir umgehend eine E-Mail.",
                     "st02": "Adresse",
                     "st03": "Senden Sie uns Ihre Nachricht ",
+                    "st04": "E-mail",
+                    "st05": "Telefon",
+                    "st06": "Senden",
                 },
             }
 

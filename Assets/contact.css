@@ -230,7 +230,7 @@ nav.sticky .mobile-nav .bar {
 .top-contact {
     position: relative;
     background-position: center;
-    background-image: url("../../assets/CaseStudy/online-cottonbro.jpg");
+    background-image: url("../Images/online-cottonbro\ 1200x850.jpg");
     background-size: cover;
     min-height: 100vh;
     width: 100%;
@@ -280,7 +280,7 @@ nav.sticky .mobile-nav .bar {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url("../../assets/CaseStudy/lisbon-blue-opacity.jpg");
+    background: url("../Images/lisbon-blue-opacity\ 1200x800.jpg");
     background-size: cover;
 }
 

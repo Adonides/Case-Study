@@ -195,7 +195,7 @@ nav.sticky .mobile-nav .bar {
 
 .top {
     padding: 0rem 5rem; /*0top botton 5 dos lados*/
-    background: url("./Images/bedroom\ Office\ 1280x811.jpg");
+    background: url("./Images/bedroom\ Office\ 1100x810.jpg");
     background-size: cover;
     min-height: 100vh;
     width: 100%;
@@ -628,6 +628,18 @@ nav.sticky .mobile-nav .bar {
     
 }
 /*RESPONSIVE.MOBILE==========================================*/
+@media screen and (max-width: 420px){
+    .intro-container {
+        font-size: 2.5rem;
+    }
+
+    #slogan {
+        position: absolute;
+        top: 63%;
+        left: 40%;
+        font-size: 1.5rem;
+    }
+}
 @media screen and (max-width: 580px){
     nav.sticky {
         padding: 15px 60px;
@@ -662,12 +674,12 @@ nav.sticky .mobile-nav .bar {
                     display: flex;
                 }
 
-.main-title {
-    position: absolute; /*pode mover para onde quiser*/
-    top: 25%;
-    left: 50%;
-    transform: translate(-40%, -30%); /*perfeito centralizado*/
-}
+    .main-title {
+        position: absolute; /*pode mover para onde quiser*/
+        top: 25%;
+        left: 50%;
+        transform: translate(-40%, -30%); /*perfeito centralizado*/
+        }
 
     #article01 {
         font-size: 1em; /*diminuir a fonte*/

@@ -207,19 +207,14 @@ nav.sticky .mobile-nav .bar {
     
 }
 
-
-
-.main-title {
+.main-title a {
     position: absolute; /*pode mover para onde quiser*/
     top: 25%;
     left: 50%;
-    transform: translate(-25%, -30%); /*perfeito centralizado*/
+    transform: translate(-50%, -35%); /*perfeito centralizado*/
     font-family: 'Lobster', cursive;
     font-weight: lighter;
     font-size: 5rem;
-}
-
-.main-title a {
     color: var(--orange);
     cursor: default;
 }
@@ -232,16 +227,37 @@ nav.sticky .mobile-nav .bar {
 
 #slogan {
     position: absolute;
-    top: 64%;
-    left: 40%;
-    font-size: 1.5rem;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.4rem;
+}
+
+.btns-links {
+    max-width: 85%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .section-focus .home-subtitle {
     position: absolute;
     top: 80%;
-    left: 45%;
-    transform: translate(-80%);
+    left: 20%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    font-size: 1.5rem;
+    background-color: var(--text-bg);
+    padding: 20px;
+    border: solid var(--dark-orange);
+    opacity: 0.5;
+    transition: 0.3s ease-in;
+}
+
+.section-focus .latest-subtitle {
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    transform: translate(-50%, -50%);
     font-weight: 600;
     font-size: 1.5rem;
     background-color: var(--text-bg);
@@ -252,6 +268,10 @@ nav.sticky .mobile-nav .bar {
 }
 
 .section-focus .home-subtitle:hover {
+    opacity: 1;
+}
+
+.section-focus .latest-subtitle:hover {
     opacity: 1;
 }
 
@@ -582,7 +602,7 @@ nav.sticky .mobile-nav .bar {
 
 #translatedBy {
     font-weight: bold;
-    font-size: small;
+    font-size: 0.6rem;
 }
 
 .footer .icons {

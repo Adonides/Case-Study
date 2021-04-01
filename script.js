@@ -41,6 +41,7 @@ const Languages = {
         nav04: "English",
         home: "Self taught is the fast way to learn",
         checkOut: "Foreword",
+        latest: "Latest Article",
         article: "The Future of Education",
         author: "By Adonides Amparo",
         datePosted: "March 22th, 2021",
@@ -73,6 +74,7 @@ const Languages = {
         nav04: "Inglês",
         home: "Auto-didata é a maneira mais rápida de aprender ",
         checkOut: "Prefácio",
+        latest: "Último Artigo",
         article: "O Futuro da Educação",
         author: "Por Adonides Amparo",
         datePosted: "22 de Março de 2021",
@@ -105,6 +107,7 @@ const Languages = {
         nav04: "Anglais",
         home: "L'auto-apprentissage est le moyen le plus rapide d'apprendre",
         checkOut: "avant-propos",
+        latest: "dernier article",
         article: "L'avenir de l'éducation ",
         author: "De Adonides Amparo",
         datePosted: "22 Mars 2021",
@@ -137,6 +140,7 @@ const Languages = {
         nav04: "Englisch",
         home: "Selbstunterricht ist der schnelle Weg zu lernen ",
         checkOut: "Vorwort",
+        latest: "der neueste Artikel",
         article: "Die Zukunft der Bildung ",
         author: "Von Adonides Amparo",
         datePosted: "22. März 2021",
@@ -157,7 +161,7 @@ const Languages = {
         article15: "Meine Erfahrung",
         commentTitle: "Hinterlasse einen Kommentar",
         translated: "Übersetzt von:",
-        by: "Pauline Kiefaber und Nori",
+        by: "Nori",
     }
 }
 
@@ -174,6 +178,7 @@ const Translate = {
                 link04.textContent = Languages.english.nav04
                 slogan.textContent = Languages.english.home
                 contentBtn.textContent = Languages.english.checkOut
+                latestBtn.textContent = Languages.english.latest
                 title.textContent = Languages.english.article
                 writeBy.textContent = Languages.english.author
                 articleDate.textContent = Languages.english.datePosted
@@ -212,6 +217,7 @@ const Translate = {
                 link04.textContent = Languages.portuguese.nav04
                 slogan.textContent = Languages.portuguese.home
                 contentBtn.textContent = Languages.portuguese.checkOut
+                latestBtn.textContent = Languages.portuguese.latest
                 title.textContent = Languages.portuguese.article
                 writeBy.textContent = Languages.portuguese.author
                 articleDate.textContent = Languages.portuguese.datePosted
@@ -250,6 +256,7 @@ const Translate = {
                 link04.textContent = Languages.french.nav04
                 slogan.textContent = Languages.french.home
                 contentBtn.textContent = Languages.french.checkOut
+                latestBtn.textContent = Languages.french.latest
                 title.textContent = Languages.french.article
                 writeBy.textContent = Languages.french.author
                 articleDate.textContent = Languages.french.datePosted
@@ -288,6 +295,7 @@ const Translate = {
                 link04.textContent = Languages.german.nav04
                 slogan.textContent = Languages.german.home
                 contentBtn.textContent = Languages.german.checkOut
+                latestBtn.textContent = Languages.german.latest
                 title.textContent = Languages.german.article
                 writeBy.textContent = Languages.german.author
                 articleDate.textContent = Languages.german.datePosted
@@ -316,6 +324,7 @@ const Translate = {
     },
     slogan: document.querySelector("#slogan"),
     contentBtn: document.querySelector("#contentBtn"),
+    latestBtn: document.querySelector("#latestBtn"),
     about: document.querySelector("#link01"),
     articles: document.querySelector("#link02"),
     contact: document.querySelector("#link03"),
@@ -349,6 +358,7 @@ const Translate = {
 
                 this.slogan.textContent = Languages[attribute].home
                 this.contentBtn.textContent = Languages[attribute].checkOut
+                this.latestBtn.textContent = Languages[attribute].latest
                 this.about.textContent = Languages[attribute].nav01
                 this.articles.textContent = Languages[attribute].nav02
                 this.contact.textContent = Languages[attribute].nav03

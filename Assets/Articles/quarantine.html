@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="quarantine.css"> 
     <title>My Experience</title>
     <script src="https://kit.fontawesome.com/d26011a575.js" crossorigin="anonymous"></script>
-    <script src="quarantine.js"></script>
+    
 </head>
 <body>
     <main>
@@ -109,7 +109,7 @@
                 <p class="date"><small><em><span id="writeBy">By Adonides Amparo</span> <br> <span id="articleDate">March 31st, 2021</span></em></small></p>
                 
                 <h3 id="subtitle">
-                    With the current situation in the world, we must take the opportunity to keep up with our studies. This is the right time to start to study if you have not start yet!
+                    With the current situation in the world, we must take the opportunity to keep up with our studies. This is the right time to start to study if you have not started yet!
                 </h3>
                 <p id="p01">
                     We are not question the decision of many countries to do or not the lockdown, this is March 2021 It means is one year after all those started around the globe and living with restriction and even total lockdown are driving us crazy. 
@@ -124,18 +124,18 @@
                 </p>
                 
                 <p id="p04">
-                    The quarantine helps all that focus to happen, the true is in my head there was nothing more to do, it is all closed, no restaurants, no bars, no meet ups that I used to go, all I have was small drinks with colleagues in my apartment.  I had everything under control, and everything happened under my roof, so study was much easier because that was no trip to be made other party to be at, there was not distraction in my mind to disturb my productive routine.
+                    Quarantine helps all that focus to happen, the true is in my head I had nothing else to do, because everything was closed, no restaurants, no bars, no meet ups some places that I used to go, I just met few was  colleagues in my apartment time to time for dinner and drinks and games. I had everything under control, and everything happened under my wish, so study was much easier because that was no trip to be made other party to be at, there was not distraction in my mind to disturb my productive routine."
                 </p>
                 <p id="p05">
-                    However, when the second wave came in January in this year, I was not able to keep up like before. why was that?
+                    However, when the second wave came in January in this year, I was not able to keep up like before and why is that?
                 </p>
                 
                 <p id="p06">
-                    In February I realized what I need to bring back that good routine, with productive and joy one… The good vibe around you makes all the difference, yeah “happiness is the key for happiness”. I had lost the control and worries and express was taking over my head! So, I packed my luggage and went back to Brazil to my family, I needed to change the atmosphere, and be surrounded with close people with no worries about any next payment or of being unemployed. 
+                    In February I realized what I need to bring back that good routine, with productive and joy moments… The good vibe around makes all the difference, yeah “happiness is the key for happiness”. I had lost the control and worries and express were taking over my head! So, I packed my luggage and went back to Brazil to my family, I needed to change the atmosphere, and be surrounded with close people with no worries about any next payment or of being unemployed for example. 
                 </p>
 
-                <p>
-                    It was a smart move, today I feel under control again, productive and enjoy good times. My routines the study and growing and projects are getting out to reality. I am happy and I want you happy with yourself as well!!!
+                <p id="p07">
+                    It was a smart move, today I feel under control again, with productive and enjoying good times. My routines the study and projects are getting out to reality. I am happy and I want you to feel this happiness with yourself as well!!!
                 </p>
                 <div class="button-reaction">
                     <div id="react" class="reaction">
@@ -229,8 +229,8 @@
                     </div>
                 </div>
                 <p>&copy;WeB.ProJEct$</p>
-                <p><small>Background photos from:</small></p>
-                <p><small><strong>Olia Danilevich</strong>no Pexels</small>
+                <p><small>Background photo from:</small></p>
+                <p><small><strong>Olia Danilevich </strong>no Pexels</small>
                 </p>
                 <p><small id="translatePage">Translated by: </small></p>
                 <p id="translatedBy"><small><strong>Brooke Taylor</strong></small></p>
@@ -238,5 +238,254 @@
             </footer>
         </section>
     </main>
+    <script>
+        /*NAVBAR==========================================*/
+        const NavbarScroll = {
+            getScrolling() {
+                window.addEventListener("scroll", function(){
+                    const navbar = document.querySelector("nav")
+                    navbar.classList.toggle("sticky", window.scrollY > 0)
+                })
+            },
+            mobileBar() {
+                const navbar = document.getElementsByClassName('links')[0]
+            navbar.classList.toggle('active-navbar')
+            }
+        }
+
+        const Translate = {
+            slogan: document.querySelector("#slogan"),
+            contentBtn: document.querySelector("#contentBtn"),
+            about: document.querySelector("#link01"),
+            articles: document.querySelector("#link02"),
+            contact: document.querySelector("#link03"),
+            idiom: document.querySelector("#link04"),
+            title: document.querySelector("#title"),
+            writeBy: document.querySelector("#writeBy"),
+            articleDate: document.querySelector("#articleDate"),
+            subtitle: document.querySelector("#subtitle"),
+            p01: document.querySelector("#p01"),
+            p02: document.querySelector("#p02"),
+            p03: document.querySelector("#p03"),
+            p04: document.querySelector("#p04"),
+            p05: document.querySelector("#p05"),
+            p06: document.querySelector("#p06"),
+            p07: document.querySelector("#p07"),
+            opinion: document.querySelector("#opinion"),
+            comment: document.querySelector("#comment"),
+            /*articleSection: document.querySelector("#mt01"),
+            traditionalTitle: document.querySelector("#st01"),
+            onlineTitle: document.querySelector("#st02"),
+            experienceTitle: document.querySelector("#st03"),*/
+            translatedPage: document.querySelector("#translatePage"),
+            translatedBy: document.querySelector("#translatedBy"),
+
+            clickEvent() {
+                const translateLink = document.querySelectorAll(".lang-text")
+                translateLink.forEach(element => {
+                    element.addEventListener('click', () => {
+                        const attribute = element.getAttribute('lang')
+
+                        this.slogan.textContent = Languages[attribute].home
+                        this.contentBtn.textContent = Languages[attribute].checkOut
+                        this.about.textContent = Languages[attribute].nav01
+                        this.articles.textContent = Languages[attribute].nav02
+                        this.contact.textContent = Languages[attribute].nav03
+                        this.idiom.textContent = Languages[attribute].nav04
+                        this.title.textContent = Languages[attribute].article
+                        this.writeBy.textContent = Languages[attribute].author
+                        this.articleDate.textContent = Languages[attribute].datePosted
+                        this.subtitle.textContent = Languages[attribute].article01
+                        this.p01.textContent = Languages[attribute].article02
+                        this.p02.textContent = Languages[attribute].article03
+                        this.p03.textContent = Languages[attribute].article04
+                        this.p04.textContent = Languages[attribute].article05
+                        this.p05.textContent = Languages[attribute].article06
+                        this.p06.textContent = Languages[attribute].article07
+                        this.p07.textContent = Languages[attribute].article08
+                        this.opinion.textContent = Languages[attribute].article09
+                        /*this.articleSection.textContent = Languages[attribute].article12
+                        this.traditionalTitle.textContent = Languages[attribute].article13
+                        this.onlineTitle.textContent = Languages[attribute].article14
+                        this.experienceTitle.textContent = Languages[attribute].article15
+                        this.comment.textContent = Languages[attribute].commentTitle*/
+                        this.translatedPage.textContent = Languages[attribute].translated
+                        this.translatedBy.textContent = Languages[attribute].by
+                    })
+                })
+            },
+        }
+
+            /*LANGUAGES==========================================*/
+        const Languages = {
+            
+            english: {
+                intro01: "for Self taught learners,",
+                intro02: "for everyday",
+                intro03: "challenge.",
+                nav01: "About",
+                nav02: "Articles",
+                nav03: "Contact",
+                nav04: "English",
+                home: "Self taught is the fast way to learn",
+                checkOut: "Latest Article",
+                article: "Taking Advantage of Quarantine",
+                author: "By Adonides Amparo",
+                datePosted: "March 22th, 2021",
+                article01: "With the current situation in the world, we must take the opportunity to keep up with our studies. This is the right time to start to study if you have not started yet!",
+                article02: "We are not question the decision of many countries to do or not the lockdown, this is March 2021 It means is one year after all those started around the globe and living with restriction and even total lockdown are driving us crazy.",
+                
+                article03: "Keep our mind busy might be one good solution to pass the time and avoid depression for this situation, I highly recommend online courses! It does not need to be the paid ones, there are so many good contents online from different points of views and languages.",
+                article04: "One year ago, when all this started, I spend my quarantine studying Spanish, practicing meditation, learning guitar and exercising with push ups and abs. those were one month and a half of so productive and good moments, guess what I was feeling great!",
+                
+                article05: "Quarantine helps all that focus to happen, the true is in my head I had nothing else to do, because everything was closed, no restaurants, no bars, no meet ups some places that I used to go, I just met few was  colleagues in my apartment time to time for dinner and drinks and games. I had everything under control, and everything happened under my wish, so study was much easier because that was no trip to be made other party to be at, there was not distraction in my mind to disturb my productive routine.",
+                article06: "However, when the second wave came in January in this year, I was not able to keep up like before and why is that?",
+                
+                article07: "In February I realized what I need to bring back that good routine, with productive and joy moments… The good vibe around makes all the difference, yeah “happiness is the key for happiness”. I had lost the control and worries and express were taking over my head! So, I packed my luggage and went back to Brazil to my family, I needed to change the atmosphere, and be surrounded with close people with no worries about any next payment or of being unemployed for example.",
+                article08: "It was a smart move, today I feel under control again, with productive and enjoying good times. My routines the study and projects are getting out to reality. I am happy and I want you to feel this happiness with yourself as well!!!",
+                article09: "Write Your Opinion",
+                article10: "Contents",
+                article11: "Traditional Education",
+                article12: "Online Education",
+                article13: "My Experience",
+                commentTitle: "Leave a Comment",
+                translated: "Translated by:",
+                by: "Brooke Taylor",
+            },
+            portuguese: {
+                intro01: "para autoditadas",
+                intro02: "para todos os dias",
+                intro03: "de desafios",
+                nav01: "Sobre",
+                nav02: "Artigos",
+                nav03: "Contato",
+                nav04: "Inglês",
+                home: "Auto-didata é a maneira mais rápida de aprender ",
+                checkOut: "Prefácio",
+                article: "Aproveitando a Quarentena",
+                author: "Por Adonides Amparo",
+                datePosted: "31 de Março de 2021",
+                article01: "Com a situação atual do mundo, devemos aproveitar para acompanhar nossos estudos. Este é o momento certo para começar a estudar, se você ainda não começou! ",
+                article02: "Não estamos questionando a decisão de muitos países de fazer ou não a quarentena, estamos em março de 2021 isso Significa que já faz um ano que tudo isso começou ao redor do globo e que vivemos com restrições e até mesmo bloqueio total a verdade que toda essa situação esta nos deixando loucos.",
+                article03: "Manter a mente ocupada pode ser uma boa solução para passar o tempo e evitar a depressão numa situação dessa, recomendo fortemente os cursos online! Não precisa ser os pagos, há tantos conteúdos bons online de diferentes matérias e idiomas.",
+                article04: "Um ano atrás, quando tudo isso começou, passei minha quarentena estudando online espanhol, praticando meditação, aprendendo violão e me exercitando com flexões e abdominais. foi um mês e meio de momentos uito produtivos e prazesoros, adivinha estava sentindo ótimo! ",
+                
+                article05: "A quarentena ajuda a que todo esse foco aconteça, a verdade é que na minha cabeça não tinha mais nada a fazer, tudo fechado, sem restaurantes, sem bares, sem encontros que eu costumava ir, apenas me reunia com colegas no meu apartamento toda semana para jantar, beber algo e jogar. Eu tinha tudo sob controle, e tudo acontecia sob meu desejo até mesmo com a vida social, então estudar é muito mais fácil porque aquele momento não tinha uma viagem para ser feita ou uma festa para ir, o fato que sabia que ninguem está se divertindo , assim não havia distração em minha mente para atrapalhar minha rotina produtiva.",
+                article06: "No entanto, quando a segunda onda veio em janeiro deste ano, não consegui acompanhar como antes, por que isso aconteceu?",
+                
+                article07: "Em fevereiro percebi o que precisava para trazer de volta aquela boa rotina, com momentos produtivos e alegres… E a boa vibe ao redor faz toda a diferença, sim “a felicidade é a chave da felicidade”. Eu tinha perdido o controle e as preocupações e o estresse estavam tomando conta da minha cabeça! Então, arrumei minhas malas e voltei para o Brasil com minha família, precisava mudar o clima, estar cercado de gente próxima e sem me preocupar com o próximo pagamento ou da situação de desempregada por exemplo.",
+                article08: "E isso foi uma jogada inteligente, hoje me sinto sob controle novamente, produtivo e aproveitando bons momentos com minha familia. Minhas rotinas de estudo e projetos estão se tornando realidade. Estou feliz e quero ver você feliz também!!!",
+                article09: "Escreva sua opinião",
+                article10: "Conteúdo",
+                article11: "Educação tradicional",
+                article12: "Educação online",
+                article13: "Minha Experinência",
+                commentTitle: "Deixe um Comentário",
+                translated: "Traduzido por:",
+                by: "-",
+            },
+            french: {
+                intro01: "pour les apprenants autodidactes",
+                intro02: "pour tous les jours",
+                intro03: "défis",
+                nav01: " Àpropos",
+                nav02: "Articles",
+                nav03: "Contact",
+                nav04: "Anglais",
+                home: "L'auto-apprentissage est le moyen le plus rapide d'apprendre",
+                checkOut: "avant-propos",
+                article: "Tirer parti de la quarantaine",
+                author: "De Adonides Amparo",
+                datePosted: "31 Mars 2021",
+                article01: "Avec la situation actuelle dans le monde, nous devons profiter de l'occasion pour suivre nos études. C'est le bon moment pour commencer à étudier si vous n'avez pas encore commencé!",
+                article02: "Nous ne remettons pas en question la décision de nombreux pays de faire ou non le verrouillage, nous sommes en mars 2021.Cela signifie qu'un an après que tous ceux qui ont commencé dans le monde entier et vivent avec des restrictions et même un verrouillage total nous rendent fous.",
+                article03: "Garder notre esprit occupé pourrait être une bonne solution pour passer le temps et éviter la dépression dans cette situation, je recommande vivement les cours en ligne! Cela n'a pas besoin d'être payant, il y a tellement de bons contenus en ligne de différents points de vue et langues.",
+                article04: "Il y a un an, quand tout cela a commencé, j'ai passé ma quarantaine à étudier l'espagnol, à pratiquer la méditation, à apprendre la guitare et à faire de l'exercice avec des pompes et des abdos. c'étaient un mois et demi de moments tellement productifs et bons, devinez ce que je me sentais bien!",
+                
+                article05: "La quarantaine aide toute cette concentration à se produire, le vrai est dans ma tête que je n'avais rien d'autre à faire, car tout était fermé, pas de restaurants, pas de bars, pas de rencontres dans certains endroits où j'allais, je viens de rencontrer peu de collègues à mon appartement de temps en temps pour le dîner et les boissons et les jeux. J'avais tout sous contrôle, et tout se passait selon mon souhait, donc étudier était beaucoup plus facile parce que ce n'était pas un voyage à faire pour une autre partie, il n'y avait pas de distraction dans mon esprit pour perturber ma routine productive.",
+                article06: "Cependant, lorsque la deuxième vague est arrivée en janvier de cette année, je n'ai pas pu suivre comme avant, pourquoi ?",
+                
+                article07: "En février j'ai réalisé ce dont j'avais besoin pour ramener cette bonne routine, avec des moments productifs et joyeux… La bonne ambiance autour fait toute la différence, ouais «le bonheur est la clé du bonheur». J'avais perdu le contrôle et les soucis et le stress prenaient le dessus sur ma tête! Du coup, j'ai fait mes valises et je suis retourné au Brésil chez ma famille, j'avais besoin de changer d'ambiance, d'être entouré de proches sans se soucier d'un prochain paiement ou d'être au chômage par exemple.",
+                article08: "C'était un geste intelligent, aujourd'hui je me sens à nouveau sous contrôle, productif et passe de bons moments. Mes routines, l'étude et la croissance et les projets deviennent réalité. Je suis heureux et je veux que tu sois heureux avec toi aussi !!!",
+                article09: "Écrivez votre opinion",
+                /*article10: "Contenu",
+                article11: "traditionnelle",
+                article12: "Éducation en ligne",
+                article13: "Mon expérience",
+                commentTitle: "Laissez un commentaire",*/
+                translated: "Traduit par:",
+                by: "Léonard Piegay",
+            },
+            german: {
+                intro01: "für unterrichtete Selbstlerner",
+                intro02: "für jeden Tag",
+                intro03: "Herausforderungen",
+                nav01: "Über",
+                nav02: "Artikel",
+                nav03: "Kontakt",
+                nav04: "Englisch",
+                home: "Selbstunterricht ist der schnelle Weg zu lernen ",
+                checkOut: "Vorwort",
+                article: "Quarantäne nutzen",
+                author: "Von Adonides Amparo",
+                datePosted: "31. März 2021",
+                article01: "Angesichts der gegenwärtigen Situation in der Welt müssen wir die Gelegenheit nutzen, um mit unseren Studien Schritt zu halten. Dies ist der richtige Zeitpunkt, um mit dem Studium zu beginnen, wenn Sie noch nicht begonnen haben!",
+                article02: "Wir stellen die Entscheidung vieler Länder, die Sperrung zu tun oder nicht, nicht in Frage. Dies ist März 2021 Das heißt, es ist ein Jahr, nachdem alle, die rund um den Globus angefangen haben und mit Einschränkungen und sogar totaler Sperrung leben, uns verrückt machen.",
+                article03: "Halten Sie unseren Geist beschäftigt könnte eine gute Lösung sein, um die Zeit zu vertreiben und Depressionen in dieser Situation zu vermeiden. Ich empfehle Online-Kurse! Es müssen nicht die bezahlten sein, es gibt so viele gute Inhalte online aus verschiedenen Blickwinkeln und Sprachen.",
+                article04: "Vor einem Jahr, als das alles begann, verbrachte ich meine Quarantäne damit, Spanisch zu lernen, Meditation zu üben, Gitarre zu lernen und mit Liegestützen und Bauchmuskeln zu trainieren. Das waren anderthalb Monate so produktiver und guter Momente, raten Sie mal, was ich großartig fühlte!",
+                
+                article05: "Quarantäne hilft dabei, dass all dieser Fokus zustande kommt. In meinem Kopf hatte ich nichts anderes zu tun, weil alles geschlossen war, keine Restaurants, keine Bars, keine Treffen an einigen Orten, an denen ich früher war. Ich habe nur wenige Kollegen getroffen meine Wohnung von Zeit zu Zeit zum Abendessen und Getränke und Spiele. Ich hatte alles unter Kontrolle und alles geschah unter meinem Wunsch, so dass das Lernen viel einfacher war, da dies keine Reise war, an der eine andere Partei teilnehmen konnte. Ich hatte keine Ablenkung im Kopf, um meine produktive Routine zu stören.",
+                article06: "Als jedoch die zweite Welle im Januar dieses Jahres kam, konnte ich nicht mehr so weitermachen wie zuvor, warum war das so?",
+                
+                article07: "Im Februar wurde mir klar, was ich brauche, um diese gute Routine mit produktiven und freudigen Momenten zurückzubringen. Die gute Stimmung macht den Unterschied. Ja, „Glück ist der Schlüssel zum Glück“. Ich hatte die Kontrolle verloren und Sorgen und Stress übernahmen meinen Kopf! Also packte ich mein Gepäck und ging zu meiner Familie nach Brasilien zurück. Ich musste die Atmosphäre ändern und von nahen Menschen umgeben sein, die sich keine Sorgen um die nächste Zahlung machten oder zum Beispiel arbeitslos waren.",
+                article08: "Es war ein kluger Schachzug, heute fühle ich mich wieder unter Kontrolle, produktiv und genieße gute Zeiten. Meine Routinen das Studium und das Wachsen und Projekte werden in die Realität umgesetzt. Ich bin glücklich und ich möchte, dass du auch mit dir selbst glücklich bist !!!",
+                article09: "Schreib deine Meinung",
+                /*article10: "Inhalt",
+                article11: "Traditionelle Bildung",
+                article12: "Online-Bildung",
+                article13: "Meine Erfahrung",
+                commentTitle: "Hinterlasse einen Kommentar",*/
+                translated: "Übersetzt von:",
+                by: "Nori",
+            }
+        }
+        /*REACTIONS==========================================*/
+const ReactionIcons = {
+    
+    values: ['thumbUp', 'thumbDown'],
+    setSelected(reaction) {
+        const elements = document.getElementById(reaction)
+        elements.classList.toggle('selected-reaction')
+
+        const reactions = [...ReactionIcons.values]
+        const index = reactions.indexOf(reaction)
+        reactions.splice(index, 1)
+
+        ReactionIcons.setUnselected(reactions)
+    },
+    setUnselected(reactions) {
+        reactions.forEach((reaction) => {
+            const elements = document.getElementById(reaction)
+            elements.classList.remove('selected-reaction')
+        })
+        
+    },
+    icons: document.getElementsByClassName('.emoji'),
+    setCounter() {
+        for (let i = 0; i <= ReactionIcons.reactions.length; i++) {
+            ReactionIcons.reaction[i].addEventListener('click', e => {
+                e.dataset.reactionId = reaction.id
+            })
+        }
+    }
+}
+
+        function renderPage() {
+            NavbarScroll.getScrolling()
+
+            Translate.clickEvent()
+        }
+        renderPage()
+    </script>
 </body>
 </html>

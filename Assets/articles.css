@@ -343,6 +343,7 @@ nav.sticky .mobile-nav .bar {
     font-size: 3em;
     line-height: 1.1;
     margin-top: 2.5rem;
+    color: var(--dark-orange);
 }
 
 .link-section {

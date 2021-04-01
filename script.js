@@ -42,6 +42,8 @@ const Languages = {
         home: "Self taught is the fast way to learn",
         checkOut: "Foreword",
         article: "The Future of Education",
+        author: "By Adonides Amparo",
+        datePosted: "March 22th, 2021",
         article01: "Before enrolling a college or online course, we got to think what is the best method to learn X or Z.",
         article02: "Is the traditional Education the best option and what to say about online learning? In this blog I will run over through those questions and give my sincere opinion about it.",
         article03: "Traditional Education",
@@ -58,6 +60,8 @@ const Languages = {
         article14: "Online Education",
         article15: "My Experience",
         commentTitle: "Leave a Comment",
+        translated: "Translated by:",
+        by: "Brooke Taylor",
     },
     portuguese: {
         intro01: "para autoditadas",
@@ -70,6 +74,8 @@ const Languages = {
         home: "Auto-didata é a maneira mais rápida de aprender ",
         checkOut: "Prefácio",
         article: "O Futuro da Educação",
+        author: "Por Adonides Amparo",
+        datePosted: "22 de Março de 2021",
         article01: "Antes de matricular-nos em uma faculdade ou curso online, devemos pensar qual é o melhor método para aprender X ou Z. ",
         article02: "A educação tradicional é a melhor opção? e o que dizer sobre o aprendizado online? Neste blog irei repassar essas perguntas e dar minha opinião sincera a respeito.",
         article03: "Educação tradicional ",
@@ -86,34 +92,40 @@ const Languages = {
         article14: "Educação online",
         article15: "Minha Experinência",
         commentTitle: "Deixe um Comentário",
+        translated: "Traduzido por:",
+        by: "-",
     },
     french: {
         intro01: "pour les apprenants autodidactes",
         intro02: "pour tous les jours",
         intro03: "défis",
-        nav01: "Environ",
+        nav01: " Àpropos",
         nav02: "Articles",
         nav03: "Contact",
         nav04: "Anglais",
         home: "L'auto-apprentissage est le moyen le plus rapide d'apprendre",
         checkOut: "avant-propos",
         article: "L'avenir de l'éducation ",
-        article01: "Avant de s'inscrire à un collège ou à un cours en ligne, nous devons réfléchir à la meilleure méthode pour apprendre X ou Z. ",
-        article02: "L'éducation traditionnelle est-elle la meilleure option? et que dire de l'apprentissage en ligne? Dans ce blog, je vais parcourir ces questions et donner mon opinion sincère à ce sujet.",
+        author: "De Adonides Amparo",
+        datePosted: "22 Mars 2021",
+        article01: "Avant de s'inscrire dans une école ou à un cours en ligne, le mieux réfléchir à la meilleure méthode pour apprendre quelque chose.",
+        article02: "L'éducation traditionnelle est-elle la meilleure option ? et que dire de l'apprentissage en ligne ? Dans ce blog, je vais parcourir ces questions et donner mon avis sur ce sujet.",
         article03: "Éducation traditionnelle",
-        article04: "Plus je pense à l'apprentissage, moins je deviens enthousiasmé par l'apprentissage traditionnel, si vous me demandez qu'il est sur le point de suivre un modèle, une routine et la plupart du temps d'être obligé d'apprendre des choses que vous n'êtes pas intéressantes et bien pire, ce ne sera pas être nécessaire pour votre carrière du tout. C'est un investissement très coûteux et vous oblige à vous déplacer pour être là où la classe prendra le relais en dépensant plus de temps. ",
-        article05: "La meilleure défense contre l'apprentissage traditionnel serait le réseau, les programmes et les stages offerts par les instituts qui ont le pouvoir de s'associer avec les entreprises. Oh oui, mais ces avantages ne sont pas pour tous les anciens élèves, la plupart du temps, seuls quelques étudiants y participent. Non vraiment, le principal aspect que je choisirais dans l'enseignement traditionnel est la structure, je le dis car il y a des matières, car il y a des carrières, il faut utiliser du matériel de dépense, et l'exemple le plus simple est d'étudier la médecine, je dirais qu'il est presque impossible de achetez-le pour avoir un laboratoire privé. Même une malédiction partielle en ligne difficile ferait l'affaire! ",
+        article04: "Plus je pense à l'apprentissage, moins l'apprentissage traditionnel me semble enthousiasmant, de mon point de vue, suivre un modèle, une routine, la plupart du temps être obligé d'apprendre des choses qui ne vous intéresse pas et pire encore : apprendre des chose qui ne seront pas nécessaires pour votre carrière. C'est un investissement très coûteux et vous oblige à vous déplacer pour être là où la se passe le cours ce qui vous fera perdre du temps et de l’argent.",
+        article05: "La meilleure défense contre l'apprentissage traditionnel serait le réseau, les programmes et les stages offerts par les instituts qui ont le pouvoir de s'associer avec les entreprises. Oh oui, mais ces avantages ne sont pas pour tous les élèves, la plupart du temps, seuls quelques étudiants y participent. Non vraiment, le principal aspect que je choisirais dans l'enseignement traditionnel est la structure, je le dis car il y a des matières et des carrières dans lesquelles il faut utiliser du matériel coûteux, et l'exemple le plus simple est d'étudier la médecine, je dirais qu'il est presque impossible de s’acheter un laboratoire privé. Même si des cours en ligne partiels ferait l'affaire !",
         article06: "Apprentissage en ligne ",
-        article07: "Cela peut être si puissant, tout ce dont nous avons besoin pour y parvenir est une routine, comme nous le faisons sur l'apprentissage traditionnel, ouais exactement pour avoir un temps spécifique pour étudier, gérer le temps pourrait être le point principal que vous échouerez à avoir une expérience réussie avec malédiction en ligne. ",
-        article08: "Ce genre d'esprit est ce que j'aime, dans ce point vous vous poussez pour un autre niveau! Parce que vous commencez à devenir le patron de votre apprentissage, à gérer votre temps et à être plus indépendant, dans certaines malédictions en ligne, vous avez des cours sur vidéo et même vous pouvez interagir avec la conférence. Ce qui est cool, c'est que vous gérez un peu votre emploi du temps flexible, que vous payez beaucoup moins et que vous bénéficiez toujours du soutien de l'institution.",
+        article07: "Cela peut être si puissant, tout ce dont nous avons besoin pour y parvenir c’est d’une routine, comme nous le faisons sur l'apprentissage traditionnel, ouais exactement pour avoir un temps spécifique pour étudier, La gestion du temps pourrait être le point principal qui vous fera échouerez à avoir une expérience réussie avec les cours en ligne.",
+        article08: "Ce genre d'esprit est ce que j'aime, être capable de se poussez au niveau supérieur ! Parce que vous commencez à devenir le patron de votre apprentissage, à gérer votre temps et à être plus indépendant, dans certains cours en ligne, vous avez des cours en vidéo et vous pouvez même interagir avec la conférence. Ce qui est cool, c'est que vous gérez un peu votre emploi du temps de manière flexible, vous payez beaucoup moins et que vous bénéficiez toujours du soutien de l'institution.",
         article09: "Le bonheur est la clé du bonheur.",
-        article10: "L'objectif ici en fin de compte est d'atteindre notre objectif le plus rapidement possible, et toutes les méthodes d'éducation comme vos avantages et inconvénients, et plus que celles que nous changeons pour chaque personne qui l'applique. Dans la manière de valoriser votre éducation, nous nous savons bien le faire avec bonheur parce que croire que peu importe que vous aimez le sujet ou non, le vrai est que des temps difficiles viendront. Cela peut être pour comprendre un concert ou le manque de temps pour étudier, vous pourriez alors être frustré et être heureux dans ce que nous faisons surpassera toute frustration, car chaque moment difficile sera juste un bon défi! ",
+        article10: "L'objectif ici en fin de compte est d'atteindre notre objectif le plus rapidement possible, et toutes les méthodes d'éducation ont des avantages et des inconvénients, et plus encore c’est différent entre toutes les personnes qui l’applique. Dans la manière de valoriser notre éducation, nous devons bien nous connaître pour le faire avec bonheur parce que croire n’importe peu que vous aimez le sujet ou non, le vérité est que des temps difficiles arrivent. Cela peut être pour comprendre un concert ou le manque de temps pour étudier, vous pourriez alors être frustré et être heureux dans ce que nous faisons surpassera toute frustration, car chaque moment difficile sera juste un bon défi !",
         article11: "Écrivez votre opinion",
         article12: "Contenu",
         article13: "traditionnelle",
         article14: "Éducation en ligne",
         article15: "Mon expérience",
         commentTitle: "Laissez un commentaire",
+        translated: "Traduit par:",
+        by: "Léonard Piegay",
     },
     german: {
         intro01: "für unterrichtete Selbstlerner",
@@ -126,6 +138,8 @@ const Languages = {
         home: "Selbstunterricht ist der schnelle Weg zu lernen ",
         checkOut: "Vorwort",
         article: "Die Zukunft der Bildung ",
+        author: "Von Adonides Amparo",
+        datePosted: "22. März 2021",
         article01: "Bevor wir uns für ein Studium oder einen Online-Kurs anmelden, müssen wir uns überlegen, was die beste Methode ist, um X oder Z zu lernen.",
         article02: "Ist die traditionelle Lernmethodik die beste Option? Oder vielleicht doch besser Online Lernmethoden? In diesem Blog werde ich diese Fragen durchgehen und meine aufrichtige Meinung dazu abgeben.",
         article03: "Traditionelles Lernen",
@@ -142,6 +156,8 @@ const Languages = {
         article14: "Online-Bildung",
         article15: "Meine Erfahrung",
         commentTitle: "Hinterlasse einen Kommentar",
+        translated: "Übersetzt von:",
+        by: "Pauline Kiefaber und Nori",
     }
 }
 
@@ -159,6 +175,8 @@ const Translate = {
                 slogan.textContent = Languages.english.home
                 contentBtn.textContent = Languages.english.checkOut
                 title.textContent = Languages.english.article
+                writeBy.textContent = Languages.english.author
+                articleDate.textContent = Languages.english.datePosted
                 subtitle.textContent = Languages.english.article01
                 p01.textContent = Languages.english.article02
                 te.textContent = Languages.english.article03
@@ -175,6 +193,8 @@ const Translate = {
                 st02.textContent = Languages.english.article14
                 st03.textContent = Languages.english.article15
                 comment.textContent = Languages.english.commentTitle*/
+                translatePage.textContent = Languages.english.translated
+                translatedBy.textContent = Languages.english.by
             }
             
         }
@@ -193,6 +213,8 @@ const Translate = {
                 slogan.textContent = Languages.portuguese.home
                 contentBtn.textContent = Languages.portuguese.checkOut
                 title.textContent = Languages.portuguese.article
+                writeBy.textContent = Languages.portuguese.author
+                articleDate.textContent = Languages.portuguese.datePosted
                 subtitle.textContent = Languages.portuguese.article01
                 p01.textContent = Languages.portuguese.article02
                 te.textContent = Languages.portuguese.article03
@@ -209,7 +231,8 @@ const Translate = {
                 st02.textContent = Languages.portuguese.article14
                 st03.textContent = Languages.portuguese.article15
                 comment.textContent = Languages.portuguese.commentTitle*/
-                
+                translatePage.textContent = Languages.portuguese.translated
+                translatedBy.textContent = Languages.portuguese.by
             }
             
         }
@@ -228,6 +251,8 @@ const Translate = {
                 slogan.textContent = Languages.french.home
                 contentBtn.textContent = Languages.french.checkOut
                 title.textContent = Languages.french.article
+                writeBy.textContent = Languages.french.author
+                articleDate.textContent = Languages.french.datePosted
                 subtitle.textContent = Languages.french.article01
                 p01.textContent = Languages.french.article02
                 te.textContent = Languages.french.article03
@@ -244,7 +269,8 @@ const Translate = {
                 st02.textContent = Languages.french.article14
                 st03.textContent = Languages.french.article15
                 comment.textContent = Languages.french.commentTitle*/
-                
+                translatePage.textContent = Languages.french.translated
+                translatedBy.textContent = Languages.french.by
             }
             
         }
@@ -263,6 +289,8 @@ const Translate = {
                 slogan.textContent = Languages.german.home
                 contentBtn.textContent = Languages.german.checkOut
                 title.textContent = Languages.german.article
+                writeBy.textContent = Languages.german.author
+                articleDate.textContent = Languages.german.datePosted
                 subtitle.textContent = Languages.german.article01
                 p01.textContent = Languages.german.article02
                 te.textContent = Languages.german.article03
@@ -279,6 +307,8 @@ const Translate = {
                 st02.textContent = Languages.german.article14
                 st03.textContent = Languages.german.article15
                 comment.textContent = Languages.german.commentTitle*/
+                translatePage.textContent = Languages.german.translated
+                translatedBy.textContent = Languages.german.by
             }
             
         }
@@ -291,6 +321,8 @@ const Translate = {
     contact: document.querySelector("#link03"),
     idiom: document.querySelector("#link04"),
     title: document.querySelector("#title"),
+    writeBy: document.querySelector("#writeBy"),
+    articleDate: document.querySelector("#articleDate"),
     subtitle: document.querySelector("#subtitle"),
     p01: document.querySelector("#p01"),
     traditional: document.querySelector("#te"),
@@ -307,6 +339,8 @@ const Translate = {
     traditionalTitle: document.querySelector("#st01"),
     onlineTitle: document.querySelector("#st02"),
     experienceTitle: document.querySelector("#st03"),*/
+    translatedPage: document.querySelector("#translatePage"),
+    translatedBy: document.querySelector("#translatedBy"),
     clickEvent() {
         const translateReload = document.querySelectorAll("[data-reload]")
         translateReload.forEach(element => {
@@ -320,6 +354,8 @@ const Translate = {
                 this.contact.textContent = Languages[attribute].nav03
                 this.idiom.textContent = Languages[attribute].nav04
                 this.title.textContent = Languages[attribute].article
+                this.writeBy.textContent = Languages[attribute].author
+                this.articleDate.textContent = Languages[attribute].datePosted
                 this.subtitle.textContent = Languages[attribute].article01
                 this.p01.textContent = Languages[attribute].article02
                 this.traditional.textContent = Languages[attribute].article03
@@ -336,6 +372,8 @@ const Translate = {
                 this.onlineTitle.textContent = Languages[attribute].article14
                 this.experienceTitle.textContent = Languages[attribute].article15
                 this.comment.textContent = Languages[attribute].commentTitle*/
+                this.translatedPage.textContent = Languages[attribute].translated
+                this.translatedBy.textContent = Languages[attribute].by
             })
         })
     },

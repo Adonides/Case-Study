@@ -363,6 +363,12 @@ nav.sticky .mobile-nav .bar {
     margin-left: 1rem;
     color: red;
 }
+.link-section a:hover {
+    color: var(--dark-orange);
+}
+.link-section .date {
+    color: #333;
+}
 /*FOOTER===============================*/
 
 .footer-text {

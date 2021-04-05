@@ -155,6 +155,10 @@ nav {
     background-image: url(https://www.countryflags.io/us/flat/16.png);
 }
 
+.es:before {
+    background-image: url(https://www.countryflags.io/es/flat/16.png);
+}
+
 .fr:before {
     background-image: url(https://www.countryflags.io/fr/flat/16.png);
 }

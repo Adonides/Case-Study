@@ -277,6 +277,45 @@ const Translate = {
         }
         
     },
+    spanish() {
+        if (window.location.hash) {
+            if (window.location.hash === "#es") {
+                introduction.textContent = Languages.spanish.intro01
+                everyday.textContent = Languages.spanish.intro02
+                challenge.textContent = Languages.spanish.intro03
+                link01.textContent = Languages.spanish.nav01
+                link02.textContent = Languages.spanish.nav02
+                link03.textContent = Languages.spanish.nav03
+                link04.textContent = Languages.spanish.nav04
+                slogan.textContent = Languages.spanish.home
+                contentBtn.textContent = Languages.spanish.checkOut
+                latestBtn.textContent = Languages.spanish.latest
+                title.textContent = Languages.spanish.article
+                writeBy.textContent = Languages.spanish.author
+                articleDate.textContent = Languages.spanish.datePosted
+                subtitle.textContent = Languages.spanish.article01
+                p01.textContent = Languages.spanish.article02
+                te.textContent = Languages.spanish.article03
+                p02.textContent = Languages.spanish.article04
+                p03.textContent = Languages.spanish.article05
+                ol.textContent = Languages.spanish.article06
+                p04.textContent = Languages.spanish.article07
+                p05.textContent = Languages.spanish.article08
+                happiness.textContent = Languages.spanish.article09
+                p06.textContent = Languages.spanish.article10
+                opinion.textContent = Languages.spanish.article11
+                /*mt01.textContent = Languages.spanish.article12
+                st01.textContent = Languages.spanish.article13
+                st02.textContent = Languages.spanish.article14
+                st03.textContent = Languages.spanish.article15
+                comment.textContent = Languages.spanish.commentTitle*/
+                translatePage.textContent = Languages.spanish.translated
+                translatedBy.textContent = Languages.spanish.by
+            }
+            
+        }
+        
+    },
     french() {
         if (window.location.hash) {
             if (window.location.hash === "#fr") {
@@ -605,6 +644,7 @@ const MainPage = {
         Translate.french()
         Translate.german()
         Translate.english()
+        Translate.spanish()
         Translate.clickEvent()
 
         

@@ -8,10 +8,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,900;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="quarantine.css"> 
+    <link rel="stylesheet" href="style01.css"> 
     <title>My Experience</title>
     <script src="https://kit.fontawesome.com/d26011a575.js" crossorigin="anonymous"></script>
-    
+    <script src="script01.js"></script>
+    <style>
+        .top {
+            padding: 0rem 5rem; 
+            background: url("../../Images/online-olia-danilevich\ 1200x800.jpg");
+            background-size: cover;
+            min-height: 100vh;
+            width: 100%;
+            opacity: 0.6;
+        }
+    </style>
 </head>
 <body>
     <main>
@@ -100,7 +110,7 @@
                         Self taught is the fast way to learn
                     </p>
                     <h2 class="home-subtitle"> <a href="#article01" id="contentBtn">
-                        Latest Article
+                        Article
                     </a></h2>
                     
                 </div>
@@ -242,19 +252,7 @@
         </section>
     </main>
     <script>
-        /*NAVBAR==========================================*/
-        const NavbarScroll = {
-            getScrolling() {
-                window.addEventListener("scroll", function(){
-                    const navbar = document.querySelector("nav")
-                    navbar.classList.toggle("sticky", window.scrollY > 0)
-                })
-            },
-            mobileBar() {
-                const navbar = document.getElementsByClassName('links')[0]
-            navbar.classList.toggle('active-navbar')
-            }
-        }
+        
 
         const Translate = {
             slogan: document.querySelector("#slogan"),
@@ -475,39 +473,8 @@
                 by: "Nori",
             }
         }
-        /*REACTIONS==========================================*/
-const ReactionIcons = {
-    
-    values: ['thumbUp', 'thumbDown'],
-    setSelected(reaction) {
-        const elements = document.getElementById(reaction)
-        elements.classList.toggle('selected-reaction')
-
-        const reactions = [...ReactionIcons.values]
-        const index = reactions.indexOf(reaction)
-        reactions.splice(index, 1)
-
-        ReactionIcons.setUnselected(reactions)
-    },
-    setUnselected(reactions) {
-        reactions.forEach((reaction) => {
-            const elements = document.getElementById(reaction)
-            elements.classList.remove('selected-reaction')
-        })
-        
-    },
-    icons: document.getElementsByClassName('.emoji'),
-    setCounter() {
-        for (let i = 0; i <= ReactionIcons.reactions.length; i++) {
-            ReactionIcons.reaction[i].addEventListener('click', e => {
-                e.dataset.reactionId = reaction.id
-            })
-        }
-    }
-}
 
         function renderPage() {
-            NavbarScroll.getScrolling()
 
             Translate.clickEvent()
         }

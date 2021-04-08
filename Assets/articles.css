@@ -395,7 +395,7 @@ nav.sticky .mobile-nav .bar {
 }
 
 /*RESPONSIVE.MOBILE==========================================*/
-@media screen and (max-width: 500px){
+@media screen and (max-width: 580px){
     .nav-bar.sticky {
         padding: 15px 60px;
     }

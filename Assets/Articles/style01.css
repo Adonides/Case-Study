@@ -300,6 +300,7 @@ nav.sticky .mobile-nav .bar {
 
 #article01 p {
     margin: .8em 0;
+    line-height: 1.3;
 }
 
 .button-reaction {
@@ -641,6 +642,10 @@ nav.sticky .mobile-nav .bar {
         top: 63%;
         left: 40%;
         font-size: 1.5rem;
+    }
+
+    #article01 p {
+        line-height: 1.4;
     }
 }
 @media screen and (max-width: 580px){

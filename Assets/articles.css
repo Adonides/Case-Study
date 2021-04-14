@@ -256,6 +256,14 @@ nav.sticky .mobile-nav .bar {
     line-height: 4rem;
 }
 
+#slogan {
+    position: absolute;
+    top: 65%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    font-size: 1.4rem;
+}
+
 .subtitle {
     position: absolute;
     top: 75%;

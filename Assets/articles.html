@@ -93,7 +93,12 @@
             </nav>
 
             <div class="top-article">
-                <h1 class="main-title">Stay Focus</h1>
+                <hearder>
+                    <h1 class="main-title">Stay Focus</h1>
+                </hearder>
+                <p id="slogan">
+                    Self taught is the fast way to learn
+                </p>
                 <h2 class="subtitle">
                     <a id="coming" href="#traditional">Coming articles </a>
                 </h2>
@@ -137,6 +142,7 @@
             </section>
             <article id="traditional" class="articles-subjects">
                 <section  class="subjects">
+                    <!--------TRADITIONAL EDUCATION-------------->
                     <div  class="link-section">
                         <h2 class="article-title st01">Traditional Education</h2>
                         <ul class="traditional-list">
@@ -151,6 +157,7 @@
                         </div>
                         </ul>
                     </div>
+                    <!--------ONLINE EDUCATION-------------->
                     <hr id="online">
                     <div  class="link-section">
                         <h2 class="article-title st02">Online Education</h2>
@@ -169,6 +176,7 @@
                             </div>
                         </ul>
                     </div>
+                    <!--------MY EXPERIENCE-------------->
                     <hr id="experience">
                     <div class="link-section">
                         <h2 class="article-title st03">My Experience</h2>
@@ -228,6 +236,7 @@
                 })
             },
             langLink: document.querySelectorAll(".lang-link"),
+            slogan: document.querySelector("#slogan"),
             home: document.querySelector("#link01"),
             about: document.querySelector("#link02"),
             contact: document.querySelector("#link03"),
@@ -279,6 +288,7 @@
 
                         const attribute = element.getAttribute('lang')
 
+                        this.slogan.textContent = Translate[attribute].mySlogan
                         this.home.textContent = Translate[attribute].nav01
                         this.about.textContent = Translate[attribute].nav02
                         this.contact.textContent = Translate[attribute].nav03
@@ -330,6 +340,7 @@
                     "nav02": "About",
                     "nav03": "Contact",
                     "nav04": "English",
+                    "mySlogan": "Self taught is the fast way to learn",
                     "coming": "Coming articles",
                     "mt01": "Contents",
                     "st01": "Traditional Education",
@@ -358,6 +369,7 @@
                     "nav02": "Sobre",
                     "nav03": "Contato",
                     "nav04": "Inglês",
+                    "mySlogan": "Auto-didata é a maneira mais rápida de aprender",
                     "coming": "Próximos artigos",
                     "mt01": "Conteúdo",
                     "st01": "Educação tradicional",
@@ -366,10 +378,10 @@
                     "st04": "Educação tradicional",
                     "st05": "Educação online",
                     "st06": "Minha Experiência",
-                    "tr01": "O que mudou na educação tradicional? ",
-                    "tr02": "Prós de se matricular na educação tradicional",
-                    "tr03": "Contras de se matricular na educação tradicional",
-                    "on00": "You should be picky with E-learning!",
+                    "tr01": "Prós de se matricular na educação tradicional",
+                    "tr02": "Contras de se matricular na educação tradicional",
+                    "tr03": "O que mudou na educação tradicional?",
+                    "on00": "Você deve ser exigente com o e-learning!",
                     "on01": "Tipos de cursos online",
                     "on02": "Flexibilidade",
                     "on03": "Poupando dinheiro",
@@ -386,6 +398,7 @@
                     "nav02": "Sobre",
                     "nav03": "Contacto",
                     "nav04": "Inglés",
+                    "mySlogan": "Autodidacta es la forma más rápida de aprender",
                     "coming": "Artículos siguientes",
                     "mt01": "Contenido",
                     "st01": "Educación tradicional",
@@ -394,10 +407,10 @@
                     "st04": "Educación tradicional",
                     "st05": "Educación en línea ",
                     "st06": "Mi experiencia ",
-                    "tr01": "¿Qué ha cambiado en la educación tradicional?",
-                    "tr02": "Ventajas de inscribirse en la educación tradicional ",
-                    "tr03": "Contras de inscribirse en la educación tradicional ",
-                    "on00": "You should be picky with E-learning!",
+                    "tr01": "Ventajas de martricularse en la educación tradicional",
+                    "tr02": "Contras de martricularse en la educación tradicional",
+                    "tr03": "¿Qué ha cambiado en la educación tradicional?",
+                    "on00": "Hay que ser exigente con el e-learning",
                     "on01": "Tipos de cursos online",
                     "on02": "Flexibilidad ",
                     "on03": "Ahorrando dinero",
@@ -414,6 +427,7 @@
                     "nav02": "Environ",
                     "nav03": "Contact",
                     "nav04": "Anglais",
+                    "mySlogan": "L'auto-apprentissage est le moyen le plus rapide d'apprendre",
                     "coming": "Articles à venir",
                     "mt01": "Contenu",
                     "st01": "traditionnelle",
@@ -422,10 +436,10 @@
                     "st04": "traditionnelle",
                     "st05": "Éducation en ligne",
                     "st06": "Mon expérience",
-                    "tr01": "Qu'est-ce qui a changé dans l'éducation traditionnelle? ",
-                    "tr02": "Les avantages de l'inscription à l'éducation traditionnelle",
-                    "tr03": "Les inconvénients de l'inscription à l'éducation traditionnelle",
-                    "on00": "You should be picky with E-learning!",
+                    "tr01": "Les avantages de l'inscription à l'éducation traditionnelle",
+                    "tr02": "Les inconvénients de l'inscription à l'éducation traditionnelle",
+                    "tr03": "Qu'est-ce qui a changé dans l'éducation traditionnelle?",
+                    "on00": "Vous devriez être pointilleux avec l'e-learning",
                     "on01": "Types de cours en ligne à venir ",
                     "on02": "Flexibilité",
                     "on03": "Économies d'argent",
@@ -442,6 +456,7 @@
                     "nav02": "Über",
                     "nav03": "Kontakt",
                     "nav04": "Englisch",
+                    "mySlogan": "Selbstunterricht ist der schnelle Weg zu lernen ",
                     "coming": "Kommende Artikel",
                     "mt01": "Inhalt",
                     "st01": "Traditionelles Lernen",
@@ -450,10 +465,10 @@
                     "st04": "Traditionelles Lernen",
                     "st05": "Online Lernen",
                     "st06": "Meine Erfahrung",
-                    "tr01": "Was hat sich in der traditionellen Bildung geändert? ",
-                    "tr02": "Die Vorteile einer Einschreibung in die traditionelle Bildung folgen",
-                    "tr03": "Nachteile der Einschreibung in die traditionelle Bildung",
-                    "on00": "You should be picky with E-learning!",
+                    "tr01": "Die Vorteile einer Einschreibung in die traditionelle Bildung folgen",
+                    "tr02": "Nachteile der Einschreibung in die traditionelle Bildung",
+                    "tr03": "Was hat sich in der traditionellen Bildung geändert?",
+                    "on00": "Sie sollten mit E-Learning wählerisch sein",
                     "on01": "Arten von Online-Kursen folgen",
                     "on02": "Flexibilität",
                     "on03": "Geld sparen",

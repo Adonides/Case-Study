@@ -654,8 +654,15 @@ nav.sticky .mobile-nav .bar {
 }
 
 @media screen and (max-width: 360px){
+    #slogan {
+        position: absolute;
+        top: 59%;
+        left: 40%;
+        font-size: 1.5rem;
+    }
+
     #article01 h2 {
-        font-size: 3em; 
+        font-size: 2.8em; 
     }
 }
 @media screen and (max-width: 580px){

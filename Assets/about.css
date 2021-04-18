@@ -50,7 +50,8 @@ a, li {
     transition: 0.6s;   
 }
 
-.logo-link {
+.AA-logo {
+    margin-right: 1rem;
     margin-left: -3rem;
     opacity: 0.7;  
 }
@@ -62,7 +63,7 @@ a, li {
     align-items: center;
 }
 
-.nav-link {
+.nav-link a {
     padding: 0 0.6rem;
     font-size: 0.9rem;
     color:#222;
@@ -259,7 +260,7 @@ nav.sticky .mobile-nav .bar {
 .instagram a:hover {
     color: rgb(252, 79, 131);
 }
-
+/*TOP==============================================*/
 .section {
     text-align: center;
     padding: 42px 80px;
@@ -267,7 +268,7 @@ nav.sticky .mobile-nav .bar {
 
 .main-title {
     position: absolute;
-    top: 35%;
+    top: 28%;
     left: 50%; /* width:100%; */
     transform: translate(-45%, -30%); /*text-align: center; */
     font-family: 'Lobster', cursive;
@@ -276,6 +277,15 @@ nav.sticky .mobile-nav .bar {
     color: var(--dark-orange);
     cursor: default;
     line-height: 5rem;
+}
+
+#slogan {
+    position: absolute;
+    top: 60%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    font-size: 1.4rem;
+    color: black;
 }
 
 .top-subtitle  {
@@ -350,14 +360,18 @@ nav.sticky .mobile-nav .bar {
     letter-spacing: 0.8rem;
 }
 
-@media (min-width: 650px) {
-    .logo-link {
-        margin-left: -4rem;
+@media (min-width:625px ) {
+    .AA-logo {
+        margin-left: -3rem;
         margin-right: 1rem;
     }
 
     .nav-link a  {
         padding: 0 3rem;
+    }
+
+    .icons {
+        margin-left: 0.3rem;
     }
 }
 /*RESPONSIVE.MOBILE==========================================*/
@@ -400,7 +414,7 @@ nav.sticky .mobile-nav .bar {
 
                 .main-title {
                     position: absolute; /*pode mover para onde quiser*/
-                    top: 25%;
+                    top: 23%;
                     left: 50%;
                     transform: translate(-40%, -30%); /*perfeito centralizado*/
                 }

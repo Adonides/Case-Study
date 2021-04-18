@@ -8,10 +8,16 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,900;1,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
         <title>Contact</title>
-        
         <link rel="stylesheet" href="./contact.css">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KQM1WK6M7H"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-KQM1WK6M7H');
+        </script>
         <script src="https://kit.fontawesome.com/d26011a575.js" crossorigin="anonymous"></script>
-        
     </head>
     <body>
         <main>
@@ -93,7 +99,12 @@
                 </nav>
             
                 <div class="top-contact">
-                    <h1 class="main-title">Stay Focus</h1>
+                    <header>
+                        <h1 class="main-title">Stay Focus</h1>
+                    </header>
+                    <p id="slogan">
+                        Self taught is the fast way to learn
+                    </p>
                     <h2 class="subtitle">
                         <a href="#contact" class="subt">Contact us</a>
                     </h2>
@@ -206,6 +217,7 @@
                     })
                 },
                 langLink: document.querySelectorAll(".lang-link"),
+                slogan: document.querySelector("#slogan"),
                 home: document.querySelector("#link01"),
                 about: document.querySelector("#link02"),
                 articles: document.querySelector("#link03"),
@@ -235,6 +247,7 @@
 
                             const attribute = element.getAttribute('lang')
 
+                            this.slogan.textContent = Translate[attribute].mySlogan
                             this.home.textContent = Translate[attribute].nav01
                             this.about.textContent = Translate[attribute].nav02
                             this.articles.textContent = Translate[attribute].nav03
@@ -263,6 +276,7 @@
                     "nav02": "Articles",
                     "nav03": "Contact",
                     "nav04": "English",
+                    "mySlogan": "Self taught is the fast way to learn",
                     "subtBtn":  "Contact us",
                     "st01": "Contact",
                     "p01": "For questions, partnership inquiries, suggestions, or general comments, please fill out the form or email me straight away.",
@@ -278,6 +292,7 @@
                     "nav02": "Sobre",
                     "nav03": "Artigos",
                     "nav04": "Inglês",
+                    "mySlogan": "Auto-didata é a maneira mais rápida de aprender",
                     "subtBtn":  "Fale conosco",
                     "st01": "Contato",
                     "p01": "Em caso de dúvidas, perguntas sobre parcerias, sugestões ou comentários gerais, preencha o formulário abaixo ou encaminhe um e-mail diretamente. ",
@@ -293,6 +308,7 @@
                     "nav02": "Sobre",
                     "nav03": "Artículos",
                     "nav04": "Inglés",
+                    "mySlogan": "Autodidacta es la forma más rápida de aprender",
                     "subtBtn":  "Hable con nosotros",
                     "st01": "Contacto",
                     "p01": "En caso de dudas, preguntas sobre asociaciones, sugerencias o comentarios generales, complete el formulario a continuación o envíe un correo electrónico directamente.",
@@ -308,6 +324,7 @@
                     "nav02": "Àpropos",
                     "nav03": "Articles",
                     "nav04": "Anglais",
+                    "mySlogan": "L'auto-apprentissage est le moyen le plus rapide d'apprendre",
                     "subtBtn":  "Nous contacter ",
                     "st01": "Contact",
                     "p01": "Pour des questions, des demandes de partenariat, des suggestions ou des commentaires généraux, veuillez remplir le formulaire ou m'envoyer un e-mail immédiatement.",
@@ -323,6 +340,7 @@
                     "nav02": "Über",
                     "nav03": "Artikel",
                     "nav04": "Englisch",
+                    "mySlogan": "Selbstunterricht ist der schnelle Weg zu lernen ",
                     "subtBtn":  "Kontaktiere uns",
                     "st01": "Kontakt",
                     "p01": "Bei Fragen, Partnerschaftsanfragen, Vorschlägen oder allgemeinen Kommentaren füllen Sie bitte das Formular aus oder senden Sie mir umgehend eine E-Mail.",

@@ -8,11 +8,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,900;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/d26011a575.js" crossorigin="anonymous"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous">
-    </script>
     <title>About</title>
     <link rel="stylesheet" href="about.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KQM1WK6M7H"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-KQM1WK6M7H');
+    </script>
+    <script src="https://kit.fontawesome.com/d26011a575.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <main>
@@ -108,6 +114,9 @@
             <header>
                 <h1 class="main-title">Stay Focus</h1>
             </header>
+            <p id="slogan">
+                Self taught is the fast way to learn
+            </p>
             <h2 class="top-subtitle"> <a href="#about" class="subt">
                 What to Expert about our Blog
             </a></h2>
@@ -170,6 +179,7 @@
             },
             langMenu: document.querySelector(".lang-menu"),
             langLink: document.querySelectorAll(".lang-link"),
+            slogan: document.querySelector("#slogan"),
             home: document.querySelector("#link01"),
             articles: document.querySelector("#link02"),
             contact: document.querySelector("#link03"),
@@ -197,6 +207,7 @@
 
                         const attribute = element.getAttribute('lang')
 
+                        this.slogan.textContent = Translate[attribute].mySlogan
                         this.home.textContent = Translate[attribute].nav01
                         this.articles.textContent = Translate[attribute].nav02
                         this.contact.textContent = Translate[attribute].nav03
@@ -226,6 +237,7 @@
                 "nav02": "Articles",
                 "nav03": "Contact",
                 "nav04": "English",
+                "mySlogan": "Self taught is the fast way to learn",
                 "subtBtn":  "What to Expert about our Blog",
                 "st01": "Art of Learning",
                 "p01": "Discuss different methods of learning so people can approach them to achieve the best performance. We are happy about people's success whose have the set mind of always grow in their career or in them personal life.",
@@ -241,6 +253,7 @@
                 "nav02": "Artigos",
                 "nav03": "Contato",
                 "nav04": "Inglês",
+                "mySlogan": "Auto-didata é a maneira mais rápida de aprender",
                 "subtBtn": "O que esperar sobre o nosso Blog",
                 "st01": "A arte de Aprender",
                 "p01": "Discutir diferentes métodos de aprendizagem para que as pessoas possam abordá-los para conseguir o melhor desempenho. Ficamos felizes com o sucesso das pessoas que têm a intenção de sempre crescer na carreira ou na vida pessoal.",
@@ -255,6 +268,7 @@
                 "nav02": "Artículos",
                 "nav03": "Contacto",
                 "nav04": "Inglés",
+                "mySlogan": "Autodidacta es la forma más rápida de aprender",
                 "subtBtn": "Que esperar en nuestro Blog",
                 "st01": "El arte de aprender",
                 "p01": "Discutir diferentes enfoques de aprendizaje para que las personas conozcan diferentes enfoques que les permitan rendir al máximo. Nos alegra ver el éxito de las personas con esta mentalidad, que están creciendo en su carrera o en su vida personal.",
@@ -269,6 +283,7 @@
                 "nav02": "Articles",
                 "nav03": "Contact",
                 "nav04": "Englisch",
+                "mySlogan": "L'auto-apprentissage est le moyen le plus rapide d'apprendre",
                 "subtBtn": "Que faut-il savoir sur notre blog",
                 "st01": "L'art d'apprendre",
                 "p01": "Discutez des différentes méthodes d'apprentissage afin que les gens puissent les approcher pour obtenir les meilleures performances. Nous sommes heureux du succès des gens qui ont la volonté de toujours grandir dans leur carrière ou dans leur vie personnelle.",
@@ -283,6 +298,7 @@
                 "nav02": "Artikel",
                 "nav03": "Kontakt",
                 "nav04": "Englisch",
+                "mySlogan": "Selbstunterricht ist der schnelle Weg zu lernen",
                 "subtBtn": "Was Sie über unseren Blog erfahren sollten", 
                 "st01": "Die Kunst des Lernens" ,
                 "p01": "Diskutiere verschiedene Lernansätze, sodass die Menschen verschiedene Herangehensweisen kennenlernen, die ihnen ermöglicht ihre bestmögliche Leistung zu erbringen. Wir freuen uns über den Erfolgt von Menschen mit diesem Mindset; die in ihrer Karriere oder ihrem Privatleben stetig wachsen. ",

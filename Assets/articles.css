@@ -463,12 +463,12 @@ nav.sticky .mobile-nav .bar {
 
 @media (min-width: 625px) {
     .logo {
-        margin-left: -1rem;
+        margin-left: -2.3rem;
         margin-right: 1rem;
     }
 
     .nav-link a {
-        padding: 0 3.5rem;
+        padding: 0 3rem;
     }
 
     

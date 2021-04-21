@@ -335,10 +335,9 @@ nav.sticky .mobile-nav .bar {
     justify-content: space-between;
 }
 
-/*.reaction {
-    
-    
-}*/
+.read-more {
+    color: rgb(247, 114, 6);
+}
 
 .reaction-title {
     display: inline-block;

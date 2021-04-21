@@ -26,7 +26,7 @@
         
             <nav class="nav-bar">
                 <div class="logo">
-                    <a href="../index.html">
+                    <a href="../index.html" rel="prev">
                     <img src="../Images/logo-32x32.png" alt="AA-logo">
                     </a>
                 </div>
@@ -108,7 +108,7 @@
                     Self taught is the fast way to learn
                 </p>
                 <h2 class="subtitle">
-                    <a id="coming" href="#traditional">Coming articles </a>
+                    <a id="coming" href="#traditional">New articles </a>
                 </h2>
             </div>
             <hr>
@@ -155,13 +155,13 @@
                         <h2 class="article-title st01">Traditional Education</h2>
                         <ul class="traditional-list">
                             <div class="coming-article">
-                                <li ><a href="./Articles/prosTraditional.html" rel="next" class="tr01">Pros of enrolling in traditional Education</a></li>     <span><small class="date">April 14th, 2021</small></span>
+                                <li ><a href="./Articles/prosTraditional.html" rel="next" class="tr01">Pros of enrolling in traditional Education</a></li>     <span><small class="date dt02">April 14th, 2021</small></span>
                             </div>
                             <div class="coming-article">
-                                <li class="tr02">Cons of enrolling in traditional Education</li> <span><small class="soon02">coming soon</small></span>
+                                <li class="tr02">Cons of enrolling in traditional Education</li> <span><small class="soon05">coming soon</small></span>
                             </div>
                             <div class="coming-article">
-                                <li class="tr03">What have changed in traditional Education?</li><span><small class="soon03">coming soon</small></span>
+                                <li class="tr03">What have changed in traditional Education?</li><span><small class="soon06">coming soon</small></span>
                         </div>
                         </ul>
                     </div>
@@ -171,16 +171,16 @@
                         <h2 class="article-title st02">Online Education</h2>
                         <ul class="online-list">
                             <div class="coming-article">
-                                <li><a href="./Articles/eLearning.html" rel="next" class="on00">You should be picky with E-learning!</a></li>  <span><small class="date">April 07th, 2021</small></span>
+                                <li><a href="./Articles/eLearning.html" rel="next" class="on00">You should be picky with E-learning!</a></li>  <span><small class="date dt01">April 07th, 2021</small></span>
                             </div>
                             <div class="coming-article">
-                                <li class="on01">Types of Online Courses</li>  <span><small class="soon04">coming soon</small></span>
+                                <li class="on01">Types of Online Courses</li>  <span><small class="soon07">coming soon</small></span>
                             </div>
                             <div class="coming-article">
-                                <li class="on02">Flexibility</li> <span><small class="soon05">coming soon</small></span>
+                                <li class="on02">Flexibility</li> <span><small class="soon08">coming soon</small></span>
                             </div>
                             <div class="coming-article">
-                                <li class="on03">Money saving </li> <span><small class="soon06">coming soon</small></span>
+                                <li class="on03">Money saving </li> <span><small class="soon09">coming soon</small></span>
                             </div>
                         </ul>
                     </div>
@@ -190,19 +190,19 @@
                         <h2 class="article-title st03">My Experience</h2>
                         <ul class="experience-list">
                             <div class="coming-article">
-                                <li><a href="./Articles/quarantine.html#article01" rel="next" class="ex00">Taking Advantage of Quarantine</a></li>    <span><small class="date">March 31st, 2021</small></span>
+                                <li><a href="./Articles/quarantine.html#article01" rel="next" class="ex00">Taking Advantage of Quarantine</a></li>    <span><small class="date dt00">March 31st, 2021</small></span>
                             </div>
                             <div class="coming-article">
-                                <li class="ex01">Who am I?</li>    <span><small class="soon07">coming soon</small></span>
+                                <li><a href="./Articles/WhoAmI.html#article01" rel="next" class="ex01">Who am I?</a></li>    <span><small class="date dt03">April 21st, 2021</small></span>
                             </div>
                             <div class="coming-article">
-                                <li class="ex02">I decided to study coding</li>  <span><small class="soon08"> coming soon</small></span>
+                                <li class="ex02">I decided to study coding</li>  <span><small class="soon10"> coming soon</small></span>
                             </div>
                             <div class="coming-article">
-                                <li class="ex03">Which language to pick?</li>  <span><small class="soon09">coming soon</small></span>
+                                <li class="ex03">Which language to pick?</li>  <span><small class="soon11">coming soon</small></span>
                             </div>
                             <div class="coming-article">
-                                <li class="ex04">My study script</li>  <span><small class="soon10">coming soon</small></span>
+                                <li class="ex04">My study script</li>  <span><small class="soon12">coming soon</small></span>
                             </div>
                         </ul>
                     </div>
@@ -269,16 +269,18 @@
             experience02: document.querySelector(".ex02"),
             experience03: document.querySelector(".ex03"),
             experience04: document.querySelector(".ex04"),
-            comingSoon01: document.querySelector(".soon01"),
-            comingSoon02: document.querySelector(".soon02"),
-            comingSoon03: document.querySelector(".soon03"),
-            comingSoon04: document.querySelector(".soon04"),
+            date00: document.querySelector(".dt00"),
+            date01: document.querySelector(".dt01"),
+            date02: document.querySelector(".dt02"),
+            date03: document.querySelector(".dt03"),
             comingSoon05: document.querySelector(".soon05"),
             comingSoon06: document.querySelector(".soon06"),
             comingSoon07: document.querySelector(".soon07"),
             comingSoon08: document.querySelector(".soon08"),
             comingSoon09: document.querySelector(".soon09"),
             comingSoon10: document.querySelector(".soon10"),
+            comingSoon11: document.querySelector(".soon11"),
+            comingSoon12: document.querySelector(".soon12"),
             
             getLangActive() {
                 this.langLink.forEach(element => {
@@ -321,16 +323,18 @@
                         this.experience02.textContent = Translate[attribute].ex02
                         this.experience03.textContent = Translate[attribute].ex03
                         this.experience04.textContent = Translate[attribute].ex04
-                        this.comingSoon01.textContent = Translate[attribute].soon
-                        this.comingSoon02.textContent = Translate[attribute].soon
-                        this.comingSoon03.textContent = Translate[attribute].soon
-                        this.comingSoon04.textContent = Translate[attribute].soon
+                        this.date00.textContent = Translate[attribute].dt00
+                        this.date01.textContent = Translate[attribute].dt01
+                        this.date02.textContent = Translate[attribute].dt02
+                        this.date03.textContent = Translate[attribute].dt03
                         this.comingSoon05.textContent = Translate[attribute].soon
                         this.comingSoon06.textContent = Translate[attribute].soon
                         this.comingSoon07.textContent = Translate[attribute].soon
                         this.comingSoon08.textContent = Translate[attribute].soon
                         this.comingSoon09.textContent = Translate[attribute].soon
                         this.comingSoon10.textContent = Translate[attribute].soon
+                        this.comingSoon11.textContent = Translate[attribute].soon
+                        this.comingSoon12.textContent = Translate[attribute].soon
                         
                     })
                 })
@@ -369,6 +373,10 @@
                     "ex02": "I decided to study coding",
                     "ex03": "Which language to pick? ",
                     "ex04": "My study script ",
+                    "dt00": "March 31st, 2021",
+                    "dt01": "April 07th, 2021",
+                    "dt02": "April 14th, 2021",
+                    "dt03": "April 21st, 2021",
                     "soon": "coming soon"
                 },
                 "portuguese":
@@ -398,6 +406,10 @@
                     "ex02": "Decidi estudar programação",
                     "ex03": "Qual linguagem de programação escolher?",
                     "ex04": "Meu roteiro de estudo",
+                    "dt00": "31 de Março, 2021",
+                    "dt01": "07 de Abril, 2021",
+                    "dt02": "14 de Abril, 2021",
+                    "dt03": "21 de Abril, 2021",
                     "soon": "em breve"
                 },
                 "spanish":
@@ -427,6 +439,10 @@
                     "ex02": "Decidí estudiar programación",
                     "ex03": "¿Qué lenguaje de programación elegir?",
                     "ex04": "Mi guión de estudio",
+                    "dt00": "31 de Marzo, 2021",
+                    "dt01": "07 de Abril, 2021",
+                    "dt02": "14 de Abril, 2021",
+                    "dt03": "21 de Abril, 2021",
                     "soon": "pronto"
                 },
                 "french":
@@ -456,6 +472,10 @@
                     "ex02": "J'ai décidé d'étudier le codage",
                     "ex03": "Quelle langue choisir? ",
                     "ex04": "Mon scénario d'étude",
+                    "dt00": "31 de Mars, 2021",
+                    "dt01": "07 de Avril, 2021",
+                    "dt02": "14 de Avril, 2021",
+                    "dt03": "21 de Avril, 2021",
                     "soon": "Bientôt disponible"
                 },
                 "german":
@@ -485,6 +505,10 @@
                     "ex02": "Ich beschloss, Codierung zu studieren",
                     "ex03": "Welche Sprache soll ich wählen?",
                     "ex04": "Mein Lernskript",
+                    "dt00": "31. März, 2021",
+                    "dt01": "07. April, 2021",
+                    "dt02": "14. April, 2021",
+                    "dt03": "21. April, 2021",
                     "soon": "kommt bald "
                 },
             }

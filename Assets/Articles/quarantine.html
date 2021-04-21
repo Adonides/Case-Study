@@ -158,6 +158,9 @@
                 <p id="p07">
                     It was a smart move, today I feel under control again, with productive and enjoying good times. My routines the study and projects are getting out to reality. I am happy and I want you to feel this happiness with yourself as well!!!
                 </p>
+
+                <a href="../articles.html#experience" class="read-more" rel="prev"><small id="rd01">More articles...</small></a>
+
                 <div class="button-reaction">
                     <div id="react" class="reaction">
                         <h4 class="reaction-title" style="color: rgb(247, 114, 6);">Reaction:</h4>
@@ -280,6 +283,7 @@
             p05: document.querySelector("#p05"),
             p06: document.querySelector("#p06"),
             p07: document.querySelector("#p07"),
+            readMore: document.querySelector("#rd01"),
             opinion: document.querySelector("#opinion"),
             comment: document.querySelector("#comment"),
             /*articleSection: document.querySelector("#mt01"),
@@ -312,7 +316,8 @@
                         this.p05.textContent = Languages[attribute].article06
                         this.p06.textContent = Languages[attribute].article07
                         this.p07.textContent = Languages[attribute].article08
-                        this.opinion.textContent = Languages[attribute].article09
+                        this.readMore.textContent = Languages[attribute].moreArticles
+                        this.opinion.textContent = Languages[attribute].btnOpinion
                         /*this.articleSection.textContent = Languages[attribute].article12
                         this.traditionalTitle.textContent = Languages[attribute].article13
                         this.onlineTitle.textContent = Languages[attribute].article14
@@ -349,7 +354,9 @@
                 
                 article07: "In February I realized what I need to bring back that good routine, with productive and joy moments… The good vibe around makes all the difference, yeah “happiness is the key for happiness”. I had lost the control and worries and express were taking over my head! So, I packed my luggage and went back to Brazil to my family, I needed to change the atmosphere, and be surrounded with close people with no worries about any next payment or of being unemployed for example.",
                 article08: "It was a smart move, today I feel under control again, with productive and enjoying good times. My routines the study and projects are getting out to reality. I am happy and I want you to feel this happiness with yourself as well!!!",
-                article09: "Write Your Opinion",
+
+                moreArticles: "More Articles...",
+                btnOpinion: "Write Your Opinion",
                 article10: "Contents",
                 article11: "Traditional Education",
                 article12: "Online Education",
@@ -378,7 +385,9 @@
                 
                 article07: "Em fevereiro percebi o que precisava para trazer de volta aquela boa rotina, com momentos produtivos e alegres… E a boa vibe ao redor faz toda a diferença, sim “a felicidade é a chave da felicidade”. Eu tinha perdido o controle e as preocupações e o estresse estavam tomando conta da minha cabeça! Então, arrumei minhas malas e voltei para o Brasil com minha família, precisava mudar o clima, estar cercado de gente próxima e sem me preocupar com o próximo pagamento ou da situação de desempregada por exemplo.",
                 article08: "E isso foi uma jogada inteligente, hoje me sinto sob controle novamente, produtivo e aproveitando bons momentos com minha familia. Minhas rotinas de estudo e projetos estão se tornando realidade. Estou feliz e quero ver você feliz também!!!",
-                article09: "Escreva sua opinião",
+
+                moreArticles: "Mais artigos...",
+                btnOpinion: "Escreva sua opinião",
                 article10: "Conteúdo",
                 article11: "Educação tradicional",
                 article12: "Educação online",
@@ -407,7 +416,9 @@
                 
                 article07: "En febrero me di cuenta de lo que necesito para recuperar esa buena rutina, con momentos productivos y de alegría... El buen rollo alrededor hace toda la diferencia, sí 'la felicidad es la clave de la felicidad'. Había perdido el control y las preocupaciones y los expresos se apoderaban de mi cabeza! Así que hice las maletas y me volví a Brasil con mi familia, necesitaba cambiar de ambiente, y estar rodeado de gente cercana sin preocupaciones de ningún próximo pago o de estar en el paro por ejemplo. ",
                 article08: "Ha sido un acierto, hoy me siento de nuevo bajo control, con productividad y disfrutando de buenos momentos. Mis rutinas el estudio y los proyectos están saliendo a la realidad. Soy feliz y quiero que tú también sientas esta felicidad!!!",
-                article09: "Escribe tu reseña",
+
+                moreArticles: "Más artículos...",
+                btnOpinion: "Escribe tu reseña",
                 article10: "Contenido",
                 article11: "Educación tradicional",
                 article12: "Educación en línea",
@@ -439,7 +450,9 @@
                 
                 article07: "En février j'ai réalisé ce dont j'avais besoin pour ramener cette bonne routine, avec des moments productifs et joyeux… La bonne ambiance autour fait toute la différence, ouais «le bonheur est la clé du bonheur». J'avais perdu le contrôle et les soucis et le stress prenaient le dessus sur ma tête! Du coup, j'ai fait mes valises et je suis retourné au Brésil chez ma famille, j'avais besoin de changer d'ambiance, d'être entouré de proches sans se soucier d'un prochain paiement ou d'être au chômage par exemple.",
                 article08: "C'était un geste intelligent, aujourd'hui je me sens à nouveau sous contrôle, productif et passe de bons moments. Mes routines, l'étude et la croissance et les projets deviennent réalité. Je suis heureux et je veux que tu sois heureux avec toi aussi !!!",
-                article09: "Écrivez votre opinion",
+
+                moreArticles: "Plus d'articles...",
+                btnOpinion: "Écrivez votre opinion",
                 /*article10: "Contenu",
                 article11: "traditionnelle",
                 article12: "Éducation en ligne",
@@ -471,7 +484,9 @@
                 
                 article07: "Im Februar wurde mir klar, was ich brauche, um diese gute Routine mit produktiven und freudigen Momenten zurückzubringen. Die gute Stimmung macht den Unterschied. Ja, „Glück ist der Schlüssel zum Glück“. Ich hatte die Kontrolle verloren und Sorgen und Stress übernahmen meinen Kopf! Also packte ich mein Gepäck und ging zu meiner Familie nach Brasilien zurück. Ich musste die Atmosphäre ändern und von nahen Menschen umgeben sein, die sich keine Sorgen um die nächste Zahlung machten oder zum Beispiel arbeitslos waren.",
                 article08: "Es war ein kluger Schachzug, heute fühle ich mich wieder unter Kontrolle, produktiv und genieße gute Zeiten. Meine Routinen das Studium und das Wachsen und Projekte werden in die Realität umgesetzt. Ich bin glücklich und ich möchte, dass du auch mit dir selbst glücklich bist !!!",
-                article09: "Schreib deine Meinung",
+
+                moreArticles: "Weitere Artikel...",
+                btnOpinion: "Schreib deine Meinung",
                 /*article10: "Inhalt",
                 article11: "Traditionelle Bildung",
                 article12: "Online-Bildung",

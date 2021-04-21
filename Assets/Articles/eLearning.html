@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,900;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style01.css"> 
-    <title>Online Education</title>
+    <title>E-Learning</title>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KQM1WK6M7H"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -156,6 +156,8 @@
                     We are looking for new skills and develop our professional career for that we must accept these challenges and believe in our potential in all path we choose to achieve them, and trough online course could be a good way to us to start it or even to be our main resource to conquer it.   
                 </p>
 
+                <a href="../articles.html#traditional" class="read-more" rel="prev"><small id="rd01">More articles...</small></a>
+
                 <div class="button-reaction">
                     <div id="react" class="reaction">
                         <h4 class="reaction-title" style="color: rgb(247, 114, 6);">Reaction:</h4>
@@ -239,6 +241,7 @@
             p05: document.querySelector("#p05"),
             p06: document.querySelector("#p06"),
             p07: document.querySelector("#p07"),
+            readMore: document.querySelector("#rd01"),
             opinion: document.querySelector("#opinion"),
             comment: document.querySelector("#comment"),
             /*articleSection: document.querySelector("#mt01"),
@@ -270,8 +273,8 @@
                         this.p04.textContent = Languages[attribute].article05
                         this.p05.textContent = Languages[attribute].article06
                         this.p06.textContent = Languages[attribute].article07
-                        this.p07.textContent = Languages[attribute].article08
-                        this.opinion.textContent = Languages[attribute].article09
+                        this.readMore.textContent = Languages[attribute].moreArticles
+                        this.opinion.textContent = Languages[attribute].writeOpinion
                         /*this.articleSection.textContent = Languages[attribute].article12
                         this.traditionalTitle.textContent = Languages[attribute].article13
                         this.onlineTitle.textContent = Languages[attribute].article14
@@ -311,7 +314,8 @@
                 
                 article07: "We are looking for new skills and develop our professional career for that we must accept these challenges and believe in our potential in all path we choose to achieve them, and trough online course could be a good way to us to start it or even to be our main resource to conquer it.",
                 
-                article08: "Write Your Opinion",
+                moreArticles: "More Articles...",
+                writeOpinion: "Write Your Opinion",
                 commentTitle: "Leave a Comment",
                 translated: "Translated by:",
                 by: "Brooke Taylor",
@@ -327,7 +331,7 @@
                 author: "Por Adonides Amparo",
                 datePosted: "07 de Abril de 2021",
 
-                article01: "Existem tantas plataformas de cursos online hoje em dia. Cursos de longa ou curta duração, pagos ou gratuitos, porém todos são cursos de um sério investimento de tempo!",
+                article01: "Existem tantas plataformas de cursos online hoje em dia. Cursos de longa ou curta duração, pagos ou gratuitos, porém todos são cursos de investimento de tempo!",
 
                 article02: "O aprendizado online tem crescido muito nos últimos anos, mas com a pandemia teve um boom, a situação empurrou todos online e os empresários na área de educação foram forçados a lançar plataformas online para vender seu conteúdo assim manter o negócio funcionando, mas tudo isso sem muito tempo de planejar, o nível dessa educação que não era excelente, acabou caiu drasticamente com a alta demanda. ",
 
@@ -340,8 +344,9 @@
                 article06: "As principais dificuldades que as pessoas falam sobre o curso online, é sobre esta solitário, que os alunos querem estar perto de outros alunos e que por essa falta de interatividade é chato. Más não é verdade, conseguimos encontrar um curso online dinâmico, divertido e interativo, existem muitos fornecedores que oferecem todos os tipos de aprendizagem online, com vídeos, jogos de desafios, histórias etc. Agora esta com você achar o tipo de curso certo para sua característica, e lembrando, que com o e-learning teremos mais tempo para estar com amigos e família!",
                 
                 article07: "Procuramos novas competências e desenvolver nossa carreira profissional para isso devemos aceitar estes desafios e acreditar no nosso potencial em todo o caminho que escolhermos para os atingir, e através do curso online poderá ser uma boa forma de iniciarmos ou mesmo, de o ser o nosso principal recurso para conquistá-los.",
-            
-                article08: "Escreva sua opinião",
+                
+                moreArticles: "Mais artigos...",
+                writeOpinion: "Escreva sua opinião",
                 commentTitle: "Deixe um Comentário",
                 translated: "Traduzido por:",
                 by: "-",
@@ -371,7 +376,8 @@
                 
                 article07: "Buscamos nuevas habilidades y desarrollar nuestra carrera profesional, y para ello debemos aceptar estos retos y creer en nuestro potencial en todo camino que elijamos para conseguirlos, los cursos online pueden ser una buena forma de iniciarnos o incluso pueden a ser nuestro principal recurso para conquistarlo.",
                 
-                article08: "Escribe tu reseña",
+                moreArticles: "Más artículos...",
+                writeOpinion: "Escribe tu reseña",
                 commentTitle: "Deja un comentario",
                 translated: "Traducido por:",
                 by: "-",
@@ -388,7 +394,7 @@
                 checkOut: "avant-propos",
                 article: "Vous devriez être pointilleux avec l'e-learning!",
                 author: "De Adonides Amparo",
-                datePosted: "31 de Avril 2021",
+                datePosted: "07 de Avril 2021",
                 article01: "Il y a tellement de fournisseurs de cours en ligne de nos jours. Cours de longue ou courte durée, cours payants ou gratuits, tous les cours sont un sérieux investissement en temps !",
 
                 article02: "L'apprentissage en ligne s'est développé ces dernières années, mais comme la pandémie est en plein essor, la situation a poussé tout le monde à se mettre en ligne et les entreprises de l'école ont été obligées de lancer des plates-formes en ligne pour leur vendre du contenu afin de maintenir l'entreprise en marche, mais tout cela avec peu de temps pour planifier, le niveau d'éducation en ligne qui n'était pas excellent a chuté davantage avec la forte demande.",
@@ -403,7 +409,8 @@
                 
                 article07: "Nous recherchons de nouvelles compétences et développons notre carrière professionnelle pour cela nous devons accepter ces défis et croire en notre potentiel dans toutes les voies que nous choisissons pour les atteindre, et le cours en ligne pourrait être un bon moyen pour nous de le démarrer ou même de l'être. notre principale ressource pour la conquérir.",
                 
-                article08: "Écrivez votre opinion",
+                moreArticles: "Plus d'articles...",
+                writeOpinion: "Écrivez votre opinion",
                 /*
                 commentTitle: "Laissez un commentaire",*/
                 translated: "Traduit par:",
@@ -436,7 +443,8 @@
                 
                 article07: "Wir suchen nach neuen Fähigkeiten und entwickeln unsere berufliche Laufbahn weiter, damit wir diese Herausforderungen annehmen und an unser Potenzial auf allen Wegen glauben können, die wir wählen, um sie zu erreichen, und ein Online-Kurs könnte ein guter Weg für uns sein, ihn zu beginnen oder sogar zu sein unsere wichtigste Ressource, um es zu erobern.",
                 
-                article08: "Schreib deine Meinung",
+                moreArticles: "Weitere Artikel...",
+                writeOpinion: "Schreib deine Meinung",
                 /*
                 commentTitle: "Hinterlasse einen Kommentar",*/
                 translated: "Übersetzt von:",

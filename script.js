@@ -60,6 +60,7 @@ const Languages = {
         article13: "Traditional Education",
         article14: "Online Education",
         article15: "My Experience",
+        readMore: "read more...",
         commentTitle: "Leave a Comment",
         translated: "Translated by:",
         by: "Brooke Taylor",
@@ -93,6 +94,7 @@ const Languages = {
         article13: "Educação tradicional",
         article14: "Educação online",
         article15: "Minha Experiência",
+        readMore: "Leia mais...",
         commentTitle: "Deixe um Comentário",
         translated: "Traduzido por:",
         by: "-",
@@ -126,6 +128,7 @@ const Languages = {
         article13: "Educación tradicional",
         article14: "Educación en línea",
         article15: "Mi experiencia",
+        readMore: "Lee mas...",
         commentTitle: "Deja un comentario",
         translated: "Traducido por:",
         by: "-",
@@ -159,6 +162,7 @@ const Languages = {
         article13: "traditionnelle",
         article14: "Éducation en ligne",
         article15: "Mon expérience",
+        readMore: "Lire la suite...",
         commentTitle: "Laissez un commentaire",
         translated: "Traduit par:",
         by: "Léonard Piegay",
@@ -192,6 +196,7 @@ const Languages = {
         article13: "Traditionelle Bildung",
         article14: "Online-Bildung",
         article15: "Meine Erfahrung",
+        readMore: "Weiterlesen ...",
         commentTitle: "Hinterlasse einen Kommentar",
         translated: "Übersetzt von:",
         by: "Nori",
@@ -226,6 +231,9 @@ const Translate = {
                 happiness.textContent = Languages.english.article09
                 p06.textContent = Languages.english.article10
                 opinion.textContent = Languages.english.article11
+                read01.textContent = Languages.english.readMore
+                read02.textContent = Languages.english.readMore
+                read03.textContent = Languages.english.readMore
                 /*mt01.textContent = Languages.english.article12
                 st01.textContent = Languages.english.article13
                 st02.textContent = Languages.english.article14
@@ -265,6 +273,9 @@ const Translate = {
                 happiness.textContent = Languages.portuguese.article09
                 p06.textContent = Languages.portuguese.article10
                 opinion.textContent = Languages.portuguese.article11
+                read01.textContent = Languages.portuguese.readMore
+                read02.textContent = Languages.portuguese.readMore
+                read03.textContent = Languages.portuguese.readMore
                 /*mt01.textContent = Languages.portuguese.article12
                 st01.textContent = Languages.portuguese.article13
                 st02.textContent = Languages.portuguese.article14
@@ -304,6 +315,9 @@ const Translate = {
                 happiness.textContent = Languages.spanish.article09
                 p06.textContent = Languages.spanish.article10
                 opinion.textContent = Languages.spanish.article11
+                read01.textContent = Languages.spanish.readMore
+                read02.textContent = Languages.spanish.readMore
+                read03.textContent = Languages.spanish.readMore
                 /*mt01.textContent = Languages.spanish.article12
                 st01.textContent = Languages.spanish.article13
                 st02.textContent = Languages.spanish.article14
@@ -343,6 +357,9 @@ const Translate = {
                 happiness.textContent = Languages.french.article09
                 p06.textContent = Languages.french.article10
                 opinion.textContent = Languages.french.article11
+                read01.textContent = Languages.french.readMore
+                read02.textContent = Languages.french.readMore
+                read03.textContent = Languages.french.readMore
                 /*mt01.textContent = Languages.french.article12
                 st01.textContent = Languages.french.article13
                 st02.textContent = Languages.french.article14
@@ -382,6 +399,9 @@ const Translate = {
                 happiness.textContent = Languages.german.article09
                 p06.textContent = Languages.german.article10
                 opinion.textContent = Languages.german.article11
+                read01.textContent = Languages.german.readMore
+                read02.textContent = Languages.german.readMore
+                read03.textContent = Languages.german.readMore
                 /*mt01.textContent = Languages.german.article12
                 st01.textContent = Languages.german.article13
                 st02.textContent = Languages.german.article14
@@ -414,6 +434,9 @@ const Translate = {
     p05: document.querySelector("#p05"),
     conclusion: document.querySelector("#happiness"),
     p06: document.querySelector("#p06"),
+    readTr: document.querySelector("#read01"),
+    readOn: document.querySelector("#read02"),
+    readEx: document.querySelector("#read03"),
     opinion: document.querySelector("#opinion"),
     comment: document.querySelector("#comment"),
     /*articleSection: document.querySelector("#mt01"),
@@ -449,6 +472,9 @@ const Translate = {
                 this.conclusion.textContent = Languages[attribute].article09
                 this.p06.textContent = Languages[attribute].article10
                 this.opinion.textContent = Languages[attribute].article11
+                this.readTr.textContent = Languages[attribute].readMore
+                this.readOn.textContent = Languages[attribute].readMore
+                this.readEx.textContent = Languages[attribute].readMore
                 /*this.articleSection.textContent = Languages[attribute].article12
                 this.traditionalTitle.textContent = Languages[attribute].article13
                 this.onlineTitle.textContent = Languages[attribute].article14
